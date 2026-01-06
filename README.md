@@ -75,12 +75,13 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ```
 chinese_poetry_explorer/
 ├── app/                    # Next.js App Router pages and layouts
-│   ├── generated/         # Prisma generated client (auto-generated)
 │   ├── globals.css        # Global styles
 │   ├── layout.tsx         # Root layout
 │   └── page.tsx           # Home page
 ├── lib/                   # Utility functions and configurations
-│   └── prisma.ts          # Prisma client singleton
+│   ├── prisma.ts          # Prisma client singleton
+│   └── validations/       # Zod validation schemas
+│       └── poetry.ts      # Poetry-related schemas
 ├── prisma/                # Prisma schema and migrations
 │   └── schema.prisma      # Database schema
 ├── public/                # Static assets
