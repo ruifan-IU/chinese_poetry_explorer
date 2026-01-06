@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Example models for Chinese Poetry Explorer
+model Author {
+  id          String   @id @default(cuid())
+  name        String
+  dynasty     String
+  biography   String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  poems       Poem[]
+}
+
+model Poem {
+  id          String   @id @default(cuid())
+  title       String
+  content     String
+  author      Author   @relation(fields: [authorId], references: [id])
+  authorId    String
+  dynasty     String
+  tags        String[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([authorId])
+  @@index([dynasty])
+}
