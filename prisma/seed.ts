@@ -1,4 +1,6 @@
-import { prisma } from '../lib/prisma';
+import 'dotenv/config';
+import { prisma } from '../lib/prisma.ts';
+import { fileURLToPath } from 'url';
 import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
@@ -16,6 +18,8 @@ function hashContent(s: string) {
 }
 
 async function main() {
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
   const dataDir = path.join(__dirname, 'data');
   const authorsPath = path.join(dataDir, 'authors.json');
   const textsPath = path.join(dataDir, 'texts.json');

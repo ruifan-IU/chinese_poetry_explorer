@@ -2,21 +2,20 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider   = "prisma-client-js"
   engineType = "binary"
-  output   = "./generated"
+  output     = "../src/generated"
 }
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 model Dynasty {
-  id        Int      @id @default(autoincrement())
-  name      String   @unique
-  authors   Author[]
-  texts     Text[]
+  id      Int      @id @default(autoincrement())
+  name    String   @unique
+  authors Author[]
+  texts   Text[]
 }
 
 model Author {
@@ -29,23 +28,23 @@ model Author {
 }
 
 model Text {
-  id          Int      @id @default(autoincrement())
+  id          Int        @id @default(autoincrement())
   title       String
   content     String
-  contentHash String   @unique
+  contentHash String     @unique
   annotation  String?
   comments    String?
   translation String?
   authorId    Int
   dynastyId   Int
-  author      Author   @relation(fields: [authorId], references: [id])
-  dynasty     Dynasty  @relation(fields: [dynastyId], references: [id])
+  author      Author     @relation(fields: [authorId], references: [id])
+  dynasty     Dynasty    @relation(fields: [dynastyId], references: [id])
   textTypes   TextType[]
 }
 
 model Type {
-  id    Int    @id @default(autoincrement())
-  name  String @unique
+  id        Int        @id @default(autoincrement())
+  name      String     @unique
   textTypes TextType[]
 }
 
