@@ -1,181 +1,111 @@
 import 'dotenv/config';
 import { prisma } from '../lib/prisma.ts';
-import { fileURLToPath } from 'url';
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'path';
 import crypto from 'crypto';
+import { fileURLToPath } from 'url';
+import getDynasties from './data/getData/getDynasties.js';
+import getTypes from './data/getData/getTypes.js';
+import getAuthorDynasty from './data/getData/getAuthorDynasty.js';
+import getAuthorInfo from './data/getData/getAuthorInfo.js';
 
-async function loadJson<T = any>(p: string): Promise<T> {
-  const raw = await fs.readFile(p, 'utf8');
-  return JSON.parse(raw) as T;
-}
-
-function hashContent(s: string) {
-  return crypto
-    .createHash('sha256')
-    .update(s || '')
-    .digest('hex');
-}
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 async function main() {
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-  const dataDir = path.join(__dirname, 'data');
-  const authorsPath = path.join(dataDir, 'authors.json');
-  const textsPath = path.join(dataDir, 'texts.json');
+  // 1. Seed Dynasties
+  const dynasties: string[] = await getDynasties();
+  const dynastyRecords = await Promise.all(
+    dynasties.map((name) =>
+      prisma.dynasty.upsert({
+        where: { name },
+        update: {},
+        create: { name },
+      })
+    )
+  );
+  const dynastyIdMap = Object.fromEntries(
+    dynastyRecords.map((d) => [d.name, d.id])
+  );
 
-  const authorsData = await loadJson<Array<any>>(authorsPath);
-  const textsData = await loadJson<Array<any>>(textsPath);
+  // 2. Seed Types
+  const types: string[] = await getTypes();
+  const typeRecords = await Promise.all(
+    types.map((name) =>
+      prisma.type.upsert({
+        where: { name },
+        update: {},
+        create: { name },
+      })
+    )
+  );
+  const typeIdMap = Object.fromEntries(typeRecords.map((t) => [t.name, t.id]));
 
-  // collect dynasty names we can see in data
-  const dynastyNames = new Set<string>();
-  for (const a of authorsData)
-    if (a.dynasty) dynastyNames.add(String(a.dynasty));
-  for (const t of textsData) if (t.dynasty) dynastyNames.add(String(t.dynasty));
+  // 3. Seed Authors
+  const authorDynastyMap = (await getAuthorDynasty()) as Record<string, string>;
+  const authorInfoMap = (await getAuthorInfo()) as Record<
+    string,
+    string | null
+  >;
+  const authorRecords = await Promise.all(
+    Object.keys(authorDynastyMap).map((name) =>
+      prisma.author.upsert({
+        where: { name },
+        update: {},
+        create: {
+          name,
+          dynastyId: dynastyIdMap[authorDynastyMap[name]],
+          introduction: authorInfoMap[name] || null,
+        },
+      })
+    )
+  );
+  const authorIdMap = Object.fromEntries(
+    authorRecords.map((a) => [a.name, a.id])
+  );
 
-  // ensure an "Unknown" dynasty exists for missing references
-  dynastyNames.add('Unknown');
+  // 4. Seed Texts
+  const textsPath = path.resolve(__dirname, './data/texts.json');
+  const textsData = JSON.parse(fs.readFileSync(textsPath, 'utf8'));
+  const textRecords = await Promise.all(
+    textsData.map((text: any) =>
+      prisma.text.create({
+        data: {
+          title: text.title,
+          authorId: authorIdMap[text.author],
+          dynastyId: dynastyIdMap[text.dynasty],
+          content: text.content,
+          contentHash: crypto
+            .createHash('sha256')
+            .update(text.content)
+            .digest('hex'),
+        },
+      })
+    )
+  );
+  const textIdMap = Object.fromEntries(
+    textRecords.map((t) => [t.content, t.id])
+  );
 
-  const dynastyMap = new Map<string, number>();
-  for (const name of dynastyNames) {
-    const d = await prisma.dynasty.upsert({
-      where: { name },
-      create: { name },
-      update: {},
-    });
-    dynastyMap.set(name, d.id);
-  }
-
-  // upsert authors
-  const authorMap = new Map<string, number>();
-  for (const a of authorsData) {
-    // assume incoming objects have at least `name` and optional `introduction` and `dynasty`
-    const name = String(
-      a.name ?? a.fullName ?? a.title ?? 'Unknown Author'
-    ).trim();
-    const introduction = a.introduction ?? a.bio ?? a.description ?? null;
-    const dynastyName = (a.dynasty && String(a.dynasty)) || 'Unknown';
-    const dynastyId = dynastyMap.get(dynastyName) ?? dynastyMap.get('Unknown')!;
-
-    const au = await prisma.author.upsert({
-      where: { name },
-      create: {
-        name,
-        introduction,
-        dynastyId,
-      },
-      update: {
-        introduction,
-        dynastyId,
-      },
-    });
-    authorMap.set(name, au.id);
-  }
-
-  // ensure there's an Unknown author if any text lacks an author
-  if (!authorMap.has('Unknown')) {
-    const u = await prisma.author.upsert({
-      where: { name: 'Unknown' },
-      create: {
-        name: 'Unknown',
-        introduction: 'Imported placeholder',
-        dynastyId: dynastyMap.get('Unknown')!,
-      },
-      update: {},
-    });
-    authorMap.set('Unknown', u.id);
-  }
-
-  let created = 0;
-  for (const t of textsData) {
-    const title = t.title ?? t.name ?? 'Untitled';
-    const content = t.content ?? t.translation ?? '';
-    const contentHash = hashContent(content + (title || ''));
-    const annotation = t.annotation ?? null;
-    const comments = t.comments ?? null;
-    const translation = t.translation ?? null;
-
-    const dynastyName = (t.dynasty && String(t.dynasty)) || 'Unknown';
-    const dynastyId = dynastyMap.get(dynastyName) ?? dynastyMap.get('Unknown')!;
-
-    const authorName =
-      t.authorName || t.author || t.by
-        ? String(t.authorName ?? t.author ?? t.by)
-        : null;
-    const authorId = authorName ? authorMap.get(authorName) ?? null : null;
-    const resolvedAuthorId = authorId ?? authorMap.get('Unknown')!;
-
-    try {
-      // upsert by contentHash (unique)
-      const existing = await prisma.text.findUnique({ where: { contentHash } });
-      if (existing) {
-        // optionally update fields
-        await prisma.text.update({
-          where: { id: existing.id },
+  // 5. Seed TextTypes (many-to-many)
+  for (const text of textsData) {
+    if (text.types && text.types.length > 0) {
+      for (const typeName of text.types) {
+        await prisma.textType.create({
           data: {
-            title,
-            content,
-            annotation,
-            comments,
-            translation,
-            authorId: resolvedAuthorId,
-            dynastyId,
+            textId: textIdMap[text.content],
+            typeId: typeIdMap[typeName],
           },
         });
-      } else {
-        const createdText = await prisma.text.create({
-          data: {
-            title,
-            content,
-            contentHash,
-            annotation,
-            comments,
-            translation,
-            author: { connect: { id: resolvedAuthorId } },
-            dynasty: { connect: { id: dynastyId } },
-          },
-        });
-
-        // handle types/tags if present (array of strings)
-        const types = Array.isArray(t.types)
-          ? t.types.map(String)
-          : Array.isArray(t.tags)
-          ? t.tags.map(String)
-          : [];
-        for (const typeNameRaw of types) {
-          const typeName = typeNameRaw.trim();
-          if (!typeName) continue;
-          const ty = await prisma.type.upsert({
-            where: { name: typeName },
-            create: { name: typeName },
-            update: {},
-          });
-          // create join row; ignore unique-constraint errors
-          try {
-            await prisma.textType.create({
-              data: {
-                textId: createdText.id,
-                typeId: ty.id,
-              },
-            });
-          } catch (err) {
-            // ignore duplicates
-          }
-        }
-        created++;
       }
-    } catch (err) {
-      console.error('Failed to upsert text:', title, err);
     }
   }
-
-  console.log(`Seed finished. texts created: ${created}`);
 }
 
 main()
   .catch((e) => {
     console.error(e);
-    process.exitCode = 1;
+    process.exit(1);
   })
   .finally(async () => {
     await prisma.$disconnect();

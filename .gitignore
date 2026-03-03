@@ -40,3 +40,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# data files - too large for git
+prisma/data/raw/
+prisma/data/cleaned/
+prisma/data/*.json
