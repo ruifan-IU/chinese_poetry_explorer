@@ -4,7 +4,7 @@
 generator client {
   provider = "prisma-client-js"
   engineType = "binary"
-  output   = "./generated"
+  output   = "../lib/prisma-client"
 }
 
 datasource db {
@@ -14,7 +14,7 @@ datasource db {
 model Dynasty {
   id        Int      @id @default(autoincrement())
   name      String   @unique
-  authors   Author[]
+  poets     Poet[]
   texts     Text[]
 }
 
@@ -35,9 +35,9 @@ model Text {
   annotation  String?
   comments    String?
   translation String?
-  authorId    Int
+  poetId      Int
   dynastyId   Int
-  author      Author   @relation(fields: [authorId], references: [id])
+  poet        Poet     @relation(fields: [poetId], references: [id])
   dynasty     Dynasty  @relation(fields: [dynastyId], references: [id])
   textTypes   TextType[]
 }

@@ -41,6 +41,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# prisma
+lib/prisma-client/
+
 # data files - too large for git
 prisma/data/raw/
 prisma/data/cleaned/
