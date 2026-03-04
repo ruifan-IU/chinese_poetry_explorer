@@ -8,10 +8,10 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "eslint",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate dev",
-    "prisma:studio": "prisma studio",
-    "prisma:push": "prisma db push",
+    "prisma:generate": "node --env-file=.env ./node_modules/.bin/prisma generate",
+    "prisma:migrate": "node --env-file=.env ./node_modules/.bin/prisma migrate dev",
+    "prisma:studio": "node --env-file=.env ./node_modules/.bin/prisma studio",
+    "prisma:push": "node --env-file=.env ./node_modules/.bin/prisma db push",
     "prisma:seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {

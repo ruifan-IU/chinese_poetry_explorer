@@ -1,0 +1,13 @@
+{
+  "total_poems": 5000,
+  "total_poets": 852,
+  "total_tags": 44,
+  "total_dynasties": 14,
+  "star_range": {
+    "max": 32722,
+    "min": 19,
+    "average": 458.348
+  },
+  "poems_with_tags": 3185,
+  "poems_with_tags_percentage": 63.7
+}
