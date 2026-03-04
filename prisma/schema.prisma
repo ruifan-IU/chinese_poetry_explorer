@@ -15,44 +15,56 @@ model Dynasty {
   id        Int      @id @default(autoincrement())
   name      String   @unique
   poets     Poet[]
-  texts     Text[]
+  poems     Poem[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Poet {
   id           Int      @id @default(autoincrement())
+  stars       Int      @default(0)
   name         String   @unique
-  introduction String?
+  image       String?
+  summary String?
+  introduction   String?
   dynastyId    Int?
   dynasty      Dynasty? @relation(fields: [dynastyId], references: [id])
-  texts        Text[]
+  poems        Poem[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([dynastyId])
+  @@index([name])
+  @@index([stars])
 }
 
-model Text {
+model Poem {
   id          Int      @id @default(autoincrement())
   title       String
+  stars       Int     @default(0)
   content     String
   contentHash String   @unique
-  annotation  String?
+  background  String?
   comments    String?
   translation String?
   poetId      Int
   dynastyId   Int
   poet        Poet     @relation(fields: [poetId], references: [id])
   dynasty     Dynasty  @relation(fields: [dynastyId], references: [id])
-  textTypes   TextType[]
+  tags        Tag[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([title])
+  @@index([poetId])
+  @@index([dynastyId])
+  @@index([stars])
 }
 
-model Type {
+model Tag {
   id    Int    @id @default(autoincrement())
   name  String @unique
-  textTypes TextType[]
-}
-
-model TextType {
-  textId Int
-  typeId Int
-  text   Text @relation(fields: [textId], references: [id])
-  type   Type @relation(fields: [typeId], references: [id])
-
-  @@id([textId, typeId])
+  poems Poem[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
