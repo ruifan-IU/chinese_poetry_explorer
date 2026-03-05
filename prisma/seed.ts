@@ -56,9 +56,20 @@ async function main() {
   const dynastiesData: string[] = JSON.parse(
     fs.readFileSync(path.join(dataDir, 'dev_dynasties.json'), 'utf8')
   );
+
+  dynastiesData.push('未知');
+
   const poetsData: PoetData[] = JSON.parse(
     fs.readFileSync(path.join(dataDir, 'dev_poets.json'), 'utf8')
   );
+
+  poetsData.push({
+    objectId: 'unknown',
+    name: '佚名',
+    star: 0,
+    dynasty: '未知',
+  });
+
   const tagsData: TagData[] = JSON.parse(
     fs.readFileSync(path.join(dataDir, 'dev_tags.json'), 'utf8')
   );
@@ -127,6 +138,7 @@ async function main() {
 
     poetObjectIdMap[poet.objectId] = poetRecord.id;
   }
+
   console.log(`  ✓ Created ${poetsData.length} poets\n`);
 
   // 5. Seed Poems
@@ -141,23 +153,14 @@ async function main() {
 
     if (poetRef && typeof poetRef === 'object' && poetRef.objectId) {
       poetId = poetObjectIdMap[poetRef.objectId];
-    }
-
-    // Skip poems without a poet (required field)
-    if (!poetId) {
-      poemsSkipped++;
-      console.warn(`  ⚠️  Skipping poem "${poem.name}" - no poet found`);
-      continue;
+    } else {
+      poetId = poetObjectIdMap['unknown'];
     }
 
     // Get dynasty ID
-    const dynastyId = poem.dynasty ? dynastyIdMap[poem.dynasty] : null;
-
-    if (!dynastyId) {
-      poemsSkipped++;
-      console.warn(`  ⚠️  Skipping poem "${poem.name}" - no dynasty found`);
-      continue;
-    }
+    const dynastyId = poem.dynasty
+      ? dynastyIdMap[poem.dynasty]
+      : dynastyIdMap['未知'];
 
     // Create content hash
     const contentHash = crypto
@@ -241,7 +244,9 @@ async function main() {
 
   console.log('\n🌟 Top 5 poems by stars:');
   topPoems.forEach((poem, i) => {
-    console.log(`  ${i + 1}. ${poem.title} by ${poem.poet.name} (⭐ ${poem.stars})`);
+    console.log(
+      `  ${i + 1}. ${poem.title} by ${poem.poet.name} (⭐ ${poem.stars})`
+    );
   });
 
   console.log('\n✅ Database seeded successfully!');
