@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { getPoemById } from '@/lib/queries';
 
 type Params = Promise<{ id: string }>;
@@ -21,9 +22,25 @@ export default async function PoemDetailPage(props: { params: Params }) {
               {poem.title}
             </h1>
             <div className="flex items-center justify-between">
-              <p className="text-lg text-zinc-600">
-                {poem.poet.name} · {poem.dynasty.name}
-              </p>
+              <div className="flex items-center gap-3">
+                {poem.poet.image && (
+                  <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-zinc-200">
+                    <Image
+                      src={poem.poet.image}
+                      alt={poem.poet.name}
+                      fill
+                      className="object-cover"
+                      sizes="48px"
+                    />
+                  </div>
+                )}
+                <div>
+                  <p className="text-lg font-medium text-zinc-900">
+                    {poem.poet.name}
+                  </p>
+                  <p className="text-sm text-zinc-600">{poem.dynasty.name}</p>
+                </div>
+              </div>
               <div className="flex items-center gap-2 text-amber-600">
                 <span>⭐</span>
                 <span className="font-medium">

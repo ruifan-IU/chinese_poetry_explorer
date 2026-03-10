@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 type PoemCardProps = {
   poem: {
@@ -8,6 +9,7 @@ type PoemCardProps = {
     stars: number;
     poet: {
       name: string;
+      image: string | null;
     };
     dynasty: {
       name: string;
@@ -29,12 +31,25 @@ export function PoemCard({ poem }: PoemCardProps) {
       className="block rounded-lg border border-zinc-200 bg-white p-6 transition-shadow hover:shadow-lg"
     >
       {/* Header */}
-      <div className="mb-4 flex items-start justify-between">
-        <div>
+      <div className="mb-4 flex items-start justify-between gap-4">
+        <div className="flex-1">
           <h3 className="text-xl font-semibold text-zinc-900">{poem.title}</h3>
-          <p className="mt-1 text-sm text-zinc-600">
-            {poem.poet.name} · {poem.dynasty.name}
-          </p>
+          <div className="mt-2 flex items-center gap-2">
+            {poem.poet.image && (
+              <div className="relative h-6 w-6 overflow-hidden rounded-full">
+                <Image
+                  src={poem.poet.image}
+                  alt={poem.poet.name}
+                  fill
+                  className="object-cover"
+                  sizes="24px"
+                />
+              </div>
+            )}
+            <p className="text-sm text-zinc-600">
+              {poem.poet.name} · {poem.dynasty.name}
+            </p>
+          </div>
         </div>
         <div className="flex items-center gap-1 text-amber-600">
           <span className="text-sm">⭐</span>
