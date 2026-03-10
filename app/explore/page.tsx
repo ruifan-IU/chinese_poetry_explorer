@@ -1,8 +1,99 @@
-export default function ExplorePage() {
+import { Suspense } from 'react';
+import { PoemCard } from '../components/PoemCard';
+import { FilterSidebar } from '../components/FilterSidebar';
+import {
+  getRecommendedPoems,
+  getFilteredPoems,
+  getAllPoets,
+  getAllTags,
+} from '@/lib/queries';
+
+type SearchParams = Promise<{
+  poetId?: string;
+  tagId?: string | string[];
+}>;
+
+export default async function ExplorePage(props: {
+  searchParams: SearchParams;
+}) {
+  const searchParams = await props.searchParams;
+
+  // Parse filters from URL
+  const poetId = searchParams.poetId ? Number(searchParams.poetId) : undefined;
+  const tagIds = searchParams.tagId
+    ? Array.isArray(searchParams.tagId)
+      ? searchParams.tagId.map(Number)
+      : [Number(searchParams.tagId)]
+    : undefined;
+
+  // Fetch data in parallel
+  const [poems, poets, tags] = await Promise.all([
+    poetId || tagIds
+      ? getFilteredPoems({ poetId, tagIds, limit: 30 })
+      : getRecommendedPoems(30),
+    getAllPoets(),
+    getAllTags(),
+  ]);
+
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold">探索诗词</h1>
-      <p className="mt-4 text-zinc-600">Coming soon: Poems list with filters</p>
+    <div className="min-h-screen bg-zinc-50">
+      {/* Header */}
+      <header className="border-b border-zinc-200 bg-white">
+        <div className="container mx-auto px-4 py-6">
+          <h1 className="text-3xl font-bold text-zinc-900">探索诗词</h1>
+          <p className="mt-2 text-zinc-600">
+            {poetId || tagIds
+              ? `找到 ${poems.length} 首诗词`
+              : '为您推荐高质量诗词'}
+          </p>
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col gap-8 lg:flex-row">
+          {/* Poems List - Main Content */}
+          <main className="flex-1">
+            <Suspense
+              fallback={
+                <div className="text-center text-zinc-600">加载中...</div>
+              }
+            >
+              {poems.length > 0 ? (
+                <div className="grid gap-6 md:grid-cols-2">
+                  {poems.map((poem) => (
+                    <PoemCard key={poem.id} poem={poem} />
+                  ))}
+                </div>
+              ) : (
+                <div className="rounded-lg border border-zinc-200 bg-white p-12 text-center">
+                  <p className="text-lg text-zinc-600">
+                    没有找到符合条件的诗词
+                  </p>
+                  <p className="mt-2 text-sm text-zinc-500">
+                    请尝试调整筛选条件
+                  </p>
+                </div>
+              )}
+            </Suspense>
+          </main>
+
+          {/* Filter Sidebar */}
+          <aside className="lg:w-80">
+            <div className="sticky top-8">
+              <Suspense
+                fallback={
+                  <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm text-zinc-600">
+                    加载筛选器...
+                  </div>
+                }
+              >
+                <FilterSidebar poets={poets} tags={tags} />
+              </Suspense>
+            </div>
+          </aside>
+        </div>
+      </div>
     </div>
   );
 }
