@@ -1,3 +1,6 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,6 +11,7 @@ type PoemCardProps = {
     content: string;
     stars: number;
     poet: {
+      id: number;
       name: string;
       image: string | null;
     };
@@ -21,9 +25,17 @@ type PoemCardProps = {
 };
 
 export function PoemCard({ poem }: PoemCardProps) {
+  const router = useRouter();
+
   // Truncate content to first 4 lines for preview
   const contentPreview = poem.content.split('\n').slice(0, 4).join('\n');
   const hasMore = poem.content.split('\n').length > 4;
+
+  const handlePoetClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    router.push(`/poets/${poem.poet.id}`);
+  };
 
   return (
     <Link
@@ -34,7 +46,10 @@ export function PoemCard({ poem }: PoemCardProps) {
       <div className="mb-4 flex items-start justify-between gap-4">
         <div className="flex-1">
           <h3 className="text-xl font-semibold text-zinc-900">{poem.title}</h3>
-          <div className="mt-2 flex items-center gap-2">
+          <button
+            onClick={handlePoetClick}
+            className="mt-2 flex items-center gap-2 text-left hover:underline"
+          >
             {poem.poet.image && (
               <div className="relative h-6 w-6 overflow-hidden rounded-full">
                 <Image
@@ -49,7 +64,7 @@ export function PoemCard({ poem }: PoemCardProps) {
             <p className="text-sm text-zinc-600">
               {poem.poet.name} · {poem.dynasty.name}
             </p>
-          </div>
+          </button>
         </div>
         <div className="flex items-center gap-1 text-amber-600">
           <span className="text-sm">⭐</span>

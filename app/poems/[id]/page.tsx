@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
 import { getPoemById } from '@/lib/queries';
 
 type Params = Promise<{ id: string }>;
@@ -22,7 +23,10 @@ export default async function PoemDetailPage(props: { params: Params }) {
               {poem.title}
             </h1>
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-3">
+              <Link
+                href={`/poets/${poem.poet.id}`}
+                className="flex items-center gap-3 transition-opacity hover:opacity-70"
+              >
                 {poem.poet.image && (
                   <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-zinc-200">
                     <Image
@@ -35,12 +39,12 @@ export default async function PoemDetailPage(props: { params: Params }) {
                   </div>
                 )}
                 <div>
-                  <p className="text-lg font-medium text-zinc-900">
+                  <p className="text-lg font-medium text-zinc-900 hover:underline">
                     {poem.poet.name}
                   </p>
                   <p className="text-sm text-zinc-600">{poem.dynasty.name}</p>
                 </div>
-              </div>
+              </Link>
               <div className="flex items-center gap-2 text-amber-600">
                 <span>⭐</span>
                 <span className="font-medium">
