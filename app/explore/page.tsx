@@ -37,23 +37,19 @@ export default async function ExplorePage(props: {
 
   return (
     <div className="min-h-screen bg-zinc-50">
-      {/* Header */}
-      <header className="border-b border-zinc-200 bg-white">
-        <div className="container mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-zinc-900">探索诗词</h1>
-          <p className="mt-2 text-zinc-600">
-            {poetId || tagIds
-              ? `找到 ${poems.length} 首诗词`
-              : '为您推荐高质量诗词'}
-          </p>
-        </div>
-      </header>
-
       {/* Main Content */}
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col gap-8 lg:flex-row">
           {/* Poems List - Main Content */}
           <main className="flex-1">
+            {/* Results info */}
+            <div className="mb-6">
+              <p className="text-sm text-zinc-600">
+                {poetId || tagIds
+                  ? `找到 ${poems.length} 首诗词`
+                  : `为您推荐 ${poems.length} 首高质量诗词`}
+              </p>
+            </div>
             <Suspense
               fallback={
                 <div className="text-center text-zinc-600">加载中...</div>
@@ -80,7 +76,7 @@ export default async function ExplorePage(props: {
 
           {/* Filter Sidebar */}
           <aside className="lg:w-80">
-            <div className="sticky top-8">
+            <div className="sticky top-24">
               <Suspense
                 fallback={
                   <div className="rounded-lg border border-zinc-200 bg-white p-4 text-center text-sm text-zinc-600">
