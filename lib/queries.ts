@@ -82,15 +82,17 @@ export async function getPoemById(id: number) {
 }
 
 /**
- * Search poems by title or content.
+ * Search poems by title, poet, or content.
  */
-export async function searchPoems(query: string, limit = 20) {
+export async function searchPoems(query: string, limit = 20, type?: PoemType) {
   return prisma.poem.findMany({
     where: {
       OR: [
         { title: { contains: query, mode: 'insensitive' } },
+        { poet: { name: { contains: query, mode: 'insensitive' } } },
         { content: { contains: query, mode: 'insensitive' } },
       ],
+      ...(type && { type }),
     },
     include: {
       poet: true,
