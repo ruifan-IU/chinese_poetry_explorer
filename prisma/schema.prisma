@@ -39,6 +39,12 @@ model Poet {
   @@index([stars])
 }
 
+enum PoemType {
+  shi
+  ci
+  wen
+}
+
 model Poem {
   id          Int      @id @default(autoincrement())
   title       String
@@ -48,6 +54,7 @@ model Poem {
   background  String?
   comments    String?
   translation String?
+  type        PoemType @default(shi)
   poetId      Int
   dynastyId   Int
   poet        Poet     @relation(fields: [poetId], references: [id])
@@ -60,6 +67,7 @@ model Poem {
   @@index([poetId])
   @@index([dynastyId])
   @@index([stars])
+  @@index([type])
 }
 
 model Tag {

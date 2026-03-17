@@ -7,10 +7,12 @@ import {
   getAllPoets,
   getAllTags,
 } from '@/lib/queries';
+import { PoemType } from '@/lib/prisma-client';
 
 type SearchParams = Promise<{
   poetId?: string;
   tagId?: string | string[];
+  type?: string;
 }>;
 
 export default async function ExplorePage(props: {
@@ -25,12 +27,13 @@ export default async function ExplorePage(props: {
       ? searchParams.tagId.map(Number)
       : [Number(searchParams.tagId)]
     : undefined;
+  const type = searchParams.type as PoemType | undefined;
 
   // Fetch data in parallel
   const [poems, poets, tags] = await Promise.all([
-    poetId || tagIds
-      ? getFilteredPoems({ poetId, tagIds, limit: 30 })
-      : getRecommendedPoems(30),
+    poetId || tagIds || type
+      ? getFilteredPoems({ poetId, tagIds, type, limit: 30 })
+      : getRecommendedPoems(30, type),
     getAllPoets(),
     getAllTags(),
   ]);
@@ -45,7 +48,7 @@ export default async function ExplorePage(props: {
             {/* Results info */}
             <div className="mb-6">
               <p className="text-sm text-zinc-600">
-                {poetId || tagIds
+                {poetId || tagIds || type
                   ? `找到 ${poems.length} 首诗词`
                   : `为您推荐 ${poems.length} 首高质量诗词`}
               </p>

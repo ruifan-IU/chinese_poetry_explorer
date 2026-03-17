@@ -1,4 +1,5 @@
 import { prisma } from './prisma';
+import { PoemType } from './prisma-client';
 
 // ========== Poems ==========
 
@@ -6,11 +7,12 @@ import { prisma } from './prisma';
  * Get recommended poems for the landing page.
  * Returns random selection of high-quality poems (stars >= 500).
  */
-export async function getRecommendedPoems(limit = 20) {
+export async function getRecommendedPoems(limit = 20, type?: PoemType) {
   // Get poems with at least 500 stars
   const poems = await prisma.poem.findMany({
     where: {
       stars: { gte: 500 },
+      ...(type && { type }),
     },
     include: {
       poet: true,
@@ -24,23 +26,26 @@ export async function getRecommendedPoems(limit = 20) {
 }
 
 /**
- * Get poems filtered by poet, tags, and/or dynasty.
+ * Get poems filtered by poet, tags, dynasty, and/or type.
  */
 export async function getFilteredPoems({
   poetId,
   tagIds,
   dynastyId,
+  type,
   limit = 20,
 }: {
   poetId?: number;
   tagIds?: number[];
   dynastyId?: number;
+  type?: PoemType;
   limit?: number;
 }) {
   return prisma.poem.findMany({
     where: {
       ...(poetId && { poetId }),
       ...(dynastyId && { dynastyId }),
+      ...(type && { type }),
       ...(tagIds &&
         tagIds.length > 0 && {
           tags: {

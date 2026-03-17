@@ -15,6 +15,7 @@ export function FilterSidebar({ poets, tags }: FilterSidebarProps) {
 
   const selectedPoetId = searchParams.get('poetId');
   const selectedTagIds = searchParams.getAll('tagId');
+  const selectedType = searchParams.get('type');
 
   const [searchPoet, setSearchPoet] = useState('');
   const [searchTag, setSearchTag] = useState('');
@@ -58,13 +59,27 @@ export function FilterSidebar({ poets, tags }: FilterSidebarProps) {
     });
   };
 
+  const handleTypeSelect = (type: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+
+    if (selectedType === type) {
+      params.delete('type');
+    } else {
+      params.set('type', type);
+    }
+
+    startTransition(() => {
+      router.push(`/explore?${params.toString()}`);
+    });
+  };
+
   const handleClearFilters = () => {
     startTransition(() => {
       router.push('/explore');
     });
   };
 
-  const hasActiveFilters = selectedPoetId || selectedTagIds.length > 0;
+  const hasActiveFilters = selectedPoetId || selectedTagIds.length > 0 || selectedType;
 
   return (
     <aside className="space-y-6">
@@ -77,6 +92,30 @@ export function FilterSidebar({ poets, tags }: FilterSidebarProps) {
           清除筛选 ✕
         </button>
       )}
+
+      {/* Type Filter */}
+      <div className="rounded-lg border border-zinc-200 bg-white p-4">
+        <h3 className="mb-3 text-lg font-semibold text-zinc-900">类型</h3>
+        <div className="space-y-2">
+          {[
+            { value: 'shi', label: '诗' },
+            { value: 'ci', label: '词' },
+            { value: 'wen', label: '文' },
+          ].map((type) => (
+            <button
+              key={type.value}
+              onClick={() => handleTypeSelect(type.value)}
+              className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-sm transition-colors ${
+                selectedType === type.value
+                  ? 'bg-zinc-900 text-white'
+                  : 'hover:bg-zinc-100'
+              }`}
+            >
+              <span>{type.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Poets Filter */}
       <div className="rounded-lg border border-zinc-200 bg-white p-4">
