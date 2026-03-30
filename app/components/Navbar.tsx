@@ -1,6 +1,10 @@
 import Link from 'next/link';
+import { getCurrentUser } from '@/lib/auth';
+import { UserMenu } from './UserMenu';
 
-export function Navbar() {
+export async function Navbar() {
+  const user = await getCurrentUser();
+
   return (
     <nav className="sticky top-0 z-50 border-b border-zinc-200 bg-white shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
@@ -23,6 +27,26 @@ export function Navbar() {
           >
             首页
           </Link>
+
+          {/* Auth Section */}
+          {user ? (
+            <UserMenu user={user} />
+          ) : (
+            <div className="flex items-center gap-3">
+              <Link
+                href="/login"
+                className="text-zinc-700 transition-colors hover:text-zinc-900"
+              >
+                登录
+              </Link>
+              <Link
+                href="/signup"
+                className="rounded-lg bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-zinc-800"
+              >
+                注册
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </nav>
