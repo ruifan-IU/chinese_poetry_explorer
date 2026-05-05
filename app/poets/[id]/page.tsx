@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { getPoetById } from '@/lib/queries';
 
@@ -19,20 +18,6 @@ export default async function PoetDetailPage(props: { params: Params }) {
         {/* Header Card */}
         <div className="mb-8 rounded-lg border border-zinc-200 bg-white p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-start">
-            {/* Poet Image */}
-            {poet.image && (
-              <div className="relative h-32 w-32 flex-shrink-0 overflow-hidden rounded-full border-4 border-zinc-200">
-                <Image
-                  src={poet.image}
-                  alt={poet.name}
-                  fill
-                  className="object-cover"
-                  sizes="128px"
-                  priority
-                />
-              </div>
-            )}
-
             {/* Poet Info */}
             <div className="flex-1">
               <div className="mb-4 flex items-start justify-between">

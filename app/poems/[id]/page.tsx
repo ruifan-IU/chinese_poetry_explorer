@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import { getPoemById } from '@/lib/queries';
 
@@ -25,19 +24,8 @@ export default async function PoemDetailPage(props: { params: Params }) {
             <div className="flex items-center justify-between">
               <Link
                 href={`/poets/${poem.poet.id}`}
-                className="flex items-center gap-3 transition-opacity hover:opacity-70"
+                className="transition-opacity hover:opacity-70"
               >
-                {poem.poet.image && (
-                  <div className="relative h-12 w-12 overflow-hidden rounded-full border-2 border-zinc-200">
-                    <Image
-                      src={poem.poet.image}
-                      alt={poem.poet.name}
-                      fill
-                      className="object-cover"
-                      sizes="48px"
-                    />
-                  </div>
-                )}
                 <div>
                   <p className="text-lg font-medium text-zinc-900 hover:underline">
                     {poem.poet.name}
