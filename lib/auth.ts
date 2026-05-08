@@ -8,6 +8,7 @@ const SALT_ROUNDS = 10;
 export interface JWTPayload {
   userId: number;
   email: string;
+  name: string | null;
 }
 
 /**

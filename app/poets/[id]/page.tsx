@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPoetById } from '@/lib/queries';
+import { PoetIntroduction } from '@/app/components/PoetIntroduction';
 
 type Params = Promise<{ id: string }>;
 
@@ -47,14 +48,7 @@ export default async function PoetDetailPage(props: { params: Params }) {
 
         {/* Introduction */}
         {poet.introduction && (
-          <section className="mb-8 rounded-lg border border-zinc-200 bg-white p-8">
-            <h2 className="mb-4 text-2xl font-semibold text-zinc-900">
-              简介
-            </h2>
-            <div className="whitespace-pre-line text-zinc-700 leading-relaxed">
-              {poet.introduction}
-            </div>
-          </section>
+          <PoetIntroduction introduction={poet.introduction} />
         )}
 
         {/* Poems by this poet */}

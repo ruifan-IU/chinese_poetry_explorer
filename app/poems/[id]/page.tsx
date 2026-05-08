@@ -1,6 +1,9 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getPoemById } from '@/lib/queries';
+import { getCurrentUser } from '@/lib/auth';
+import { isPoemFavorited } from '@/lib/favorites';
+import { FavoriteButton } from '@/app/components/FavoriteButton';
 
 type Params = Promise<{ id: string }>;
 
@@ -11,6 +14,11 @@ export default async function PoemDetailPage(props: { params: Params }) {
   if (!poem) {
     notFound();
   }
+
+  const user = await getCurrentUser();
+  const isFavorited = user
+    ? await isPoemFavorited(user.userId, poem.id)
+    : false;
 
   return (
     <div className="min-h-screen bg-zinc-50 py-12">
@@ -33,11 +41,18 @@ export default async function PoemDetailPage(props: { params: Params }) {
                   <p className="text-sm text-zinc-600">{poem.dynasty.name}</p>
                 </div>
               </Link>
-              <div className="flex items-center gap-2 text-amber-600">
-                <span>⭐</span>
-                <span className="font-medium">
-                  {poem.stars.toLocaleString()}
-                </span>
+              <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 text-amber-600">
+                  <span>⭐</span>
+                  <span className="font-medium">
+                    {poem.stars.toLocaleString()}
+                  </span>
+                </div>
+                <FavoriteButton
+                  poemId={poem.id}
+                  initialIsFavorited={isFavorited}
+                  isAuthenticated={!!user}
+                />
               </div>
             </div>
           </header>

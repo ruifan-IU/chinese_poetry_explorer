@@ -41,6 +41,7 @@ export async function POST(request: NextRequest) {
     const token = createToken({
       userId: user.id,
       email: user.email,
+      name: user.name,
     });
 
     // Set cookie

@@ -46,22 +46,23 @@ enum PoemType {
 }
 
 model Poem {
-  id          Int      @id @default(autoincrement())
+  id          Int            @id @default(autoincrement())
   title       String
-  stars       Int     @default(0)
+  stars       Int            @default(0)
   content     String
-  contentHash String   @unique
+  contentHash String         @unique
   background  String?
   comments    String?
   translation String?
-  type        PoemType @default(shi)
+  type        PoemType       @default(shi)
   poetId      Int
   dynastyId   Int
-  poet        Poet     @relation(fields: [poetId], references: [id])
-  dynasty     Dynasty  @relation(fields: [dynastyId], references: [id])
+  poet        Poet           @relation(fields: [poetId], references: [id])
+  dynasty     Dynasty        @relation(fields: [dynastyId], references: [id])
   tags        Tag[]
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  favorites   UserFavorite[]
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
 
   @@index([title])
   @@index([poetId])
@@ -79,12 +80,26 @@ model Tag {
 }
 
 model User {
-  id        Int      @id @default(autoincrement())
-  email     String   @unique
+  id        Int            @id @default(autoincrement())
+  email     String         @unique
   name      String?
   password  String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  favorites UserFavorite[]
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
 
   @@index([email])
+}
+
+model UserFavorite {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  poemId    Int
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  poem      Poem     @relation(fields: [poemId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, poemId])
+  @@index([userId])
+  @@index([poemId])
 }

@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import { FavoriteButton } from './FavoriteButton';
 
 type PoemCardProps = {
   poem: {
@@ -21,9 +22,11 @@ type PoemCardProps = {
       name: string;
     }>;
   };
+  isFavorited: boolean;
+  isAuthenticated: boolean;
 };
 
-export function PoemCard({ poem }: PoemCardProps) {
+export function PoemCard({ poem, isFavorited, isAuthenticated }: PoemCardProps) {
   const router = useRouter();
 
   // Truncate content to first 4 lines for preview
@@ -68,24 +71,33 @@ export function PoemCard({ poem }: PoemCardProps) {
         {hasMore && <span className='text-zinc-400'>...</span>}
       </div>
 
-      {/* Tags */}
-      {poem.tags.length > 0 && (
-        <div className='flex flex-wrap gap-2'>
-          {poem.tags.slice(0, 3).map((tag) => (
-            <span
-              key={tag.name}
-              className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'
-            >
-              {tag.name}
-            </span>
-          ))}
-          {poem.tags.length > 3 && (
-            <span className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'>
-              +{poem.tags.length - 3}
-            </span>
-          )}
+      {/* Tags and Favorite Button */}
+      <div className='flex items-center justify-between gap-4'>
+        {poem.tags.length > 0 && (
+          <div className='flex flex-wrap gap-2 flex-1'>
+            {poem.tags.slice(0, 3).map((tag) => (
+              <span
+                key={tag.name}
+                className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'
+              >
+                {tag.name}
+              </span>
+            ))}
+            {poem.tags.length > 3 && (
+              <span className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'>
+                +{poem.tags.length - 3}
+              </span>
+            )}
+          </div>
+        )}
+        <div className='flex-shrink-0'>
+          <FavoriteButton
+            poemId={poem.id}
+            initialIsFavorited={isFavorited}
+            isAuthenticated={isAuthenticated}
+          />
         </div>
-      )}
+      </div>
     </Link>
   );
 }
