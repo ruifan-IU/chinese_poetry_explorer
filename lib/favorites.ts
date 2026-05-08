@@ -32,3 +32,26 @@ export async function getUserFavoritedPoemIds(
 
   return favorites.map((f) => f.poemId);
 }
+
+/**
+ * Get all favorited poems for a user with full poem details
+ */
+export async function getUserFavoritedPoems(userId: number) {
+  const favorites = await prisma.userFavorite.findMany({
+    where: { userId },
+    include: {
+      poem: {
+        include: {
+          poet: true,
+          dynasty: true,
+          tags: true,
+        },
+      },
+    },
+    orderBy: {
+      createdAt: 'desc',
+    },
+  });
+
+  return favorites.map((f) => f.poem);
+}

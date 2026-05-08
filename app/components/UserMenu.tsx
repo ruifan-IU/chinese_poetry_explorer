@@ -79,6 +79,15 @@ export function UserMenu({ user }: UserMenuProps) {
             )}
           </div>
           <button
+            onClick={() => {
+              setIsOpen(false);
+              router.push('/favorites');
+            }}
+            className='w-full px-3 py-2 text-left text-sm text-zinc-700 transition-colors hover:bg-zinc-50'
+          >
+            我的收藏
+          </button>
+          <button
             onClick={handleLogout}
             className='w-full px-3 py-2 text-left text-sm text-zinc-700 transition-colors hover:bg-zinc-50'
           >
