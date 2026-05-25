@@ -4,7 +4,11 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { useState, useTransition } from 'react';
 
 type FilterSidebarProps = {
-  dynasties: Array<{ id: number; name: string; _count: { poems: number; poets: number } }>;
+  dynasties: Array<{
+    id: number;
+    name: string;
+    _count: { poems: number; poets: number };
+  }>;
   tags: Array<{ id: number; name: string; _count: { poems: number } }>;
 };
 
@@ -62,34 +66,34 @@ export function FilterSidebar({ dynasties, tags }: FilterSidebarProps) {
   const hasActiveFilters = selectedDynastyId || selectedTagIds.length > 0;
 
   return (
-    <aside className="space-y-6">
+    <aside className='space-y-6'>
       {/* Clear Filters Button */}
       {hasActiveFilters && (
         <button
           onClick={handleClearFilters}
-          className="w-full rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50"
+          className='w-full rounded-lg border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-700 transition-colors hover:bg-zinc-50'
         >
           清除筛选 ✕
         </button>
       )}
 
       {/* Dynasty Filter */}
-      <div className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h3 className="mb-3 text-lg font-semibold text-zinc-900">朝代</h3>
+      <div className='rounded-lg border border-zinc-200 bg-white p-4'>
+        <h3 className='mb-3 text-lg font-semibold text-zinc-900'>朝代</h3>
 
-        <div className="max-h-64 space-y-2 overflow-y-auto">
+        <div className='max-h-64 space-y-2 overflow-y-auto'>
           {dynasties.map((dynasty) => (
             <button
               key={dynasty.id}
               onClick={() => handleDynastySelect(String(dynasty.id))}
-              className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-sm transition-colors ${
+              className={`flex w-full items-center justify-between rounded px-3 py-2 text-left text-sm text-zinc-700 transition-colors ${
                 selectedDynastyId === String(dynasty.id)
-                  ? 'bg-zinc-900 text-white'
+                  ? 'bg-zinc-300 text-white'
                   : 'hover:bg-zinc-100'
               }`}
             >
-              <span className="truncate">{dynasty.name}</span>
-              <span className="ml-2 text-xs opacity-60">
+              <span className='truncate'>{dynasty.name}</span>
+              <span className='ml-2 text-xs opacity-60'>
                 {dynasty._count.poems}
               </span>
             </button>
@@ -98,18 +102,18 @@ export function FilterSidebar({ dynasties, tags }: FilterSidebarProps) {
       </div>
 
       {/* Tags Filter */}
-      <div className="rounded-lg border border-zinc-200 bg-white p-4">
-        <h3 className="mb-3 text-lg font-semibold text-zinc-900">标签</h3>
+      <div className='rounded-lg border border-zinc-200 bg-white p-4'>
+        <h3 className='mb-3 text-lg font-semibold text-zinc-900'>标签</h3>
 
         <input
-          type="text"
-          placeholder="搜索标签..."
+          type='text'
+          placeholder='搜索标签...'
           value={searchTag}
           onChange={(e) => setSearchTag(e.target.value)}
-          className="mb-3 w-full rounded-md border border-zinc-300 px-3 py-2 text-sm focus:border-zinc-500 focus:outline-none"
+          className='mb-3 w-full rounded-md border border-zinc-300 px-3 py-2 text-sm text-zinc-700 focus:border-zinc-500 focus:outline-none'
         />
 
-        <div className="flex flex-wrap gap-2">
+        <div className='flex flex-wrap gap-2'>
           {filteredTags.map((tag) => (
             <button
               key={tag.id}
@@ -127,7 +131,7 @@ export function FilterSidebar({ dynasties, tags }: FilterSidebarProps) {
       </div>
 
       {isPending && (
-        <div className="rounded-lg border border-zinc-200 bg-zinc-50 p-3 text-center text-sm text-zinc-600">
+        <div className='rounded-lg border border-zinc-200 bg-zinc-50 p-3 text-center text-sm text-zinc-600'>
           加载中...
         </div>
       )}

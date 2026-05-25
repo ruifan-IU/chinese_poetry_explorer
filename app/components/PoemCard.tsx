@@ -3,6 +3,7 @@
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { FavoriteButton } from './FavoriteButton';
+import { MemorizeButton } from './MemorizeButton';
 
 type PoemCardProps = {
   poem: {
@@ -23,15 +24,21 @@ type PoemCardProps = {
     }>;
   };
   isFavorited: boolean;
+  isMemorizing?: boolean;
   isAuthenticated: boolean;
 };
 
-export function PoemCard({ poem, isFavorited, isAuthenticated }: PoemCardProps) {
+export function PoemCard({
+  poem,
+  isFavorited,
+  isMemorizing = false,
+  isAuthenticated,
+}: PoemCardProps) {
   const router = useRouter();
 
   // Truncate content to first 4 lines for preview
-  const contentPreview = poem.content.split('\n').slice(0, 4).join('\n');
-  const hasMore = poem.content.split('\n').length > 4;
+  const contentPreview = poem.content.split('\n').slice(0, 2).join('\n');
+  const hasMore = poem.content.split('\n').length > 2;
 
   const handlePoetClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -71,26 +78,29 @@ export function PoemCard({ poem, isFavorited, isAuthenticated }: PoemCardProps) 
         {hasMore && <span className='text-zinc-400'>...</span>}
       </div>
 
-      {/* Tags and Favorite Button */}
+      {/* Tags and Buttons */}
       <div className='flex items-center justify-between gap-4'>
-        {poem.tags.length > 0 && (
-          <div className='flex flex-wrap gap-2 flex-1'>
-            {poem.tags.slice(0, 3).map((tag) => (
-              <span
-                key={tag.name}
-                className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'
-              >
-                {tag.name}
-              </span>
-            ))}
-            {poem.tags.length > 3 && (
-              <span className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'>
-                +{poem.tags.length - 3}
-              </span>
-            )}
-          </div>
-        )}
-        <div className='flex-shrink-0'>
+        <div className='flex flex-wrap gap-2 flex-1'>
+          {poem.tags.slice(0, 3).map((tag) => (
+            <span
+              key={tag.name}
+              className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'
+            >
+              {tag.name}
+            </span>
+          ))}
+          {poem.tags.length > 3 && (
+            <span className='rounded-full bg-zinc-100 px-3 py-1 text-xs text-zinc-600'>
+              +{poem.tags.length - 3}
+            </span>
+          )}
+        </div>
+        <div className='flex items-center gap-2 flex-shrink-0'>
+          <MemorizeButton
+            poemId={poem.id}
+            initialIsMemorizing={isMemorizing}
+            isAuthenticated={isAuthenticated}
+          />
           <FavoriteButton
             poemId={poem.id}
             initialIsFavorited={isFavorited}

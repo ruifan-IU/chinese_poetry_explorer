@@ -79,6 +79,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Soft limit: Unverified users can only save 5 favorites
+    const MAX_FAVORITES_UNVERIFIED = 5;
+
+    if (!user.emailVerified) {
+      const favoriteCount = await prisma.userFavorite.count({
+        where: { userId: user.userId },
+      });
+
+      if (favoriteCount >= MAX_FAVORITES_UNVERIFIED) {
+        return NextResponse.json(
+          {
+            error: `Please verify your email to save more than ${MAX_FAVORITES_UNVERIFIED} favorites`,
+            requiresVerification: true,
+            currentCount: favoriteCount,
+            maxCount: MAX_FAVORITES_UNVERIFIED,
+          },
+          { status: 403 }
+        );
+      }
+    }
+
     // Create favorite and increment star count in a transaction
     const [favorite] = await prisma.$transaction([
       prisma.userFavorite.create({

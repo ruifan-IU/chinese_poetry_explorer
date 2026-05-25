@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { hashPassword, createToken, setAuthCookie } from '@/lib/auth';
+import { generateVerificationToken, generateTokenExpiry } from '@/lib/tokens';
+import { sendVerificationEmail } from '@/lib/email';
 
 export async function POST(request: NextRequest) {
   try {
@@ -37,21 +39,35 @@ export async function POST(request: NextRequest) {
     // Hash password and create user
     const hashedPassword = await hashPassword(password);
 
+    // Generate verification token
+    const verificationToken = generateVerificationToken();
+    const tokenExpiry = generateTokenExpiry();
+
     const user = await prisma.user.create({
       data: {
         email,
         password: hashedPassword,
         name: name || null,
+        verificationToken,
+        tokenExpiry,
+        emailVerified: false,
       },
     });
 
-    // Create token
+    // Send verification email
+    const emailResult = await sendVerificationEmail(email, verificationToken);
+
+    if (!emailResult.success) {
+      console.error('Failed to send verification email:', emailResult.error);
+      // Continue with signup even if email fails - user can request resend later
+    }
+
+    // Create auth token and set cookie
     const token = createToken({
       userId: user.id,
       email: user.email,
     });
 
-    // Set cookie
     await setAuthCookie(token);
 
     return NextResponse.json(
@@ -60,7 +76,9 @@ export async function POST(request: NextRequest) {
           id: user.id,
           email: user.email,
           name: user.name,
+          emailVerified: user.emailVerified,
         },
+        message: 'Account created successfully. Please check your email to verify your account.',
       },
       { status: 201 }
     );

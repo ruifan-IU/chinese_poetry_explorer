@@ -13,6 +13,7 @@ import {
 import { $Enums } from '@/lib/prisma-client';
 import { getCurrentUser } from '@/lib/auth';
 import { getUserFavoritedPoemIds } from '@/lib/favorites';
+import { getUserMemorizingPoemIds } from '@/lib/memorization';
 
 type PoemType = $Enums.PoemType;
 
@@ -38,11 +39,14 @@ export default async function ExplorePage(props: {
   const type = (searchParams.type as PoemType | undefined) ?? 'shi';
   const query = searchParams.q;
 
-  // Get current user and their favorites
+  // Get current user and their favorites/memorizations
   const user = await getCurrentUser();
-  const favoritedPoemIds = user
-    ? await getUserFavoritedPoemIds(user.userId)
-    : [];
+  const [favoritedPoemIds, memorizingPoemIds] = user
+    ? await Promise.all([
+        getUserFavoritedPoemIds(user.userId),
+        getUserMemorizingPoemIds(user.userId),
+      ])
+    : [[], []];
 
   // Fetch data in parallel
   const [poems, tags, dynasties] = await Promise.all([
@@ -89,6 +93,7 @@ export default async function ExplorePage(props: {
                       key={poem.id}
                       poem={poem}
                       isFavorited={favoritedPoemIds.includes(poem.id)}
+                      isMemorizing={memorizingPoemIds.includes(poem.id)}
                       isAuthenticated={!!user}
                     />
                   ))}

@@ -46,23 +46,24 @@ enum PoemType {
 }
 
 model Poem {
-  id          Int            @id @default(autoincrement())
-  title       String
-  stars       Int            @default(0)
-  content     String
-  contentHash String         @unique
-  background  String?
-  comments    String?
-  translation String?
-  type        PoemType       @default(shi)
-  poetId      Int
-  dynastyId   Int
-  poet        Poet           @relation(fields: [poetId], references: [id])
-  dynasty     Dynasty        @relation(fields: [dynastyId], references: [id])
-  tags        Tag[]
-  favorites   UserFavorite[]
-  createdAt   DateTime       @default(now())
-  updatedAt   DateTime       @updatedAt
+  id            Int                @id @default(autoincrement())
+  title         String
+  stars         Int                @default(0)
+  content       String
+  contentHash   String             @unique
+  background    String?
+  comments      String?
+  translation   String?
+  type          PoemType           @default(shi)
+  poetId        Int
+  dynastyId     Int
+  poet          Poet               @relation(fields: [poetId], references: [id])
+  dynasty       Dynasty            @relation(fields: [dynastyId], references: [id])
+  tags          Tag[]
+  favorites     UserFavorite[]
+  memorizations UserMemorization[]
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
 
   @@index([title])
   @@index([poetId])
@@ -80,13 +81,17 @@ model Tag {
 }
 
 model User {
-  id        Int            @id @default(autoincrement())
-  email     String         @unique
-  name      String?
-  password  String
-  favorites UserFavorite[]
-  createdAt DateTime       @default(now())
-  updatedAt DateTime       @updatedAt
+  id                Int                @id @default(autoincrement())
+  email             String             @unique
+  name              String?
+  password          String
+  emailVerified     Boolean            @default(false)
+  verificationToken String?            @unique
+  tokenExpiry       DateTime?
+  favorites         UserFavorite[]
+  memorizations     UserMemorization[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
 
   @@index([email])
 }
@@ -102,4 +107,43 @@ model UserFavorite {
   @@unique([userId, poemId])
   @@index([userId])
   @@index([poemId])
+}
+
+enum MasteryLevel {
+  NEW        // Just added, never practiced
+  LEARNING   // Currently learning (0-3 correct reviews)
+  YOUNG      // Recently learned (3-7 days interval)
+  MATURE     // Well learned (7+ days interval)
+  MASTERED   // Fully mastered (30+ days interval)
+}
+
+model UserMemorization {
+  id              Int          @id @default(autoincrement())
+  userId          Int
+  poemId          Int
+  user            User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  poem            Poem         @relation(fields: [poemId], references: [id], onDelete: Cascade)
+
+  // Spaced Repetition Algorithm fields
+  masteryLevel    MasteryLevel @default(NEW)
+  easeFactor      Float        @default(2.5) // How "easy" the poem is (1.3 - 2.5+)
+  interval        Int          @default(0)   // Days until next review
+  repetitions     Int          @default(0)   // Number of successful reviews
+
+  // Review tracking
+  lastReviewedAt  DateTime?    // When last practiced
+  nextReviewAt    DateTime?    // When to review next
+  totalReviews    Int          @default(0)   // Total review attempts
+  correctReviews  Int          @default(0)   // Successful reviews
+
+  // Metadata
+  notes           String?      // User's personal notes
+  addedAt         DateTime     @default(now())
+  updatedAt       DateTime     @updatedAt
+
+  @@unique([userId, poemId])
+  @@index([userId])
+  @@index([poemId])
+  @@index([nextReviewAt])
+  @@index([masteryLevel])
 }

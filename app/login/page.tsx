@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, FormEvent } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 export default function LoginPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const redirectTo = searchParams.get('redirect') || '/';
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -35,8 +37,7 @@ export default function LoginPage() {
         return;
       }
 
-      // Redirect to home page on success
-      router.push('/');
+      router.push(redirectTo);
       router.refresh();
     } catch (err) {
       setError('An unexpected error occurred');

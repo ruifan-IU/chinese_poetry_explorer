@@ -3,22 +3,22 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-type FavoriteButtonProps = {
+type MemorizeButtonProps = {
   poemId: number;
-  initialIsFavorited: boolean;
+  initialIsMemorizing: boolean;
   isAuthenticated: boolean;
 };
 
-export function FavoriteButton({
+export function MemorizeButton({
   poemId,
-  initialIsFavorited,
+  initialIsMemorizing,
   isAuthenticated,
-}: FavoriteButtonProps) {
+}: MemorizeButtonProps) {
   const router = useRouter();
-  const [isFavorited, setIsFavorited] = useState(initialIsFavorited);
+  const [isMemorizing, setIsMemorizing] = useState(initialIsMemorizing);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleToggleFavorite = async (e: React.MouseEvent) => {
+  const handleToggleMemorize = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -30,20 +30,20 @@ export function FavoriteButton({
     setIsLoading(true);
 
     try {
-      if (isFavorited) {
-        // Remove from favorites
-        const response = await fetch(`/api/favorites?poemId=${poemId}`, {
+      if (isMemorizing) {
+        // Remove from memorization list
+        const response = await fetch(`/api/memorization?poemId=${poemId}`, {
           method: 'DELETE',
         });
 
         if (!response.ok) {
-          throw new Error('Failed to remove favorite');
+          throw new Error('Failed to remove from memorization list');
         }
 
-        setIsFavorited(false);
+        setIsMemorizing(false);
       } else {
-        // Add to favorites
-        const response = await fetch('/api/favorites', {
+        // Add to memorization list
+        const response = await fetch('/api/memorization', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ poemId }),
@@ -55,7 +55,7 @@ export function FavoriteButton({
           // Handle verification limit error
           if (data.requiresVerification) {
             const shouldVerify = confirm(
-              `您已收藏 ${data.currentCount} 首诗词（未验证用户上限：${data.maxCount} 首）\n\n${data.error}\n\n是否前往验证邮箱？`
+              `您已添加 ${data.currentCount} 首诗词到背诵列表（未验证用户上限：${data.maxCount} 首）\n\n${data.error}\n\n是否前往验证邮箱？`
             );
 
             if (shouldVerify) {
@@ -65,15 +65,15 @@ export function FavoriteButton({
             return;
           }
 
-          throw new Error(data.error || 'Failed to add favorite');
+          throw new Error(data.error || 'Failed to add to memorization list');
         }
 
-        setIsFavorited(true);
+        setIsMemorizing(true);
       }
 
       router.refresh();
     } catch (error) {
-      console.error('Toggle favorite error:', error);
+      console.error('Toggle memorization error:', error);
       alert('操作失败，请重试');
     } finally {
       setIsLoading(false);
@@ -82,18 +82,18 @@ export function FavoriteButton({
 
   return (
     <button
-      onClick={handleToggleFavorite}
+      onClick={handleToggleMemorize}
       disabled={isLoading}
       className={`flex items-center gap-1 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
-        isFavorited
-          ? 'bg-red-50 text-red-600 hover:bg-red-100'
+        isMemorizing
+          ? 'bg-purple-50 text-purple-600 hover:bg-purple-100'
           : 'bg-zinc-100 text-zinc-600 hover:bg-zinc-200'
       } ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
-      title={isFavorited ? '取消收藏' : '收藏'}
+      title={isMemorizing ? '移出背诵列表' : '加入背诵列表'}
     >
       <svg
         className="h-4 w-4"
-        fill={isFavorited ? 'currentColor' : 'none'}
+        fill={isMemorizing ? 'currentColor' : 'none'}
         stroke="currentColor"
         viewBox="0 0 24 24"
       >
@@ -101,10 +101,10 @@ export function FavoriteButton({
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth={2}
-          d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
         />
       </svg>
-      {isFavorited ? '已收藏' : '收藏'}
+      {isMemorizing ? '背诵中' : '背诵'}
     </button>
   );
 }
