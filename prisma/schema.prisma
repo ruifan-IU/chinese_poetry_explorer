@@ -26,7 +26,6 @@ model Poet {
   stars       Int      @default(0)
   name         String   @unique
   image       String?
-  summary String?
   introduction   String?
   dynastyId    Int?
   dynasty      Dynasty? @relation(fields: [dynastyId], references: [id])
@@ -51,15 +50,13 @@ model Poem {
   stars         Int                @default(0)
   content       String
   contentHash   String             @unique
-  background    String?
-  comments      String?
-  translation   String?
   type          PoemType           @default(shi)
   poetId        Int
   dynastyId     Int
   poet          Poet               @relation(fields: [poetId], references: [id])
   dynasty       Dynasty            @relation(fields: [dynastyId], references: [id])
   tags          Tag[]
+  annotations PoemAnnotation[]
   favorites     UserFavorite[]
   memorizations UserMemorization[]
   createdAt     DateTime           @default(now())
@@ -78,6 +75,31 @@ model Tag {
   poems Poem[]
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+}
+
+enum AnnotationType {
+  TRANSLATION
+  COMMENTARY
+  BACKGROUND
+}
+
+enum AnnotationOrigin {
+  IMPORTED
+  HUMAN
+  GENERATED
+}
+
+model PoemAnnotation {
+  id        Int              @id @default(autoincrement())
+  poemId    Int
+  type      AnnotationType
+  content   String
+  origin    AnnotationOrigin
+  poem      Poem             @relation(fields: [poemId], references: [id], onDelete: Cascade)
+  createdAt DateTime         @default(now())
+  updatedAt DateTime         @updatedAt
+
+  @@index([poemId, type])
 }
 
 model User {
