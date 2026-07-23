@@ -13,14 +13,14 @@ export async function POST(request: NextRequest) {
     if (!email || !password) {
       return NextResponse.json(
         { error: 'Email and password are required' },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
     if (password.length < 6) {
       return NextResponse.json(
         { error: 'Password must be at least 6 characters' },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
     if (existingUser) {
       return NextResponse.json(
         { error: 'User with this email already exists' },
-        { status: 400 }
+        { status: 400 },
       );
     }
 
@@ -66,6 +66,7 @@ export async function POST(request: NextRequest) {
     const token = createToken({
       userId: user.id,
       email: user.email,
+      name: user.name,
     });
 
     await setAuthCookie(token);
@@ -78,15 +79,16 @@ export async function POST(request: NextRequest) {
           name: user.name,
           emailVerified: user.emailVerified,
         },
-        message: 'Account created successfully. Please check your email to verify your account.',
+        message:
+          'Account created successfully. Please check your email to verify your account.',
       },
-      { status: 201 }
+      { status: 201 },
     );
   } catch (error) {
     console.error('Signup error:', error);
     return NextResponse.json(
       { error: 'Internal server error' },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

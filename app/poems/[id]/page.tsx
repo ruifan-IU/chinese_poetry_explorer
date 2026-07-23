@@ -20,31 +20,37 @@ export default async function PoemDetailPage(props: { params: Params }) {
     ? await isPoemFavorited(user.userId, poem.id)
     : false;
 
+  const translation = poem.annotations.find((a) => a.type === 'TRANSLATION');
+
+  const commentary = poem.annotations.find((a) => a.type === 'COMMENTARY');
+
+  const background = poem.annotations.find((a) => a.type === 'BACKGROUND');
+
   return (
-    <div className="min-h-screen bg-zinc-50 py-12">
-      <article className="container mx-auto max-w-3xl px-4">
-        <div className="rounded-lg border border-zinc-200 bg-white p-8">
+    <div className='min-h-screen bg-zinc-50 py-12'>
+      <article className='container mx-auto max-w-3xl px-4'>
+        <div className='rounded-lg border border-zinc-200 bg-white p-8'>
           {/* Title and Author */}
-          <header className="mb-8 border-b border-zinc-200 pb-6">
-            <h1 className="mb-4 text-4xl font-bold text-zinc-900">
+          <header className='mb-8 border-b border-zinc-200 pb-6'>
+            <h1 className='mb-4 text-4xl font-bold text-zinc-900'>
               {poem.title}
             </h1>
-            <div className="flex items-center justify-between">
+            <div className='flex items-center justify-between'>
               <Link
                 href={`/poets/${poem.poet.id}`}
-                className="transition-opacity hover:opacity-70"
+                className='transition-opacity hover:opacity-70'
               >
                 <div>
-                  <p className="text-lg font-medium text-zinc-900 hover:underline">
+                  <p className='text-lg font-medium text-zinc-900 hover:underline'>
                     {poem.poet.name}
                   </p>
-                  <p className="text-sm text-zinc-600">{poem.dynasty.name}</p>
+                  <p className='text-sm text-zinc-600'>{poem.dynasty.name}</p>
                 </div>
               </Link>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center gap-2 text-amber-600">
+              <div className='flex items-center gap-3'>
+                <div className='flex items-center gap-2 text-amber-600'>
                   <span>⭐</span>
-                  <span className="font-medium">
+                  <span className='font-medium'>
                     {poem.stars.toLocaleString()}
                   </span>
                 </div>
@@ -58,45 +64,39 @@ export default async function PoemDetailPage(props: { params: Params }) {
           </header>
 
           {/* Content */}
-          <section className="mb-8">
-            <h2 className="mb-4 text-xl font-semibold text-zinc-900">原文</h2>
-            <div className="whitespace-pre-line font-serif text-lg leading-relaxed text-zinc-800">
+          <section className='mb-8'>
+            <h2 className='mb-4 text-xl font-semibold text-zinc-900'>原文</h2>
+            <div className='whitespace-pre-line font-serif text-lg leading-relaxed text-zinc-800'>
               {poem.content}
             </div>
           </section>
 
           {/* Translation */}
-          {poem.translation && (
-            <section className="mb-8">
-              <h2 className="mb-4 text-xl font-semibold text-zinc-900">
-                译文
-              </h2>
-              <div className="whitespace-pre-line text-zinc-700">
-                {poem.translation}
+          {translation && (
+            <section className='mb-8'>
+              <h2 className='mb-4 text-xl font-semibold text-zinc-900'>译文</h2>
+              <div className='whitespace-pre-line text-zinc-700'>
+                {translation.content}
               </div>
             </section>
           )}
 
-          {/* Comments */}
-          {poem.comments && (
-            <section className="mb-8">
-              <h2 className="mb-4 text-xl font-semibold text-zinc-900">
-                赏析
-              </h2>
-              <div className="whitespace-pre-line text-zinc-700">
-                {poem.comments}
+          {/* Commentary */}
+          {commentary && (
+            <section className='mb-8'>
+              <h2 className='mb-4 text-xl font-semibold text-zinc-900'>赏析</h2>
+              <div className='whitespace-pre-line text-zinc-700'>
+                {commentary.content}
               </div>
             </section>
           )}
 
           {/* Background */}
-          {poem.background && (
-            <section className="mb-8">
-              <h2 className="mb-4 text-xl font-semibold text-zinc-900">
-                背景
-              </h2>
-              <div className="whitespace-pre-line text-zinc-700">
-                {poem.background}
+          {background && (
+            <section className='mb-8'>
+              <h2 className='mb-4 text-xl font-semibold text-zinc-900'>背景</h2>
+              <div className='whitespace-pre-line text-zinc-700'>
+                {background.content}
               </div>
             </section>
           )}
@@ -104,14 +104,12 @@ export default async function PoemDetailPage(props: { params: Params }) {
           {/* Tags */}
           {poem.tags.length > 0 && (
             <section>
-              <h2 className="mb-4 text-xl font-semibold text-zinc-900">
-                标签
-              </h2>
-              <div className="flex flex-wrap gap-2">
+              <h2 className='mb-4 text-xl font-semibold text-zinc-900'>标签</h2>
+              <div className='flex flex-wrap gap-2'>
                 {poem.tags.map((tag) => (
                   <span
                     key={tag.id}
-                    className="rounded-full bg-zinc-100 px-4 py-2 text-sm text-zinc-700"
+                    className='rounded-full bg-zinc-100 px-4 py-2 text-sm text-zinc-700'
                   >
                     {tag.name}
                   </span>

@@ -77,6 +77,7 @@ export async function getPoemById(id: number) {
       poet: true,
       tags: true,
       dynasty: true,
+      annotations: true,
     },
   });
 }
