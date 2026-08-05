@@ -2,88 +2,77 @@ import 'dotenv/config';
 import { prisma } from '../lib/prisma.js';
 import fs from 'fs';
 import path from 'path';
-import crypto from 'crypto';
 import { fileURLToPath } from 'url';
+import type { PoemType } from '../lib/prisma-client/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Type definitions for the JSON data
 interface PoetData {
-  objectId: string;
   name: string;
-  star: number;
+  introduction: string | null;
   dynasty: string;
-  image?: string;
-  desc?: string;
-  content?: string;
-}
-
-interface TagData {
-  objectId: string;
-  name: string;
 }
 
 interface PoemData {
-  objectId: string;
-  name: string;
-  star: number;
-  dynasty: string;
+  title: string;
   content: string;
-  fanyi?: string;
-  shangxi?: string;
-  about?: string;
-  author?: string;
-  poet?: {
-    __type: string;
-    className: string;
-    objectId: string;
-  };
-  tags?: Array<{
-    __type: string;
-    className: string;
-    objectId: string;
-  }>;
+  contentHash: string;
+  poetName: string;
+  dynasty: string;
+  type: string;
+  tags: string[];
+  fame: number;
+}
+
+// Postgres has a ~65535 bind-parameter limit per statement; createMany() on
+// 56k+ poems needs to be chunked to stay under it.
+const POEM_INSERT_BATCH_SIZE = 2000;
+
+function chunk<T>(items: T[], size: number): T[][] {
+  const chunks: T[][] = [];
+  for (let i = 0; i < items.length; i += size) {
+    chunks.push(items.slice(i, i + size));
+  }
+  return chunks;
 }
 
 async function main() {
-  console.log('🌱 Starting database seed...\n');
+  console.log('Starting database seed...\n');
 
-  const dataDir = path.resolve(__dirname, './data/dev');
+  const dataDir = path.resolve(__dirname, './data/cleaned/tang');
 
-  // 1. Load all data files
-  console.log('📂 Loading data files...');
+  console.log('Loading cleaned data files...');
   const dynastiesData: string[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'dev_dynasties.json'), 'utf8')
+    fs.readFileSync(path.join(dataDir, 'dynasties.json'), 'utf8')
   );
-
-  dynastiesData.push('未知');
-
   const poetsData: PoetData[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'dev_poets.json'), 'utf8')
-  );
-
-  poetsData.push({
-    objectId: 'unknown',
-    name: '佚名',
-    star: 0,
-    dynasty: '未知',
-  });
-
-  const tagsData: TagData[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'dev_tags.json'), 'utf8')
+    fs.readFileSync(path.join(dataDir, 'poets.json'), 'utf8')
   );
   const poemsData: PoemData[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'dev_poems.json'), 'utf8')
+    fs.readFileSync(path.join(dataDir, 'poems.json'), 'utf8')
+  );
+  const tagsData: string[] = JSON.parse(
+    fs.readFileSync(path.join(dataDir, 'tags.json'), 'utf8')
   );
 
-  console.log(`  ✓ Loaded ${dynastiesData.length} dynasties`);
-  console.log(`  ✓ Loaded ${poetsData.length} poets`);
-  console.log(`  ✓ Loaded ${tagsData.length} tags`);
-  console.log(`  ✓ Loaded ${poemsData.length} poems\n`);
+  console.log(`  Loaded ${dynastiesData.length} dynasties`);
+  console.log(`  Loaded ${poetsData.length} poets`);
+  console.log(`  Loaded ${poemsData.length} poems`);
+  console.log(`  Loaded ${tagsData.length} tags\n`);
 
-  // 2. Seed Dynasties
-  console.log('👑 Seeding dynasties...');
+  // 0. Clear the old dataset. This is a full replacement, not a merge --
+  // deleting Poem first cascades to UserFavorite/UserMemorization/
+  // PoemAnnotation and clears the Poem<->Tag join table automatically.
+  console.log('Clearing existing data...');
+  await prisma.poem.deleteMany({});
+  await prisma.poet.deleteMany({});
+  await prisma.tag.deleteMany({});
+  await prisma.dynasty.deleteMany({});
+  console.log('  Cleared\n');
+
+  // 1. Dynasties
+  console.log('Seeding dynasties...');
   const dynastyRecords = await Promise.all(
     dynastiesData.map((name) =>
       prisma.dynasty.upsert({
@@ -96,131 +85,95 @@ async function main() {
   const dynastyIdMap = Object.fromEntries(
     dynastyRecords.map((d) => [d.name, d.id])
   );
-  console.log(`  ✓ Created ${dynastyRecords.length} dynasties\n`);
+  console.log(`  Created ${dynastyRecords.length} dynasties\n`);
 
-  // 3. Seed Tags
-  console.log('🏷️  Seeding tags...');
-  const tagRecords = await Promise.all(
-    tagsData.map((tag) =>
-      prisma.tag.upsert({
-        where: { name: tag.name },
-        update: {},
-        create: { name: tag.name },
-      })
-    )
-  );
+  // 2. Tags - createMany in one round trip rather than firing hundreds of
+  // concurrent upserts, which was resetting the connection under load.
+  console.log('Seeding tags...');
+  await prisma.tag.createMany({
+    data: tagsData.map((name) => ({ name })),
+    skipDuplicates: true,
+  });
+  const tagRecords = await prisma.tag.findMany({
+    where: { name: { in: tagsData } },
+  });
   const tagIdMap = Object.fromEntries(tagRecords.map((t) => [t.name, t.id]));
-  // Also create objectId -> tag name mapping for poems
-  const tagObjectIdToName = Object.fromEntries(
-    tagsData.map((t) => [t.objectId, t.name])
-  );
-  console.log(`  ✓ Created ${tagRecords.length} tags\n`);
+  console.log(`  Created ${tagRecords.length} tags\n`);
 
-  // 4. Seed Poets
-  console.log('✍️  Seeding poets...');
-  const poetObjectIdMap: Record<string, number> = {};
-
+  // 3. Poets
+  console.log('Seeding poets...');
+  const poetRecords = [];
   for (const poet of poetsData) {
-    const dynastyId = poet.dynasty ? dynastyIdMap[poet.dynasty] : null;
-
-    const poetRecord = await prisma.poet.upsert({
+    const record = await prisma.poet.upsert({
       where: { name: poet.name },
       update: {},
       create: {
         name: poet.name,
-        stars: poet.star || 0,
-        summary: poet.desc || null,
-        introduction: poet.content || null,
-        image: poet.image || null,
-        dynastyId: dynastyId || null,
+        introduction: poet.introduction,
+        dynastyId: dynastyIdMap[poet.dynasty] ?? null,
       },
     });
-
-    poetObjectIdMap[poet.objectId] = poetRecord.id;
+    poetRecords.push(record);
   }
+  const poetIdMap = Object.fromEntries(poetRecords.map((p) => [p.name, p.id]));
+  console.log(`  Created ${poetRecords.length} poets\n`);
 
-  console.log(`  ✓ Created ${poetsData.length} poets\n`);
-
-  // 5. Seed Poems
-  console.log('📜 Seeding poems...');
+  // 4. Poems - bulk insert scalar fields first (fast, no relations)
+  console.log('Seeding poems...');
+  const poemBatches = chunk(poemsData, POEM_INSERT_BATCH_SIZE);
   let poemsCreated = 0;
-  let poemsSkipped = 0;
 
-  for (const poem of poemsData) {
-    // Get poet ID
-    const poetRef = poem.poet;
-    let poetId: number | null = null;
+  for (const batch of poemBatches) {
+    const result = await prisma.poem.createMany({
+      skipDuplicates: true,
+      data: batch.map((poem) => ({
+        title: poem.title,
+        content: poem.content,
+        contentHash: poem.contentHash,
+        type: poem.type as PoemType,
+        poetId: poetIdMap[poem.poetName],
+        dynastyId: dynastyIdMap[poem.dynasty],
+      })),
+    });
+    poemsCreated += result.count;
+    console.log(`  Inserted ${poemsCreated} / ${poemsData.length} poems...`);
+  }
+  console.log(`  Created ${poemsCreated} poems\n`);
 
-    if (poetRef && typeof poetRef === 'object' && poetRef.objectId) {
-      poetId = poetObjectIdMap[poetRef.objectId];
-    } else {
-      poetId = poetObjectIdMap['unknown'];
-    }
+  // 5. Attach tags - only the small subset of poems that actually have any
+  // (the 唐诗三百首 anthology tags), so this skips the vast majority of rows.
+  console.log('Linking anthology tags...');
+  const poemsWithTags = poemsData.filter((p) => p.tags.length > 0);
+  const hashesWithTags = poemsWithTags.map((p) => p.contentHash);
 
-    // Get dynasty ID
-    const dynastyId = poem.dynasty
-      ? dynastyIdMap[poem.dynasty]
-      : dynastyIdMap['未知'];
+  const insertedPoems = await prisma.poem.findMany({
+    where: { contentHash: { in: hashesWithTags } },
+    select: { id: true, contentHash: true },
+  });
+  const poemIdByHash = Object.fromEntries(
+    insertedPoems.map((p) => [p.contentHash, p.id])
+  );
 
-    // Create content hash
-    const contentHash = crypto
-      .createHash('sha256')
-      .update(poem.content)
-      .digest('hex');
+  let tagsLinked = 0;
+  for (const poem of poemsWithTags) {
+    const poemId = poemIdByHash[poem.contentHash];
+    if (!poemId) continue;
 
-    // Collect tag IDs
-    const tagIds: number[] = [];
-    if (poem.tags && Array.isArray(poem.tags)) {
-      for (const tag of poem.tags) {
-        const tagObjectId = typeof tag === 'object' ? tag.objectId : tag;
-        const tagName = tagObjectIdToName[tagObjectId];
-        if (tagName && tagIdMap[tagName]) {
-          tagIds.push(tagIdMap[tagName]);
-        }
-      }
-    }
-
-    try {
-      // Create poem with tags relationship
-      await prisma.poem.create({
-        data: {
-          title: poem.name,
-          content: poem.content,
-          contentHash,
-          stars: poem.star || 0,
-          translation: poem.fanyi || null,
-          comments: poem.shangxi || null,
-          background: poem.about || null,
-          poetId,
-          dynastyId,
-          tags: {
-            connect: tagIds.map((id) => ({ id })),
-          },
+    await prisma.poem.update({
+      where: { id: poemId },
+      data: {
+        tags: {
+          connect: poem.tags.map((name) => ({ id: tagIdMap[name] })),
         },
-      });
-
-      poemsCreated++;
-
-      // Progress indicator every 100 poems
-      if (poemsCreated % 100 === 0) {
-        console.log(`  📝 Created ${poemsCreated} poems...`);
-      }
-    } catch (error) {
-      poemsSkipped++;
-      console.error(`  ❌ Error creating poem "${poem.name}":`, error);
-    }
+      },
+    });
+    tagsLinked++;
   }
-
-  console.log(`  ✓ Created ${poemsCreated} poems`);
-  if (poemsSkipped > 0) {
-    console.log(`  ⚠️  Skipped ${poemsSkipped} poems\n`);
-  } else {
-    console.log('');
-  }
+  console.log(`  Linked tags on ${tagsLinked} poems\n`);
 
   // 6. Summary
-  console.log('📊 Seeding Summary:');
-  console.log('━'.repeat(50));
+  console.log('Seeding Summary:');
+  console.log('-'.repeat(50));
 
   const counts = await Promise.all([
     prisma.dynasty.count(),
@@ -233,28 +186,14 @@ async function main() {
   console.log(`  Poets:     ${counts[1]}`);
   console.log(`  Tags:      ${counts[2]}`);
   console.log(`  Poems:     ${counts[3]}`);
-  console.log('━'.repeat(50));
+  console.log('-'.repeat(50));
 
-  // Get some sample data
-  const topPoems = await prisma.poem.findMany({
-    take: 5,
-    orderBy: { stars: 'desc' },
-    include: { poet: true },
-  });
-
-  console.log('\n🌟 Top 5 poems by stars:');
-  topPoems.forEach((poem, i) => {
-    console.log(
-      `  ${i + 1}. ${poem.title} by ${poem.poet.name} (⭐ ${poem.stars})`
-    );
-  });
-
-  console.log('\n✅ Database seeded successfully!');
+  console.log('\nDatabase seeded successfully!');
 }
 
 main()
   .catch((e) => {
-    console.error('\n❌ Error seeding database:');
+    console.error('\nError seeding database:');
     console.error(e);
     process.exit(1);
   })
