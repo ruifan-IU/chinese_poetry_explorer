@@ -3,30 +3,43 @@ import { prisma } from '../lib/prisma.js';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
 import type { PoemType } from '../lib/prisma-client/index.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-interface PoetData {
+interface DevTag {
   name: string;
-  introduction: string | null;
-  dynasty: string;
+  objectId: string;
 }
 
-interface PoemData {
-  title: string;
-  content: string;
-  contentHash: string;
-  poetName: string;
+interface DevPoet {
+  poetId: number;
+  objectId: string;
+  star: number;
+  name: string;
+  image: string | null;
   dynasty: string;
-  type: string;
-  tags: string[];
-  fame: number;
+  desc: string | null;
+}
+
+interface DevPointer {
+  objectId: string;
+}
+
+interface DevPoem {
+  poetryId: number;
+  star: number;
+  name: string;
+  dynasty: string;
+  content: string;
+  poet?: DevPointer;
+  tags?: DevPointer[];
 }
 
 // Postgres has a ~65535 bind-parameter limit per statement; createMany() on
-// 56k+ poems needs to be chunked to stay under it.
+// thousands of poems needs to be chunked to stay under it.
 const POEM_INSERT_BATCH_SIZE = 2000;
 
 function chunk<T>(items: T[], size: number): T[][] {
@@ -37,23 +50,40 @@ function chunk<T>(items: T[], size: number): T[][] {
   return chunks;
 }
 
+function computeContentHash(content: string): string {
+  return crypto.createHash('sha256').update(content, 'utf8').digest('hex');
+}
+
+/**
+ * The dev dataset has no shi/ci/wen label on poems, so we have to infer it
+ * from the title and tags. Ci titles conventionally follow a "词牌名·标题"
+ * pattern (e.g. "水调歌头·明月几时有"), and the 婉约/豪放 tags are ci-specific
+ * stylistic labels. Neither signal is perfect (元曲 titles use "·" too, and
+ * most poems have no tags at all), so this is a heuristic, not ground truth.
+ */
+function inferPoemType(title: string, tagNames: string[]): PoemType {
+  // TODO(human): implement the shi/ci/wen heuristic described above.
+  // Fallback for now: everything is classified as 'shi'.
+  return 'shi';
+}
+
 async function main() {
   console.log('Starting database seed...\n');
 
-  const dataDir = path.resolve(__dirname, './data/cleaned/tang');
+  const dataDir = path.resolve(__dirname, './data/dev');
 
-  console.log('Loading cleaned data files...');
+  console.log('Loading dev data files...');
   const dynastiesData: string[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'dynasties.json'), 'utf8')
+    fs.readFileSync(path.join(dataDir, 'dev_dynasties.json'), 'utf8')
   );
-  const poetsData: PoetData[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'poets.json'), 'utf8')
+  const poetsData: DevPoet[] = JSON.parse(
+    fs.readFileSync(path.join(dataDir, 'dev_poets.json'), 'utf8')
   );
-  const poemsData: PoemData[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'poems.json'), 'utf8')
+  const poemsData: DevPoem[] = JSON.parse(
+    fs.readFileSync(path.join(dataDir, 'dev_poems.json'), 'utf8')
   );
-  const tagsData: string[] = JSON.parse(
-    fs.readFileSync(path.join(dataDir, 'tags.json'), 'utf8')
+  const tagsData: DevTag[] = JSON.parse(
+    fs.readFileSync(path.join(dataDir, 'dev_tags.json'), 'utf8')
   );
 
   console.log(`  Loaded ${dynastiesData.length} dynasties`);
@@ -91,13 +121,17 @@ async function main() {
   // concurrent upserts, which was resetting the connection under load.
   console.log('Seeding tags...');
   await prisma.tag.createMany({
-    data: tagsData.map((name) => ({ name })),
+    data: tagsData.map((t) => ({ name: t.name })),
     skipDuplicates: true,
   });
   const tagRecords = await prisma.tag.findMany({
-    where: { name: { in: tagsData } },
+    where: { name: { in: tagsData.map((t) => t.name) } },
   });
   const tagIdMap = Object.fromEntries(tagRecords.map((t) => [t.name, t.id]));
+  // Poems reference tags by Parse-style objectId pointers, not names.
+  const tagObjectIdToName = Object.fromEntries(
+    tagsData.map((t) => [t.objectId, t.name])
+  );
   console.log(`  Created ${tagRecords.length} tags\n`);
 
   // 3. Poets
@@ -109,42 +143,58 @@ async function main() {
       update: {},
       create: {
         name: poet.name,
-        introduction: poet.introduction,
+        introduction: poet.desc,
+        image: poet.image || null,
+        stars: poet.star,
         dynastyId: dynastyIdMap[poet.dynasty] ?? null,
       },
     });
     poetRecords.push(record);
   }
-  const poetIdMap = Object.fromEntries(poetRecords.map((p) => [p.name, p.id]));
+  const poetIdByName = Object.fromEntries(poetRecords.map((p) => [p.name, p.id]));
+  // Poems reference poets by Parse-style objectId pointers, not names.
+  const poetObjectIdToId = Object.fromEntries(
+    poetsData.map((p) => [p.objectId, poetIdByName[p.name]])
+  );
   console.log(`  Created ${poetRecords.length} poets\n`);
 
-  // 4. Poems - bulk insert scalar fields first (fast, no relations)
+  // 4. Poems - skip the ~10% of the dev set with no poet reference at all
+  // (no pointer, no author name), since poetId is required by the schema.
+  const poemsWithPoet = poemsData.filter((p) => p.poet);
+  const skippedOrphans = poemsData.length - poemsWithPoet.length;
   console.log('Seeding poems...');
-  const poemBatches = chunk(poemsData, POEM_INSERT_BATCH_SIZE);
+  if (skippedOrphans > 0) {
+    console.log(`  Skipping ${skippedOrphans} poems with no poet reference`);
+  }
+
+  const poemBatches = chunk(poemsWithPoet, POEM_INSERT_BATCH_SIZE);
   let poemsCreated = 0;
 
   for (const batch of poemBatches) {
     const result = await prisma.poem.createMany({
       skipDuplicates: true,
-      data: batch.map((poem) => ({
-        title: poem.title,
-        content: poem.content,
-        contentHash: poem.contentHash,
-        type: poem.type as PoemType,
-        poetId: poetIdMap[poem.poetName],
-        dynastyId: dynastyIdMap[poem.dynasty],
-      })),
+      data: batch.map((poem) => {
+        const tagNames = (poem.tags ?? []).map((t) => tagObjectIdToName[t.objectId]);
+        return {
+          title: poem.name,
+          content: poem.content,
+          contentHash: computeContentHash(poem.content),
+          type: inferPoemType(poem.name, tagNames),
+          stars: poem.star,
+          poetId: poetObjectIdToId[poem.poet!.objectId],
+          dynastyId: dynastyIdMap[poem.dynasty],
+        };
+      }),
     });
     poemsCreated += result.count;
-    console.log(`  Inserted ${poemsCreated} / ${poemsData.length} poems...`);
+    console.log(`  Inserted ${poemsCreated} / ${poemsWithPoet.length} poems...`);
   }
   console.log(`  Created ${poemsCreated} poems\n`);
 
-  // 5. Attach tags - only the small subset of poems that actually have any
-  // (the 唐诗三百首 anthology tags), so this skips the vast majority of rows.
-  console.log('Linking anthology tags...');
-  const poemsWithTags = poemsData.filter((p) => p.tags.length > 0);
-  const hashesWithTags = poemsWithTags.map((p) => p.contentHash);
+  // 5. Attach tags - only the subset of poems that actually have any.
+  console.log('Linking tags...');
+  const poemsWithTags = poemsWithPoet.filter((p) => (p.tags ?? []).length > 0);
+  const hashesWithTags = poemsWithTags.map((p) => computeContentHash(p.content));
 
   const insertedPoems = await prisma.poem.findMany({
     where: { contentHash: { in: hashesWithTags } },
@@ -156,14 +206,15 @@ async function main() {
 
   let tagsLinked = 0;
   for (const poem of poemsWithTags) {
-    const poemId = poemIdByHash[poem.contentHash];
+    const poemId = poemIdByHash[computeContentHash(poem.content)];
     if (!poemId) continue;
 
+    const tagNames = (poem.tags ?? []).map((t) => tagObjectIdToName[t.objectId]);
     await prisma.poem.update({
       where: { id: poemId },
       data: {
         tags: {
-          connect: poem.tags.map((name) => ({ id: tagIdMap[name] })),
+          connect: tagNames.map((name) => ({ id: tagIdMap[name] })),
         },
       },
     });
