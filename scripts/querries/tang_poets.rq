@@ -1,0 +1,13 @@
+SELECT ?item ?itemLabel (SAMPLE(?pic) AS ?picture) (SAMPLE(?birthDate) AS ?birth) (SAMPLE(?deathDate) AS ?death) ?sitelinks (GROUP_CONCAT(DISTINCT STR(?alias); separator="|") AS ?aliases) WHERE {
+  ?item wdt:P106 wd:Q49757;
+        wdt:P27 wd:Q9683.
+  ?item wikibase:sitelinks ?sitelinks.
+  OPTIONAL {?item skos:altLabel ?alias.
+           FILTER(LANG(?alias) IN ("zh", "zh-hant", "zh-hans"))}
+  OPTIONAL {?item wdt:P18 ?pic.}
+  OPTIONAL {?item wdt:P569 ?birthDate.}
+  OPTIONAL {?item wdt:P570 ?deathDate.}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh-hant,mul,en". }
+}
+GROUP BY ?item ?itemLabel ?sitelinks
+ORDER BY DESC(?sitelinks)

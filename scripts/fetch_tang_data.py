@@ -13,6 +13,8 @@ Downloads only what this project needs:
 Safe to re-run: already-downloaded files are skipped.
 """
 
+import requests
+import json
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -53,7 +55,30 @@ def main() -> None:
 
     print(f"Fetching {len(INDICES)} rank files...")
     for i in INDICES:
-        fetch(f"rank/poet/poet.tang.rank.{i}.json", OUT_DIR / "rank" / f"poet.tang.rank.{i}.json")
+        fetch(
+            f"rank/poet/poet.tang.rank.{i}.json",
+            OUT_DIR / "rank" / f"poet.tang.rank.{i}.json",
+        )
+
+    if not (OUT_DIR / "wikidata.json").exists():
+        queryFile = Path(__file__).parent / "querries" / "tang_poets.rq"
+        dest = OUT_DIR / "wikidata.json"
+        with open(queryFile, "r", encoding="utf-8") as file:
+            query = file.read()
+        headers = {
+            "User-Agent": "chinese-poetry-explorer/0.1 (ruifan.cs@gmail.com)",
+            "Accept": "application/sparql-results+json",
+        }
+
+        response = requests.get(
+            f"https://query.wikidata.org/sparql?query={query}", headers=headers
+        )
+        print(response.status_code)
+        if response.status_code == 200:
+            print("Fetching Tang poet data from Wikidata")
+            data = response.json()
+            with open(dest, "w", encoding="utf-8") as file:
+                json.dump(data, file, ensure_ascii=False, indent=2)
 
     print("Done.")
 
