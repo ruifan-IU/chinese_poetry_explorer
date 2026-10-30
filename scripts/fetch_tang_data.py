@@ -13,8 +13,8 @@ Downloads only what this project needs:
 Safe to re-run: already-downloaded files are skipped.
 """
 
-import requests
 import json
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -22,6 +22,15 @@ from pathlib import Path
 REPO_BASE = "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master"
 INDICES = range(0, 58000, 1000)  # poet.tang.0.json ... poet.tang.57000.json
 
+WIKIDATA_SPARQL_URL = "https://query.wikidata.org/sparql"
+# Wikimedia rejects requests without a descriptive User-Agent (403).
+# See https://meta.wikimedia.org/wiki/User-Agent_policy
+WIKIDATA_HEADERS = {
+    "User-Agent": "chinese-poetry-explorer/0.1 (ruifan.cs@gmail.com)",
+    "Accept": "application/sparql-results+json",
+}
+
+QUERIES_DIR = Path(__file__).parent / "queries"
 OUT_DIR = Path(__file__).parent.parent / "prisma" / "data" / "raw" / "tang"
 
 
@@ -37,6 +46,33 @@ def fetch(repo_path: str, dest: Path) -> None:
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(data)
     print(f"  saved {dest.name} ({len(data):,} bytes)")
+
+
+def fetch_wikidata(query_file: Path, dest: Path) -> None:
+    """Run a SPARQL query against the Wikidata Query Service, save the JSON results."""
+    if dest.exists():
+        print(f"  skip (already downloaded): {dest.name}")
+        return
+
+    query = query_file.read_text(encoding="utf-8")
+    url = WIKIDATA_SPARQL_URL + "?" + urllib.parse.urlencode({"query": query})
+    req = urllib.request.Request(url, headers=WIKIDATA_HEADERS)
+
+    try:
+        with urllib.request.urlopen(req, timeout=90) as resp:
+            data = json.load(resp)
+    except urllib.error.HTTPError as e:
+        # The body carries the useful part, e.g. a user-agent policy notice
+        # or a SPARQL syntax error with the offending line.
+        raise RuntimeError(
+            f"Wikidata query {query_file.name} failed with HTTP {e.code}:\n"
+            f"{e.read().decode('utf-8', errors='replace')[:1000]}"
+        ) from e
+
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    with open(dest, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"  saved {dest.name} ({len(data['results']['bindings']):,} rows)")
 
 
 def main() -> None:
@@ -60,25 +96,8 @@ def main() -> None:
             OUT_DIR / "rank" / f"poet.tang.rank.{i}.json",
         )
 
-    if not (OUT_DIR / "wikidata.json").exists():
-        queryFile = Path(__file__).parent / "querries" / "tang_poets.rq"
-        dest = OUT_DIR / "wikidata.json"
-        with open(queryFile, "r", encoding="utf-8") as file:
-            query = file.read()
-        headers = {
-            "User-Agent": "chinese-poetry-explorer/0.1 (ruifan.cs@gmail.com)",
-            "Accept": "application/sparql-results+json",
-        }
-
-        response = requests.get(
-            f"https://query.wikidata.org/sparql?query={query}", headers=headers
-        )
-        print(response.status_code)
-        if response.status_code == 200:
-            print("Fetching Tang poet data from Wikidata")
-            data = response.json()
-            with open(dest, "w", encoding="utf-8") as file:
-                json.dump(data, file, ensure_ascii=False, indent=2)
+    print("Fetching Tang poets from Wikidata...")
+    fetch_wikidata(QUERIES_DIR / "tang_poets.rq", OUT_DIR / "wikidata.json")
 
     print("Done.")
 
