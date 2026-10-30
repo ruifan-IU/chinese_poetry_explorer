@@ -1,0 +1,8306 @@
+{
+  "summary": {
+    "none": 1161,
+    "alias": 374,
+    "label": 1957,
+    "label-ambiguous (unresolved)": 125,
+    "alias-ambiguous (unresolved)": 11
+  },
+  "collisions": {
+    "Q9738": [
+      "武则天",
+      "武曌"
+    ],
+    "Q708347": [
+      "刘子玄",
+      "刘知几"
+    ],
+    "Q45477654": [
+      "庄南杰",
+      "英才"
+    ],
+    "Q45519847": [
+      "余延寿",
+      "徐延寿"
+    ],
+    "Q45503127": [
+      "李彦𬀩",
+      "李彦远"
+    ],
+    "Q3082953": [
+      "郭元振",
+      "郭震"
+    ],
+    "Q15938899": [
+      "薛耀",
+      "薛曜"
+    ],
+    "Q11095991": [
+      "李季兰",
+      "李冶"
+    ],
+    "Q11581519": [
+      "卢弼",
+      "卢汝弼"
+    ],
+    "Q45461947": [
+      "卢贞",
+      "卢真"
+    ],
+    "Q45633120": [
+      "薛维翰",
+      "蒋维翰"
+    ],
+    "Q2899207": [
+      "王绩",
+      "王𪟝"
+    ],
+    "Q45622497": [
+      "蔡允恭",
+      "蔡文恭"
+    ],
+    "Q11069272": [
+      "张𬸦",
+      "张文成"
+    ],
+    "Q45442904": [
+      "王泠然",
+      "王冷然"
+    ],
+    "Q45566024": [
+      "赵骅",
+      "赵铎"
+    ],
+    "Q45467571": [
+      "冯著",
+      "冯渚"
+    ],
+    "Q18908264": [
+      "独孤绶",
+      "独孤授"
+    ],
+    "Q45549877": [
+      "罗珦",
+      "罗炯"
+    ],
+    "Q700284": [
+      "李翱",
+      "李翺"
+    ],
+    "Q18908479": [
+      "裴次元",
+      "裴元"
+    ],
+    "Q45634955": [
+      "魏朴",
+      "魏璞"
+    ],
+    "Q10369247": [
+      "布燮",
+      "段义宗"
+    ],
+    "Q45636065": [
+      "王元",
+      "王玄"
+    ],
+    "Q45601510": [
+      "安锜",
+      "崔锜"
+    ],
+    "Q45531875": [
+      "张保嗣",
+      "张保胤"
+    ],
+    "Q45546143": [
+      "范夜",
+      "范液"
+    ],
+    "Q45470046": [
+      "权彻",
+      "权澈"
+    ],
+    "Q45606745": [
+      "梁陟",
+      "梁涉"
+    ],
+    "Q18908358": [
+      "孙顾",
+      "孙𬱟"
+    ],
+    "Q45558440": [
+      "郑中丞",
+      "郑儋"
+    ],
+    "Q45452659": [
+      "大易",
+      "太易"
+    ],
+    "Q9184473": [
+      "躭章",
+      "本寂"
+    ],
+    "Q45553219": [
+      "虞有贤",
+      "鱼又玄"
+    ],
+    "Q45576667": [
+      "贺兰暹",
+      "贺兰遂"
+    ],
+    "Q9746": [
+      "唐明皇",
+      "李隆基"
+    ]
+  },
+  "ambiguous": [
+    {
+      "name": "皎然",
+      "poemCount": 487,
+      "candidates": [
+        {
+          "qid": "Q11644522",
+          "label": "释皎然",
+          "aliases": [
+            "清昼",
+            "皎然",
+            "释皎然"
+          ],
+          "sitelinks": 7,
+          "birthYear": 730,
+          "deathYear": 799,
+          "picture": null
+        },
+        {
+          "qid": "Q45602935",
+          "label": "释皎然",
+          "aliases": [
+            "皎然",
+            "长生和尚"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李端",
+      "poemCount": 273,
+      "candidates": [
+        {
+          "qid": "Q11097649",
+          "label": "李端",
+          "aliases": [
+            "正己"
+          ],
+          "sitelinks": 6,
+          "birthYear": 732,
+          "deathYear": 792,
+          "picture": null
+        },
+        {
+          "qid": "Q45495797",
+          "label": "李端",
+          "aliases": [
+            "公表"
+          ],
+          "sitelinks": 0,
+          "birthYear": 732,
+          "deathYear": 792,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李涉",
+      "poemCount": 135,
+      "candidates": [
+        {
+          "qid": "Q18909427",
+          "label": "李涉",
+          "aliases": [
+            "青溪子"
+          ],
+          "sitelinks": 2,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45550194",
+          "label": "李涉",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 742,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "刘商",
+      "poemCount": 128,
+      "candidates": [
+        {
+          "qid": "Q28410510",
+          "label": "刘商",
+          "aliases": [],
+          "sitelinks": 2,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45482594",
+          "label": "刘商",
+          "aliases": [
+            "子夏"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45672816",
+          "label": "刘商",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 772,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "刘言史",
+      "poemCount": 82,
+      "candidates": [
+        {
+          "qid": "Q10900406",
+          "label": "刘言史",
+          "aliases": [],
+          "sitelinks": 2,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45479948",
+          "label": "刘言史",
+          "aliases": [
+            "刘枣强"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 812,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔道融",
+      "poemCount": 79,
+      "candidates": [
+        {
+          "qid": "Q45601381",
+          "label": "崔道融",
+          "aliases": [
+            "东瓯散人"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 907,
+          "picture": null
+        },
+        {
+          "qid": "Q45472896",
+          "label": "崔道融",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 742,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "刘驾",
+      "poemCount": 73,
+      "candidates": [
+        {
+          "qid": "Q9471229",
+          "label": "刘驾",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45480940",
+          "label": "刘驾",
+          "aliases": [
+            "司南"
+          ],
+          "sitelinks": 0,
+          "birthYear": 822,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔国辅",
+      "poemCount": 51,
+      "candidates": [
+        {
+          "qid": "Q18908517",
+          "label": "崔国辅",
+          "aliases": [],
+          "sitelinks": 4,
+          "birthYear": 678,
+          "deathYear": 755,
+          "picture": null
+        },
+        {
+          "qid": "Q45422623",
+          "label": "崔国辅",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "来鹄",
+      "poemCount": 30,
+      "candidates": [
+        {
+          "qid": "Q11100028",
+          "label": "Q11100028",
+          "aliases": [
+            "来鹄"
+          ],
+          "sitelinks": 2,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45515537",
+          "label": "来鹏",
+          "aliases": [
+            "乡校小臣",
+            "来鹄"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 883,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "子兰",
+      "poemCount": 26,
+      "candidates": [
+        {
+          "qid": "Q45436923",
+          "label": "释子兰",
+          "aliases": [
+            "子兰"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45504341",
+          "label": "李皋",
+          "aliases": [
+            "子兰",
+            "成"
+          ],
+          "sitelinks": 0,
+          "birthYear": 734,
+          "deathYear": 793,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "赵彦昭",
+      "poemCount": 21,
+      "candidates": [
+        {
+          "qid": "Q8070578",
+          "label": "赵彦昭",
+          "aliases": [
+            "赵彦昭"
+          ],
+          "sitelinks": 3,
+          "birthYear": 650,
+          "deathYear": 714,
+          "picture": null
+        },
+        {
+          "qid": "Q45565833",
+          "label": "赵彦昭",
+          "aliases": [
+            "奂然"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔融",
+      "poemCount": 20,
+      "candidates": [
+        {
+          "qid": "Q3370134",
+          "label": "崔融",
+          "aliases": [
+            "安成",
+            "文"
+          ],
+          "sitelinks": 7,
+          "birthYear": 653,
+          "deathYear": 706,
+          "picture": null
+        },
+        {
+          "qid": "Q45602090",
+          "label": "崔融",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "虚中",
+      "poemCount": 20,
+      "candidates": [
+        {
+          "qid": "Q45446246",
+          "label": "王毂",
+          "aliases": [
+            "临沂子",
+            "虚中"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45595884",
+          "label": "释虚中",
+          "aliases": [
+            "虚中"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王翰",
+      "poemCount": 18,
+      "candidates": [
+        {
+          "qid": "Q717319",
+          "label": "王翰",
+          "aliases": [
+            "子羽",
+            "王瀚"
+          ],
+          "sitelinks": 13,
+          "birthYear": 685,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45446314",
+          "label": "王翰",
+          "aliases": [
+            "王干"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45402082",
+          "label": "王翰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "朱存",
+      "poemCount": 16,
+      "candidates": [
+        {
+          "qid": "Q45446309",
+          "label": "朱存",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 879,
+          "picture": null
+        },
+        {
+          "qid": "Q45473355",
+          "label": "朱存",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "薛据",
+      "poemCount": 14,
+      "candidates": [
+        {
+          "qid": "Q45424560",
+          "label": "薛据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45633055",
+          "label": "薛据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 701,
+          "deathYear": 767,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔涯",
+      "poemCount": 13,
+      "candidates": [
+        {
+          "qid": "Q45473411",
+          "label": "崔涯",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 779,
+          "picture": null
+        },
+        {
+          "qid": "Q45600669",
+          "label": "崔涯",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王湾",
+      "poemCount": 11,
+      "candidates": [
+        {
+          "qid": "Q7967656",
+          "label": "王湾",
+          "aliases": [],
+          "sitelinks": 7,
+          "birthYear": 693,
+          "deathYear": 751,
+          "picture": null
+        },
+        {
+          "qid": "Q45675455",
+          "label": "王湾",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 791,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "姚系",
+      "poemCount": 10,
+      "candidates": [
+        {
+          "qid": "Q45576055",
+          "label": "姚系",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45693489",
+          "label": "姚系",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 798,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李嶷",
+      "poemCount": 9,
+      "candidates": [
+        {
+          "qid": "Q45510539",
+          "label": "李嶷",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45599925",
+          "label": "李嶷",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 757,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李正封",
+      "poemCount": 9,
+      "candidates": [
+        {
+          "qid": "Q45495792",
+          "label": "李正封",
+          "aliases": [
+            "中护",
+            "李二十八"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45560239",
+          "label": "李正封",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 814,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李涛",
+      "poemCount": 8,
+      "candidates": [
+        {
+          "qid": "Q45504620",
+          "label": "李涛",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45594056",
+          "label": "李涛",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 782,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "张循之",
+      "poemCount": 7,
+      "candidates": [
+        {
+          "qid": "Q45531809",
+          "label": "张循之",
+          "aliases": [
+            "张修之"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45535164",
+          "label": "张循之",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 697,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王起",
+      "poemCount": 7,
+      "candidates": [
+        {
+          "qid": "Q18908337",
+          "label": "王起",
+          "aliases": [
+            "举之",
+            "当世仲尼",
+            "文懿"
+          ],
+          "sitelinks": 2,
+          "birthYear": 760,
+          "deathYear": 847,
+          "picture": null
+        },
+        {
+          "qid": "Q45662162",
+          "label": "王起",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 820,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑损",
+      "poemCount": 6,
+      "candidates": [
+        {
+          "qid": "Q45556362",
+          "label": "郑损",
+          "aliases": [
+            "庆远"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45504973",
+          "label": "郑损",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 760,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李沇",
+      "poemCount": 6,
+      "candidates": [
+        {
+          "qid": "Q45501712",
+          "label": "李沇",
+          "aliases": [
+            "东济"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 895,
+          "picture": null
+        },
+        {
+          "qid": "Q45545693",
+          "label": "李沇",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 837,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "马逢",
+      "poemCount": 6,
+      "candidates": [
+        {
+          "qid": "Q45438135",
+          "label": "马逢",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45438535",
+          "label": "马逢",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 895,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "张琰",
+      "poemCount": 6,
+      "candidates": [
+        {
+          "qid": "Q45613718",
+          "label": "张琰",
+          "aliases": [
+            "张炎"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45534705",
+          "label": "张琰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李贞白",
+      "poemCount": 6,
+      "candidates": [
+        {
+          "qid": "Q45473421",
+          "label": "李贞白",
+          "aliases": [
+            "朱贞白"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45497055",
+          "label": "李贞白",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王铎",
+      "poemCount": 5,
+      "candidates": [
+        {
+          "qid": "Q7967418",
+          "label": "王铎",
+          "aliases": [
+            "昭范",
+            "王铎"
+          ],
+          "sitelinks": 5,
+          "birthYear": null,
+          "deathYear": 884,
+          "picture": null
+        },
+        {
+          "qid": "Q45676766",
+          "label": "王铎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 748,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "裴𫍯",
+      "poemCount": 5,
+      "candidates": [
+        {
+          "qid": "Q45625420",
+          "label": "裴𫍯",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45672035",
+          "label": "裴𫍯",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 861,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑綮",
+      "poemCount": 5,
+      "candidates": [
+        {
+          "qid": "Q45558179",
+          "label": "郑綮",
+          "aliases": [
+            "蕴武"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 899,
+          "picture": null
+        },
+        {
+          "qid": "Q45570863",
+          "label": "郑綮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 898,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "元万顷",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q11387763",
+          "label": "元万顷",
+          "aliases": [
+            "元万顷",
+            "北门学士"
+          ],
+          "sitelinks": 3,
+          "birthYear": 650,
+          "deathYear": 689,
+          "picture": null
+        },
+        {
+          "qid": "Q45632690",
+          "label": "元万顷",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 699,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李休烈",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q26159456",
+          "label": "李休烈",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 688,
+          "picture": null
+        },
+        {
+          "qid": "Q45497447",
+          "label": "李休烈",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李深",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q45505778",
+          "label": "李深",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45655086",
+          "label": "李深",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李观",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q11097997",
+          "label": "李观",
+          "aliases": [
+            "元宾",
+            "李观"
+          ],
+          "sitelinks": 2,
+          "birthYear": 766,
+          "deathYear": 794,
+          "picture": null
+        },
+        {
+          "qid": "Q45565566",
+          "label": "李观",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 799,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "袁郊",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q24840506",
+          "label": "袁郊",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": 844,
+          "picture": null
+        },
+        {
+          "qid": "Q45577775",
+          "label": "袁郊",
+          "aliases": [
+            "之仪",
+            "之干"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李浩",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q45504750",
+          "label": "李浩",
+          "aliases": [
+            "太素"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45695354",
+          "label": "李浩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 768,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "智常",
+      "poemCount": 4,
+      "candidates": [
+        {
+          "qid": "Q9282631",
+          "label": "释智常",
+          "aliases": [
+            "归宗和尚",
+            "智常",
+            "至真禅师",
+            "赤眼归宗和尚"
+          ],
+          "sitelinks": 2,
+          "birthYear": 750,
+          "deathYear": null,
+          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Priest%20Zhichang%20and%20courtier%20Libo.jpg"
+        },
+        {
+          "qid": "Q45612902",
+          "label": "释智常",
+          "aliases": [
+            "智常"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李岑",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q45498949",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45499017",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45499085",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45553133",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 782,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "张众甫",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q22100823",
+          "label": "张众甫",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45528190",
+          "label": "张众甫",
+          "aliases": [
+            "子初"
+          ],
+          "sitelinks": 0,
+          "birthYear": 715,
+          "deathYear": 782,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑常",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q45502031",
+          "label": "郑常",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 760,
+          "picture": null
+        },
+        {
+          "qid": "Q45556765",
+          "label": "郑常",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 787,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "严休复",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q45490800",
+          "label": "严休复",
+          "aliases": [
+            "严十八",
+            "玄锡"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 835,
+          "picture": null
+        },
+        {
+          "qid": "Q45537573",
+          "label": "严休复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 840,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "陈峤",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q45375039",
+          "label": "陈峤",
+          "aliases": [
+            "延封"
+          ],
+          "sitelinks": 1,
+          "birthYear": 825,
+          "deathYear": 899,
+          "picture": null
+        },
+        {
+          "qid": "Q45541409",
+          "label": "陈峤",
+          "aliases": [
+            "景山"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李荣",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q45502184",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45548686",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 792,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "法常",
+      "poemCount": 3,
+      "candidates": [
+        {
+          "qid": "Q9201031",
+          "label": "释法常",
+          "aliases": [
+            "大梅和尚",
+            "法常"
+          ],
+          "sitelinks": 3,
+          "birthYear": 752,
+          "deathYear": 839,
+          "picture": null
+        },
+        {
+          "qid": "Q45559676",
+          "label": "释法常",
+          "aliases": [
+            "法常"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王晙",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q7967501",
+          "label": "王晙",
+          "aliases": [
+            "忠烈"
+          ],
+          "sitelinks": 5,
+          "birthYear": 601,
+          "deathYear": 732,
+          "picture": null
+        },
+        {
+          "qid": "Q45439660",
+          "label": "王晙",
+          "aliases": [
+            "光庭"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "杜羔",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45493764",
+          "label": "杜羔",
+          "aliases": [
+            "敬"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 821,
+          "picture": null
+        },
+        {
+          "qid": "Q45522586",
+          "label": "杜羔",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 868,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "苑咸",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q15908148",
+          "label": "苑咸",
+          "aliases": [
+            "咸"
+          ],
+          "sitelinks": 2,
+          "birthYear": 710,
+          "deathYear": 758,
+          "picture": null
+        },
+        {
+          "qid": "Q45545420",
+          "label": "苑咸",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李穆",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45436634",
+          "label": "李穆",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 809,
+          "picture": null
+        },
+        {
+          "qid": "Q45510394",
+          "label": "李穆",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔何",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45442612",
+          "label": "崔何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 774,
+          "picture": null
+        },
+        {
+          "qid": "Q45598421",
+          "label": "崔何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李谅",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q4260728",
+          "label": "李谅",
+          "aliases": [
+            "复言",
+            "李谅"
+          ],
+          "sitelinks": 3,
+          "birthYear": 775,
+          "deathYear": 833,
+          "picture": null
+        },
+        {
+          "qid": "Q45574930",
+          "label": "李谅",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 797,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "曹汾",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45595232",
+          "label": "曹汾",
+          "aliases": [
+            "子晋",
+            "道谦"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 874,
+          "picture": null
+        },
+        {
+          "qid": "Q45584300",
+          "label": "曹汾",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 874,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "于兴宗",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45482537",
+          "label": "于兴宗",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 855,
+          "picture": null
+        },
+        {
+          "qid": "Q45709631",
+          "label": "于兴宗",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "于瓌",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45709814",
+          "label": "于瓌",
+          "aliases": [
+            "匡德"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45506318",
+          "label": "于瓌",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 861,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢渥",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45462467",
+          "label": "卢渥",
+          "aliases": [
+            "子章"
+          ],
+          "sitelinks": 0,
+          "birthYear": 820,
+          "deathYear": 905,
+          "picture": null
+        },
+        {
+          "qid": "Q45547811",
+          "label": "卢渥",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 816,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦承贻",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45450651",
+          "label": "韦承贻",
+          "aliases": [
+            "贻之"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45658925",
+          "label": "韦承贻",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 890,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李聪",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45552141",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 819,
+          "picture": null
+        },
+        {
+          "qid": "Q45509469",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李士元",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45494346",
+          "label": "李士元",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45696328",
+          "label": "李士元",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 868,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑蕡",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45557212",
+          "label": "郑蕡",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45524318",
+          "label": "郑蕡",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 885,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "刘云",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45478314",
+          "label": "刘云",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45567345",
+          "label": "刘云",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 757,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "智通",
+      "poemCount": 2,
+      "candidates": [
+        {
+          "qid": "Q45612773",
+          "label": "释智通",
+          "aliases": [
+            "智通"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45612836",
+          "label": "释智通",
+          "aliases": [
+            "智通"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "封行高",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45488119",
+          "label": "封行高",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": 655,
+          "picture": null
+        },
+        {
+          "qid": "Q45563563",
+          "label": "封行高",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "牛凤及",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45453629",
+          "label": "牛凤及",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45559017",
+          "label": "牛凤及",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 691,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李如璧",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45498286",
+          "label": "李如璧",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45541601",
+          "label": "李如璧",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 756,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "于经野",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45480743",
+          "label": "于经野",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 738,
+          "picture": null
+        },
+        {
+          "qid": "Q45709709",
+          "label": "于经野",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王景",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45445465",
+          "label": "王景",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45654870",
+          "label": "王景",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 733,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢崇道",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45462207",
+          "label": "卢崇道",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45576034",
+          "label": "卢崇道",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 706,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔珪",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45609897",
+          "label": "崔珪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45599969",
+          "label": "崔珪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "周万",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45438647",
+          "label": "周万",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 778,
+          "picture": null
+        },
+        {
+          "qid": "Q45551031",
+          "label": "周万",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑绍",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45555702",
+          "label": "郑绍",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45509434",
+          "label": "郑绍",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 737,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李清",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45505583",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45600675",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 794,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "长孙铸",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45454225",
+          "label": "长孙铸",
+          "aliases": [
+            "长孙镈"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45529307",
+          "label": "长孙铸",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 796,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "姚发",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45575467",
+          "label": "姚发",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45693321",
+          "label": "姚发",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 751,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李晔",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45564170",
+          "label": "李晔",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 776,
+          "picture": null
+        },
+        {
+          "qid": "Q45504213",
+          "label": "李晔",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "于结",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45506635",
+          "label": "于结",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 784,
+          "picture": null
+        },
+        {
+          "qid": "Q45709724",
+          "label": "于结",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "杨郇伯",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45512622",
+          "label": "杨郇伯",
+          "aliases": [
+            "杨邠伯",
+            "杨郁伯"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45512819",
+          "label": "杨郇伯",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔绩",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45500154",
+          "label": "崔绩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 672,
+          "picture": null
+        },
+        {
+          "qid": "Q45600806",
+          "label": "崔绩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "裴达",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45623749",
+          "label": "裴达",
+          "aliases": [
+            "裴逵"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45641903",
+          "label": "裴达",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 800,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔瓘",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q18908615",
+          "label": "崔瓘",
+          "aliases": [],
+          "sitelinks": 2,
+          "birthYear": null,
+          "deathYear": 770,
+          "picture": null
+        },
+        {
+          "qid": "Q45421918",
+          "label": "崔瓘",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦执中",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45449856",
+          "label": "韦执中",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45674329",
+          "label": "韦执中",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 818,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢群",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45462915",
+          "label": "卢群",
+          "aliases": [
+            "载初"
+          ],
+          "sitelinks": 0,
+          "birthYear": 742,
+          "deathYear": 800,
+          "picture": null
+        },
+        {
+          "qid": "Q45544840",
+          "label": "卢群",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 805,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "袁高",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45577973",
+          "label": "袁高",
+          "aliases": [
+            "公颐"
+          ],
+          "sitelinks": 2,
+          "birthYear": 728,
+          "deathYear": 787,
+          "picture": null
+        },
+        {
+          "qid": "Q45687781",
+          "label": "袁高",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 730,
+          "deathYear": 790,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "陆瀍",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45590349",
+          "label": "陆瀍",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 776,
+          "picture": null
+        },
+        {
+          "qid": "Q45539021",
+          "label": "陆瀍",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑据",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45487673",
+          "label": "郑据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 797,
+          "picture": null
+        },
+        {
+          "qid": "Q45556701",
+          "label": "郑据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 761,
+          "deathYear": 845,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "萧建",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45450897",
+          "label": "萧建",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 767,
+          "picture": null
+        },
+        {
+          "qid": "Q45594312",
+          "label": "萧建",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "张复",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45533194",
+          "label": "张复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45695445",
+          "label": "张复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 860,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "窦洵直",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45482442",
+          "label": "窦洵直",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 833,
+          "picture": null
+        },
+        {
+          "qid": "Q45620930",
+          "label": "窦洵直",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "裴思谦",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q10516229",
+          "label": "裴思谦",
+          "aliases": [
+            "自牧",
+            "裴思谦"
+          ],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45669014",
+          "label": "裴思谦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 843,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李损之",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45504079",
+          "label": "李损之",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45577152",
+          "label": "李损之",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 649,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "孟球",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45562845",
+          "label": "孟球",
+          "aliases": [
+            "庭玉",
+            "廷玉"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45605360",
+          "label": "孟球",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 853,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢嗣立",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45462719",
+          "label": "卢嗣立",
+          "aliases": [
+            "敏绍"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45565045",
+          "label": "卢嗣立",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 870,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李质",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45501383",
+          "label": "李质",
+          "aliases": [
+            "公干"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45437455",
+          "label": "李质",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 809,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李明远",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45470206",
+          "label": "李明远",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 679,
+          "picture": null
+        },
+        {
+          "qid": "Q45500801",
+          "label": "李明远",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢顺之",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45461493",
+          "label": "卢顺之",
+          "aliases": [
+            "子谟"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45569141",
+          "label": "卢顺之",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 868,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "田章",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45463428",
+          "label": "田章",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45606212",
+          "label": "田章",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 860,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李邺",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45498879",
+          "label": "李邺",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45698090",
+          "label": "李邺",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 851,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "卢邺",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45460232",
+          "label": "卢邺",
+          "aliases": [
+            "漳臣"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45544648",
+          "label": "卢邺",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 867,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "崔璐",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45602157",
+          "label": "崔璐",
+          "aliases": [
+            "大圭"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45454539",
+          "label": "崔璐",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 878,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李廷璧",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45497384",
+          "label": "李廷璧",
+          "aliases": [
+            "冠祥"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45442406",
+          "label": "李廷璧",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 869,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李克恭",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q11095512",
+          "label": "李克恭",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": 920,
+          "picture": null
+        },
+        {
+          "qid": "Q45498746",
+          "label": "李克恭",
+          "aliases": [
+            "李允恭"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李屿",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45497252",
+          "label": "李屿",
+          "aliases": [
+            "鲁珍"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45437962",
+          "label": "李屿",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 779,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李旭",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45497707",
+          "label": "李旭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45573464",
+          "label": "李旭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 723,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦冰",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45450070",
+          "label": "韦冰",
+          "aliases": [
+            "祥风"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45657493",
+          "label": "韦冰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 731,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李京",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45454070",
+          "label": "李京",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 787,
+          "picture": null
+        },
+        {
+          "qid": "Q45501646",
+          "label": "李京",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦遵",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45452009",
+          "label": "韦遵",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45606900",
+          "label": "韦遵",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 777,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦鼎",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45419666",
+          "label": "韦鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45451880",
+          "label": "韦鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韩垂",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45609958",
+          "label": "韩垂",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45532284",
+          "label": "韩垂",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 792,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王沂",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45441141",
+          "label": "王沂",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45655407",
+          "label": "王沂",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 807,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "丁元和",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45709448",
+          "label": "丁元和",
+          "aliases": [
+            "淘沙子"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45606089",
+          "label": "丁元和",
+          "aliases": [
+            "淘沙子"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "张震",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45536482",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45697156",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 749,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李曜",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45510471",
+          "label": "李曜",
+          "aliases": [
+            "李擢"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45595583",
+          "label": "李曜",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 745,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李何",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45499281",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45555643",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 765,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦镒",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45451945",
+          "label": "韦镒",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 756,
+          "picture": null
+        },
+        {
+          "qid": "Q45663591",
+          "label": "韦镒",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 725,
+          "deathYear": 774,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑德玄",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45558506",
+          "label": "郑德玄",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45545652",
+          "label": "郑德玄",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 652,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王约",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45440178",
+          "label": "王约",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45675107",
+          "label": "王约",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 669,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑师贞",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45554459",
+          "label": "郑师贞",
+          "aliases": [
+            "郑师冉"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45554523",
+          "label": "郑师贞",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑衮",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45556512",
+          "label": "郑衮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45522230",
+          "label": "郑衮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 808,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韩泰",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q17029914",
+          "label": "韩泰",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": 800,
+          "picture": null
+        },
+        {
+          "qid": "Q45610385",
+          "label": "韩泰",
+          "aliases": [
+            "安平"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 831,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李郁",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45500396",
+          "label": "李郁",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45612923",
+          "label": "李郁",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 859,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李范",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45438283",
+          "label": "李范",
+          "aliases": [
+            "得之",
+            "李正范"
+          ],
+          "sitelinks": 0,
+          "birthYear": 786,
+          "deathYear": 855,
+          "picture": null
+        },
+        {
+          "qid": "Q45506848",
+          "label": "李范",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "郑说",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45556217",
+          "label": "郑说",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45556283",
+          "label": "郑说",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "裴淑",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45625354",
+          "label": "裴淑",
+          "aliases": [
+            "柔之"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45643320",
+          "label": "裴淑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 778,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "柳氏",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q65799865",
+          "label": "柳氏",
+          "aliases": [
+            "章台柳"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45422195",
+          "label": "柳氏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 758,
+          "deathYear": 801,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "王苏苏",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45440562",
+          "label": "王苏苏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45621513",
+          "label": "王苏苏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "韦铿",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45451366",
+          "label": "韦铿",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45672556",
+          "label": "韦铿",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 806,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李兼",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45504556",
+          "label": "李兼",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45695573",
+          "label": "李兼",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 792,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李缜",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45508749",
+          "label": "李缜",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45600812",
+          "label": "李缜",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 831,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "钟辐",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45571150",
+          "label": "钟辐",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45571212",
+          "label": "钟辐",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李伯良",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45499347",
+          "label": "李伯良",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45700757",
+          "label": "李伯良",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 625,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李潭",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45549808",
+          "label": "李潭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 891,
+          "picture": null
+        },
+        {
+          "qid": "Q45510116",
+          "label": "李潭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "淘沙子",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45709448",
+          "label": "丁元和",
+          "aliases": [
+            "淘沙子"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45606089",
+          "label": "丁元和",
+          "aliases": [
+            "淘沙子"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "鸿渐",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q948270",
+          "label": "陆羽",
+          "aliases": [
+            "东岗子",
+            "季疵",
+            "桑苧翁",
+            "竟陵子",
+            "茶仙",
+            "茶圣",
+            "茶神",
+            "陆疾",
+            "陆羽",
+            "鸿渐"
+          ],
+          "sitelinks": 26,
+          "birthYear": 733,
+          "deathYear": 804,
+          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Lu%20Y%C3%BC.png"
+        },
+        {
+          "qid": "Q45606023",
+          "label": "释鸿渐",
+          "aliases": [
+            "鸿渐"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "子言",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q11137925",
+          "label": "沈传师",
+          "aliases": [
+            "子言"
+          ],
+          "sitelinks": 2,
+          "birthYear": 769,
+          "deathYear": 827,
+          "picture": null
+        },
+        {
+          "qid": "Q45436986",
+          "label": "释子言",
+          "aliases": [
+            "子言"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "法满",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45559806",
+          "label": "释法满",
+          "aliases": [
+            "法满"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45474088",
+          "label": "朱君绪",
+          "aliases": [
+            "法满"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 720,
+          "picture": null
+        }
+      ]
+    },
+    {
+      "name": "李峰",
+      "poemCount": 0,
+      "candidates": [
+        {
+          "qid": "Q45553323",
+          "label": "李峰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 782,
+          "picture": null
+        },
+        {
+          "qid": "Q45504277",
+          "label": "李峰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null
+        }
+      ]
+    }
+  ],
+  "unmatched": [
+    {
+      "name": "佚名",
+      "poemCount": 1869
+    },
+    {
+      "name": "齐己",
+      "poemCount": 820
+    },
+    {
+      "name": "贯休",
+      "poemCount": 735
+    },
+    {
+      "name": "皮日休",
+      "poemCount": 441
+    },
+    {
+      "name": "李中",
+      "poemCount": 310
+    },
+    {
+      "name": "徐铉",
+      "poemCount": 308
+    },
+    {
+      "name": "徐夤",
+      "poemCount": 268
+    },
+    {
+      "name": "和凝",
+      "poemCount": 143
+    },
+    {
+      "name": "花蕊夫人徐氏",
+      "poemCount": 140
+    },
+    {
+      "name": "吴筠",
+      "poemCount": 130
+    },
+    {
+      "name": "傅翕",
+      "poemCount": 117
+    },
+    {
+      "name": "太宗皇帝",
+      "poemCount": 110
+    },
+    {
+      "name": "徐成",
+      "poemCount": 109
+    },
+    {
+      "name": "张𧏖",
+      "poemCount": 107
+    },
+    {
+      "name": "李建勋",
+      "poemCount": 102
+    },
+    {
+      "name": "孙光宪",
+      "poemCount": 91
+    },
+    {
+      "name": "延寿",
+      "poemCount": 89
+    },
+    {
+      "name": "冯延巳",
+      "poemCount": 84
+    },
+    {
+      "name": "崔致远",
+      "poemCount": 84
+    },
+    {
+      "name": "刘兼",
+      "poemCount": 81
+    },
+    {
+      "name": "章孝标",
+      "poemCount": 78
+    },
+    {
+      "name": "明皇帝",
+      "poemCount": 71
+    },
+    {
+      "name": "喻凫",
+      "poemCount": 68
+    },
+    {
+      "name": "道世",
+      "poemCount": 62
+    },
+    {
+      "name": "王周",
+      "poemCount": 60
+    },
+    {
+      "name": "欧阳炯",
+      "poemCount": 57
+    },
+    {
+      "name": "顾敻",
+      "poemCount": 56
+    },
+    {
+      "name": "后主煜",
+      "poemCount": 54
+    },
+    {
+      "name": "于武陵",
+      "poemCount": 54
+    },
+    {
+      "name": "张果",
+      "poemCount": 53
+    },
+    {
+      "name": "则天皇后",
+      "poemCount": 48
+    },
+    {
+      "name": "克符道者",
+      "poemCount": 41
+    },
+    {
+      "name": "宝志",
+      "poemCount": 41
+    },
+    {
+      "name": "孙鲂",
+      "poemCount": 40
+    },
+    {
+      "name": "司马扎",
+      "poemCount": 39
+    },
+    {
+      "name": "白云仙人",
+      "poemCount": 39
+    },
+    {
+      "name": "徐彦伯",
+      "poemCount": 37
+    },
+    {
+      "name": "李远",
+      "poemCount": 37
+    },
+    {
+      "name": "崔橹",
+      "poemCount": 37
+    },
+    {
+      "name": "沈彬",
+      "poemCount": 35
+    },
+    {
+      "name": "李百药",
+      "poemCount": 34
+    },
+    {
+      "name": "僧贯休",
+      "poemCount": 33
+    },
+    {
+      "name": "林宽",
+      "poemCount": 33
+    },
+    {
+      "name": "元阳子",
+      "poemCount": 33
+    },
+    {
+      "name": "殷文圭",
+      "poemCount": 32
+    },
+    {
+      "name": "孟贯",
+      "poemCount": 31
+    },
+    {
+      "name": "修睦",
+      "poemCount": 31
+    },
+    {
+      "name": "王希明",
+      "poemCount": 31
+    },
+    {
+      "name": "韩琮",
+      "poemCount": 29
+    },
+    {
+      "name": "毛熙震",
+      "poemCount": 29
+    },
+    {
+      "name": "章谒",
+      "poemCount": 26
+    },
+    {
+      "name": "李九龄",
+      "poemCount": 25
+    },
+    {
+      "name": "杨行真人",
+      "poemCount": 23
+    },
+    {
+      "name": "菩提达摩",
+      "poemCount": 23
+    },
+    {
+      "name": "乔知之",
+      "poemCount": 22
+    },
+    {
+      "name": "道镜、善导",
+      "poemCount": 22
+    },
+    {
+      "name": "灵澈",
+      "poemCount": 21
+    },
+    {
+      "name": "魏承班",
+      "poemCount": 21
+    },
+    {
+      "name": "王棨",
+      "poemCount": 21
+    },
+    {
+      "name": "浙东众诗人",
+      "poemCount": 21
+    },
+    {
+      "name": "栖白",
+      "poemCount": 20
+    },
+    {
+      "name": "钱镠",
+      "poemCount": 20
+    },
+    {
+      "name": "王初",
+      "poemCount": 19
+    },
+    {
+      "name": "喻坦之",
+      "poemCount": 19
+    },
+    {
+      "name": "胡宿",
+      "poemCount": 19
+    },
+    {
+      "name": "王仁裕",
+      "poemCount": 18
+    },
+    {
+      "name": "德宗皇帝",
+      "poemCount": 17
+    },
+    {
+      "name": "刘眘虚",
+      "poemCount": 17
+    },
+    {
+      "name": "僧齐己",
+      "poemCount": 16
+    },
+    {
+      "name": "僧皎然",
+      "poemCount": 16
+    },
+    {
+      "name": "阎朝隐",
+      "poemCount": 16
+    },
+    {
+      "name": "孟宾于",
+      "poemCount": 15
+    },
+    {
+      "name": "孙宗闵",
+      "poemCount": 15
+    },
+    {
+      "name": "赵光逢、张衮",
+      "poemCount": 14
+    },
+    {
+      "name": "陈子良",
+      "poemCount": 14
+    },
+    {
+      "name": "蒋防",
+      "poemCount": 14
+    },
+    {
+      "name": "陈抟",
+      "poemCount": 14
+    },
+    {
+      "name": "李舒",
+      "poemCount": 13
+    },
+    {
+      "name": "柳中庸",
+      "poemCount": 13
+    },
+    {
+      "name": "孔德绍",
+      "poemCount": 13
+    },
+    {
+      "name": "牛希济",
+      "poemCount": 13
+    },
+    {
+      "name": "郑遨",
+      "poemCount": 13
+    },
+    {
+      "name": "文益",
+      "poemCount": 13
+    },
+    {
+      "name": "湘妃庙",
+      "poemCount": 13
+    },
+    {
+      "name": "钱弘俶",
+      "poemCount": 13
+    },
+    {
+      "name": "泰钦",
+      "poemCount": 13
+    },
+    {
+      "name": "高宗皇帝",
+      "poemCount": 12
+    },
+    {
+      "name": "宣宗皇帝",
+      "poemCount": 12
+    },
+    {
+      "name": "徐安贞",
+      "poemCount": 12
+    },
+    {
+      "name": "熊皎",
+      "poemCount": 12
+    },
+    {
+      "name": "缪岛云",
+      "poemCount": 12
+    },
+    {
+      "name": "嵩岳诸仙",
+      "poemCount": 12
+    },
+    {
+      "name": "王叡",
+      "poemCount": 11
+    },
+    {
+      "name": "陈叔达",
+      "poemCount": 11
+    },
+    {
+      "name": "水神",
+      "poemCount": 11
+    },
+    {
+      "name": "赞宁",
+      "poemCount": 11
+    },
+    {
+      "name": "常察",
+      "poemCount": 11
+    },
+    {
+      "name": "魏征、褚亮",
+      "poemCount": 10
+    },
+    {
+      "name": "盖嘉运",
+      "poemCount": 10
+    },
+    {
+      "name": "樊铸",
+      "poemCount": 10
+    },
+    {
+      "name": "柳冲用",
+      "poemCount": 10
+    },
+    {
+      "name": "窦真君",
+      "poemCount": 10
+    },
+    {
+      "name": "赵志",
+      "poemCount": 10
+    },
+    {
+      "name": "李纾",
+      "poemCount": 9
+    },
+    {
+      "name": "杨汝士",
+      "poemCount": 9
+    },
+    {
+      "name": "冯道",
+      "poemCount": 9
+    },
+    {
+      "name": "宋齐丘",
+      "poemCount": 9
+    },
+    {
+      "name": "潘佑",
+      "poemCount": 9
+    },
+    {
+      "name": "徐仲雅",
+      "poemCount": 9
+    },
+    {
+      "name": "廖融",
+      "poemCount": 9
+    },
+    {
+      "name": "耿玉真",
+      "poemCount": 9
+    },
+    {
+      "name": "道怤",
+      "poemCount": 9
+    },
+    {
+      "name": "蜀太后徐氏",
+      "poemCount": 8
+    },
+    {
+      "name": "蜀太妃徐氏",
+      "poemCount": 8
+    },
+    {
+      "name": "贺知章、源乾曜",
+      "poemCount": 8
+    },
+    {
+      "name": "张昭",
+      "poemCount": 8
+    },
+    {
+      "name": "吴少微",
+      "poemCount": 8
+    },
+    {
+      "name": "李赤",
+      "poemCount": 8
+    },
+    {
+      "name": "潘咸",
+      "poemCount": 8
+    },
+    {
+      "name": "韩溉",
+      "poemCount": 8
+    },
+    {
+      "name": "赵氏",
+      "poemCount": 8
+    },
+    {
+      "name": "王氏妇",
+      "poemCount": 8
+    },
+    {
+      "name": "项宗",
+      "poemCount": 8
+    },
+    {
+      "name": "中宗皇帝",
+      "poemCount": 7
+    },
+    {
+      "name": "文宗皇帝",
+      "poemCount": 7
+    },
+    {
+      "name": "东方虬",
+      "poemCount": 7
+    },
+    {
+      "name": "谢偃",
+      "poemCount": 7
+    },
+    {
+      "name": "刘孝孙",
+      "poemCount": 7
+    },
+    {
+      "name": "孔绍安",
+      "poemCount": 7
+    },
+    {
+      "name": "李昂",
+      "poemCount": 7
+    },
+    {
+      "name": "陈翊",
+      "poemCount": 7
+    },
+    {
+      "name": "曲信陵",
+      "poemCount": 7
+    },
+    {
+      "name": "杨凝式",
+      "poemCount": 7
+    },
+    {
+      "name": "郑良士",
+      "poemCount": 7
+    },
+    {
+      "name": "黄损",
+      "poemCount": 7
+    },
+    {
+      "name": "韩熙载",
+      "poemCount": 7
+    },
+    {
+      "name": "詹琲",
+      "poemCount": 7
+    },
+    {
+      "name": "幸夤逊",
+      "poemCount": 7
+    },
+    {
+      "name": "杨徽之",
+      "poemCount": 7
+    },
+    {
+      "name": "丘光庭",
+      "poemCount": 7
+    },
+    {
+      "name": "义净",
+      "poemCount": 7
+    },
+    {
+      "name": "青霞子",
+      "poemCount": 7
+    },
+    {
+      "name": "还阳子",
+      "poemCount": 7
+    },
+    {
+      "name": "宋光嗣",
+      "poemCount": 7
+    },
+    {
+      "name": "后主衍",
+      "poemCount": 6
+    },
+    {
+      "name": "崔居俭、卢文纪",
+      "poemCount": 6
+    },
+    {
+      "name": "庾抱",
+      "poemCount": 6
+    },
+    {
+      "name": "任希古",
+      "poemCount": 6
+    },
+    {
+      "name": "殷遥",
+      "poemCount": 6
+    },
+    {
+      "name": "许稷",
+      "poemCount": 6
+    },
+    {
+      "name": "王鲁复",
+      "poemCount": 6
+    },
+    {
+      "name": "汤悦",
+      "poemCount": 6
+    },
+    {
+      "name": "卞震",
+      "poemCount": 6
+    },
+    {
+      "name": "慧净",
+      "poemCount": 6
+    },
+    {
+      "name": "可止",
+      "poemCount": 6
+    },
+    {
+      "name": "春台仙",
+      "poemCount": 6
+    },
+    {
+      "name": "蜀宫群仙",
+      "poemCount": 6
+    },
+    {
+      "name": "明月潭龙女",
+      "poemCount": 6
+    },
+    {
+      "name": "西施",
+      "poemCount": 6
+    },
+    {
+      "name": "张生妻",
+      "poemCount": 6
+    },
+    {
+      "name": "陶谷",
+      "poemCount": 6
+    },
+    {
+      "name": "何仙姑",
+      "poemCount": 6
+    },
+    {
+      "name": "昭宗皇帝",
+      "poemCount": 5
+    },
+    {
+      "name": "鲍氏君徽",
+      "poemCount": 5
+    },
+    {
+      "name": "乔备",
+      "poemCount": 5
+    },
+    {
+      "name": "张鼎",
+      "poemCount": 5
+    },
+    {
+      "name": "徐九臯",
+      "poemCount": 5
+    },
+    {
+      "name": "阎宽",
+      "poemCount": 5
+    },
+    {
+      "name": "楼颕",
+      "poemCount": 5
+    },
+    {
+      "name": "温宪",
+      "poemCount": 5
+    },
+    {
+      "name": "颜荛",
+      "poemCount": 5
+    },
+    {
+      "name": "张衮",
+      "poemCount": 5
+    },
+    {
+      "name": "徐锴",
+      "poemCount": 5
+    },
+    {
+      "name": "同谷子",
+      "poemCount": 5
+    },
+    {
+      "name": "云台峰五女仙",
+      "poemCount": 5
+    },
+    {
+      "name": "吴清妻",
+      "poemCount": 5
+    },
+    {
+      "name": "水府君",
+      "poemCount": 5
+    },
+    {
+      "name": "权龙褒",
+      "poemCount": 5
+    },
+    {
+      "name": "范质",
+      "poemCount": 5
+    },
+    {
+      "name": "王溥",
+      "poemCount": 5
+    },
+    {
+      "name": "钱惟治",
+      "poemCount": 5
+    },
+    {
+      "name": "慧超",
+      "poemCount": 5
+    },
+    {
+      "name": "李郃",
+      "poemCount": 5
+    },
+    {
+      "name": "法琳",
+      "poemCount": 5
+    },
+    {
+      "name": "玄奘",
+      "poemCount": 5
+    },
+    {
+      "name": "李存勗",
+      "poemCount": 5
+    },
+    {
+      "name": "岑真人",
+      "poemCount": 5
+    },
+    {
+      "name": "肃宗皇帝",
+      "poemCount": 4
+    },
+    {
+      "name": "吴越王钱镠",
+      "poemCount": 4
+    },
+    {
+      "name": "刘允济",
+      "poemCount": 4
+    },
+    {
+      "name": "赵彦伯",
+      "poemCount": 4
+    },
+    {
+      "name": "刘庭琦",
+      "poemCount": 4
+    },
+    {
+      "name": "崔子向",
+      "poemCount": 4
+    },
+    {
+      "name": "周元范",
+      "poemCount": 4
+    },
+    {
+      "name": "郑仁表",
+      "poemCount": 4
+    },
+    {
+      "name": "路德延",
+      "poemCount": 4
+    },
+    {
+      "name": "王感化",
+      "poemCount": 4
+    },
+    {
+      "name": "李家明",
+      "poemCount": 4
+    },
+    {
+      "name": "狄焕",
+      "poemCount": 4
+    },
+    {
+      "name": "符蒙",
+      "poemCount": 4
+    },
+    {
+      "name": "慧宣",
+      "poemCount": 4
+    },
+    {
+      "name": "澹交",
+      "poemCount": 4
+    },
+    {
+      "name": "沈廷瑞",
+      "poemCount": 4
+    },
+    {
+      "name": "曲龙山仙",
+      "poemCount": 4
+    },
+    {
+      "name": "张云容",
+      "poemCount": 4
+    },
+    {
+      "name": "织女",
+      "poemCount": 4
+    },
+    {
+      "name": "甘露寺鬼",
+      "poemCount": 4
+    },
+    {
+      "name": "唐晅妻张氏",
+      "poemCount": 4
+    },
+    {
+      "name": "陈宫妃嫔",
+      "poemCount": 4
+    },
+    {
+      "name": "宫嫔",
+      "poemCount": 4
+    },
+    {
+      "name": "金车美人",
+      "poemCount": 4
+    },
+    {
+      "name": "张元一",
+      "poemCount": 4
+    },
+    {
+      "name": "后唐庄宗",
+      "poemCount": 4
+    },
+    {
+      "name": "李德谷",
+      "poemCount": 4
+    },
+    {
+      "name": "钱弘倧",
+      "poemCount": 4
+    },
+    {
+      "name": "乔潭",
+      "poemCount": 4
+    },
+    {
+      "name": "慧忠",
+      "poemCount": 4
+    },
+    {
+      "name": "空海",
+      "poemCount": 4
+    },
+    {
+      "name": "宗密",
+      "poemCount": 4
+    },
+    {
+      "name": "延沼",
+      "poemCount": 4
+    },
+    {
+      "name": "用虚",
+      "poemCount": 4
+    },
+    {
+      "name": "惟劲",
+      "poemCount": 4
+    },
+    {
+      "name": "李玄光",
+      "poemCount": 4
+    },
+    {
+      "name": "法珍",
+      "poemCount": 4
+    },
+    {
+      "name": "嗣主璟",
+      "poemCount": 3
+    },
+    {
+      "name": "杜𬱟",
+      "poemCount": 3
+    },
+    {
+      "name": "杜正伦",
+      "poemCount": 3
+    },
+    {
+      "name": "崔善为",
+      "poemCount": 3
+    },
+    {
+      "name": "陈嘉言",
+      "poemCount": 3
+    },
+    {
+      "name": "宋务光",
+      "poemCount": 3
+    },
+    {
+      "name": "吴兢",
+      "poemCount": 3
+    },
+    {
+      "name": "蔡隐丘",
+      "poemCount": 3
+    },
+    {
+      "name": "张巡",
+      "poemCount": 3
+    },
+    {
+      "name": "赵征明",
+      "poemCount": 3
+    },
+    {
+      "name": "李子卿",
+      "poemCount": 3
+    },
+    {
+      "name": "席夔",
+      "poemCount": 3
+    },
+    {
+      "name": "湛贲",
+      "poemCount": 3
+    },
+    {
+      "name": "陈翥",
+      "poemCount": 3
+    },
+    {
+      "name": "吴武陵",
+      "poemCount": 3
+    },
+    {
+      "name": "常楚老",
+      "poemCount": 3
+    },
+    {
+      "name": "郑薰",
+      "poemCount": 3
+    },
+    {
+      "name": "顾在镕",
+      "poemCount": 3
+    },
+    {
+      "name": "捧劒仆",
+      "poemCount": 3
+    },
+    {
+      "name": "钟谟",
+      "poemCount": 3
+    },
+    {
+      "name": "张立",
+      "poemCount": 3
+    },
+    {
+      "name": "王继勋",
+      "poemCount": 3
+    },
+    {
+      "name": "杨达",
+      "poemCount": 3
+    },
+    {
+      "name": "欧阳彬",
+      "poemCount": 3
+    },
+    {
+      "name": "李舜弦",
+      "poemCount": 3
+    },
+    {
+      "name": "李节度姬",
+      "poemCount": 3
+    },
+    {
+      "name": "怀素",
+      "poemCount": 3
+    },
+    {
+      "name": "僧鸾",
+      "poemCount": 3
+    },
+    {
+      "name": "怀濬",
+      "poemCount": 3
+    },
+    {
+      "name": "若虚",
+      "poemCount": 3
+    },
+    {
+      "name": "栾清",
+      "poemCount": 3
+    },
+    {
+      "name": "洛川仙女",
+      "poemCount": 3
+    },
+    {
+      "name": "上元夫人",
+      "poemCount": 3
+    },
+    {
+      "name": "洞庭龙君",
+      "poemCount": 3
+    },
+    {
+      "name": "湘中蛟女",
+      "poemCount": 3
+    },
+    {
+      "name": "虎丘山石壁鬼",
+      "poemCount": 3
+    },
+    {
+      "name": "商山客死书生",
+      "poemCount": 3
+    },
+    {
+      "name": "夷陵女郎",
+      "poemCount": 3
+    },
+    {
+      "name": "甄后",
+      "poemCount": 3
+    },
+    {
+      "name": "韦检亡姬",
+      "poemCount": 3
+    },
+    {
+      "name": "萧颕士",
+      "poemCount": 3
+    },
+    {
+      "name": "清豁",
+      "poemCount": 3
+    },
+    {
+      "name": "南唐嗣主李璟",
+      "poemCount": 3
+    },
+    {
+      "name": "徐昌图",
+      "poemCount": 3
+    },
+    {
+      "name": "马吉甫",
+      "poemCount": 3
+    },
+    {
+      "name": "李揆",
+      "poemCount": 3
+    },
+    {
+      "name": "魏炎",
+      "poemCount": 3
+    },
+    {
+      "name": "无住",
+      "poemCount": 3
+    },
+    {
+      "name": "伏牛上人",
+      "poemCount": 3
+    },
+    {
+      "name": "李隲",
+      "poemCount": 3
+    },
+    {
+      "name": "小白",
+      "poemCount": 3
+    },
+    {
+      "name": "胡峤",
+      "poemCount": 3
+    },
+    {
+      "name": "钱元瓘",
+      "poemCount": 3
+    },
+    {
+      "name": "刘隐辞",
+      "poemCount": 3
+    },
+    {
+      "name": "曹菘",
+      "poemCount": 3
+    },
+    {
+      "name": "陆蟾",
+      "poemCount": 3
+    },
+    {
+      "name": "王师闵",
+      "poemCount": 3
+    },
+    {
+      "name": "李惟",
+      "poemCount": 3
+    },
+    {
+      "name": "开成时儒",
+      "poemCount": 3
+    },
+    {
+      "name": "僧润",
+      "poemCount": 3
+    },
+    {
+      "name": "翟奉达",
+      "poemCount": 3
+    },
+    {
+      "name": "道恒",
+      "poemCount": 3
+    },
+    {
+      "name": "王操",
+      "poemCount": 3
+    },
+    {
+      "name": "本先",
+      "poemCount": 3
+    },
+    {
+      "name": "钱昱",
+      "poemCount": 3
+    },
+    {
+      "name": "钱熙",
+      "poemCount": 3
+    },
+    {
+      "name": "陈用拙",
+      "poemCount": 3
+    },
+    {
+      "name": "冯友仁",
+      "poemCount": 3
+    },
+    {
+      "name": "刘氏云",
+      "poemCount": 2
+    },
+    {
+      "name": "梁氏琼",
+      "poemCount": 2
+    },
+    {
+      "name": "姚氏月华",
+      "poemCount": 2
+    },
+    {
+      "name": "刘氏媛",
+      "poemCount": 2
+    },
+    {
+      "name": "虞羽客",
+      "poemCount": 2
+    },
+    {
+      "name": "王训",
+      "poemCount": 2
+    },
+    {
+      "name": "朱子奢",
+      "poemCount": 2
+    },
+    {
+      "name": "郑惟忠",
+      "poemCount": 2
+    },
+    {
+      "name": "富嘉谟",
+      "poemCount": 2
+    },
+    {
+      "name": "张锡",
+      "poemCount": 2
+    },
+    {
+      "name": "解琬",
+      "poemCount": 2
+    },
+    {
+      "name": "王光庭",
+      "poemCount": 2
+    },
+    {
+      "name": "张翚",
+      "poemCount": 2
+    },
+    {
+      "name": "孙处玄",
+      "poemCount": 2
+    },
+    {
+      "name": "苏源明",
+      "poemCount": 2
+    },
+    {
+      "name": "衞象",
+      "poemCount": 2
+    },
+    {
+      "name": "郑概",
+      "poemCount": 2
+    },
+    {
+      "name": "张正元",
+      "poemCount": 2
+    },
+    {
+      "name": "张嗣初",
+      "poemCount": 2
+    },
+    {
+      "name": "武少仪",
+      "poemCount": 2
+    },
+    {
+      "name": "陈昌言",
+      "poemCount": 2
+    },
+    {
+      "name": "封敖",
+      "poemCount": 2
+    },
+    {
+      "name": "赵蕃",
+      "poemCount": 2
+    },
+    {
+      "name": "唐扶",
+      "poemCount": 2
+    },
+    {
+      "name": "侯冽",
+      "poemCount": 2
+    },
+    {
+      "name": "韦瓘",
+      "poemCount": 2
+    },
+    {
+      "name": "景审",
+      "poemCount": 2
+    },
+    {
+      "name": "蒯希逸",
+      "poemCount": 2
+    },
+    {
+      "name": "戈牢",
+      "poemCount": 2
+    },
+    {
+      "name": "周墀",
+      "poemCount": 2
+    },
+    {
+      "name": "沈颜",
+      "poemCount": 2
+    },
+    {
+      "name": "杜常",
+      "poemCount": 2
+    },
+    {
+      "name": "赵光逢",
+      "poemCount": 2
+    },
+    {
+      "name": "熊皦",
+      "poemCount": 2
+    },
+    {
+      "name": "高辇",
+      "poemCount": 2
+    },
+    {
+      "name": "刘洞",
+      "poemCount": 2
+    },
+    {
+      "name": "萧彧",
+      "poemCount": 2
+    },
+    {
+      "name": "钟蒨",
+      "poemCount": 2
+    },
+    {
+      "name": "乔舜",
+      "poemCount": 2
+    },
+    {
+      "name": "张格",
+      "poemCount": 2
+    },
+    {
+      "name": "韩昭",
+      "poemCount": 2
+    },
+    {
+      "name": "徐光溥",
+      "poemCount": 2
+    },
+    {
+      "name": "李宏臯",
+      "poemCount": 2
+    },
+    {
+      "name": "颜仁郁",
+      "poemCount": 2
+    },
+    {
+      "name": "唐怡",
+      "poemCount": 2
+    },
+    {
+      "name": "元凛",
+      "poemCount": 2
+    },
+    {
+      "name": "吴象之",
+      "poemCount": 2
+    },
+    {
+      "name": "任生",
+      "poemCount": 2
+    },
+    {
+      "name": "河北士人",
+      "poemCount": 2
+    },
+    {
+      "name": "洛中举子",
+      "poemCount": 2
+    },
+    {
+      "name": "陈德诚",
+      "poemCount": 2
+    },
+    {
+      "name": "皮光业",
+      "poemCount": 2
+    },
+    {
+      "name": "临川小吏",
+      "poemCount": 2
+    },
+    {
+      "name": "孟氏",
+      "poemCount": 2
+    },
+    {
+      "name": "鲍家四弦",
+      "poemCount": 2
+    },
+    {
+      "name": "张瑛",
+      "poemCount": 2
+    },
+    {
+      "name": "刘氏妇",
+      "poemCount": 2
+    },
+    {
+      "name": "越溪杨女",
+      "poemCount": 2
+    },
+    {
+      "name": "法宣",
+      "poemCount": 2
+    },
+    {
+      "name": "慧偘",
+      "poemCount": 2
+    },
+    {
+      "name": "无闷",
+      "poemCount": 2
+    },
+    {
+      "name": "吴子来",
+      "poemCount": 2
+    },
+    {
+      "name": "彭晓",
+      "poemCount": 2
+    },
+    {
+      "name": "酒肆布衣",
+      "poemCount": 2
+    },
+    {
+      "name": "芙蓉古丈夫、毛女",
+      "poemCount": 2
+    },
+    {
+      "name": "希道",
+      "poemCount": 2
+    },
+    {
+      "name": "紫微孙处士",
+      "poemCount": 2
+    },
+    {
+      "name": "方壶居士",
+      "poemCount": 2
+    },
+    {
+      "name": "慈恩塔院女仙",
+      "poemCount": 2
+    },
+    {
+      "name": "毛女正美",
+      "poemCount": 2
+    },
+    {
+      "name": "王仙仙",
+      "poemCount": 2
+    },
+    {
+      "name": "辅国将军",
+      "poemCount": 2
+    },
+    {
+      "name": "广利王女",
+      "poemCount": 2
+    },
+    {
+      "name": "商山三丈夫",
+      "poemCount": 2
+    },
+    {
+      "name": "富春沙际鬼",
+      "poemCount": 2
+    },
+    {
+      "name": "崇圣寺鬼",
+      "poemCount": 2
+    },
+    {
+      "name": "孟蜀妃张太华",
+      "poemCount": 2
+    },
+    {
+      "name": "苏检妻",
+      "poemCount": 2
+    },
+    {
+      "name": "故台城妓",
+      "poemCount": 2
+    },
+    {
+      "name": "卢绛",
+      "poemCount": 2
+    },
+    {
+      "name": "病狂人",
+      "poemCount": 2
+    },
+    {
+      "name": "刘乙",
+      "poemCount": 2
+    },
+    {
+      "name": "路应",
+      "poemCount": 2
+    },
+    {
+      "name": "闽后陈氏",
+      "poemCount": 2
+    },
+    {
+      "name": "庄翱",
+      "poemCount": 2
+    },
+    {
+      "name": "斐公衍",
+      "poemCount": 2
+    },
+    {
+      "name": "路半千",
+      "poemCount": 2
+    },
+    {
+      "name": "刘希移",
+      "poemCount": 2
+    },
+    {
+      "name": "刘延坚",
+      "poemCount": 2
+    },
+    {
+      "name": "宋家娘子",
+      "poemCount": 2
+    },
+    {
+      "name": "赵不为",
+      "poemCount": 2
+    },
+    {
+      "name": "王英",
+      "poemCount": 2
+    },
+    {
+      "name": "李贻孙",
+      "poemCount": 2
+    },
+    {
+      "name": "张濬",
+      "poemCount": 2
+    },
+    {
+      "name": "刘蜕",
+      "poemCount": 2
+    },
+    {
+      "name": "玄览",
+      "poemCount": 2
+    },
+    {
+      "name": "裴通",
+      "poemCount": 2
+    },
+    {
+      "name": "童汉卿",
+      "poemCount": 2
+    },
+    {
+      "name": "陶晟",
+      "poemCount": 2
+    },
+    {
+      "name": "黄冠道人",
+      "poemCount": 2
+    },
+    {
+      "name": "徐知证",
+      "poemCount": 2
+    },
+    {
+      "name": "卢郢",
+      "poemCount": 2
+    },
+    {
+      "name": "钱弘佐",
+      "poemCount": 2
+    },
+    {
+      "name": "范禹偁",
+      "poemCount": 2
+    },
+    {
+      "name": "李如实",
+      "poemCount": 2
+    },
+    {
+      "name": "令狐峤",
+      "poemCount": 2
+    },
+    {
+      "name": "慧棱",
+      "poemCount": 2
+    },
+    {
+      "name": "马希振",
+      "poemCount": 2
+    },
+    {
+      "name": "孟嘏",
+      "poemCount": 2
+    },
+    {
+      "name": "德圆",
+      "poemCount": 2
+    },
+    {
+      "name": "蜀宫人",
+      "poemCount": 2
+    },
+    {
+      "name": "刘子翼",
+      "poemCount": 2
+    },
+    {
+      "name": "王拊",
+      "poemCount": 2
+    },
+    {
+      "name": "智藏",
+      "poemCount": 2
+    },
+    {
+      "name": "江油令",
+      "poemCount": 2
+    },
+    {
+      "name": "辨正",
+      "poemCount": 2
+    },
+    {
+      "name": "张嵩",
+      "poemCount": 2
+    },
+    {
+      "name": "杨□",
+      "poemCount": 2
+    },
+    {
+      "name": "崔希逸",
+      "poemCount": 2
+    },
+    {
+      "name": "吕令问",
+      "poemCount": 2
+    },
+    {
+      "name": "哥舒翰",
+      "poemCount": 2
+    },
+    {
+      "name": "张怀瓘",
+      "poemCount": 2
+    },
+    {
+      "name": "李臯",
+      "poemCount": 2
+    },
+    {
+      "name": "林蕴",
+      "poemCount": 2
+    },
+    {
+      "name": "钱徽",
+      "poemCount": 2
+    },
+    {
+      "name": "谢观",
+      "poemCount": 2
+    },
+    {
+      "name": "普化和尚",
+      "poemCount": 2
+    },
+    {
+      "name": "裴坦",
+      "poemCount": 2
+    },
+    {
+      "name": "卢道者",
+      "poemCount": 2
+    },
+    {
+      "name": "赵匡胤",
+      "poemCount": 2
+    },
+    {
+      "name": "魏丕",
+      "poemCount": 2
+    },
+    {
+      "name": "匡白",
+      "poemCount": 2
+    },
+    {
+      "name": "李昪",
+      "poemCount": 2
+    },
+    {
+      "name": "冯延鲁",
+      "poemCount": 2
+    },
+    {
+      "name": "梅远",
+      "poemCount": 2
+    },
+    {
+      "name": "张洎",
+      "poemCount": 2
+    },
+    {
+      "name": "钱俶",
+      "poemCount": 2
+    },
+    {
+      "name": "郑元弼",
+      "poemCount": 2
+    },
+    {
+      "name": "张连",
+      "poemCount": 2
+    },
+    {
+      "name": "王衍",
+      "poemCount": 2
+    },
+    {
+      "name": "花蘂夫人",
+      "poemCount": 2
+    },
+    {
+      "name": "何蠲",
+      "poemCount": 2
+    },
+    {
+      "name": "周如锡",
+      "poemCount": 2
+    },
+    {
+      "name": "冯友义",
+      "poemCount": 2
+    },
+    {
+      "name": "杨真人",
+      "poemCount": 2
+    },
+    {
+      "name": "睿宗皇帝",
+      "poemCount": 1
+    },
+    {
+      "name": "文德皇后",
+      "poemCount": 1
+    },
+    {
+      "name": "韩王元嘉",
+      "poemCount": 1
+    },
+    {
+      "name": "越王贞",
+      "poemCount": 1
+    },
+    {
+      "name": "信安王祎",
+      "poemCount": 1
+    },
+    {
+      "name": "女学士宋氏若华",
+      "poemCount": 1
+    },
+    {
+      "name": "尚宫宋氏若昭",
+      "poemCount": 1
+    },
+    {
+      "name": "尚宫宋氏若宪",
+      "poemCount": 1
+    },
+    {
+      "name": "南唐先主李昪",
+      "poemCount": 1
+    },
+    {
+      "name": "韩王从善",
+      "poemCount": 1
+    },
+    {
+      "name": "吉王从谦",
+      "poemCount": 1
+    },
+    {
+      "name": "蜀高祖王建",
+      "poemCount": 1
+    },
+    {
+      "name": "后王钱俶",
+      "poemCount": 1
+    },
+    {
+      "name": "后蜀嗣主孟昶",
+      "poemCount": 1
+    },
+    {
+      "name": "闽王王继鹏",
+      "poemCount": 1
+    },
+    {
+      "name": "林钟宫",
+      "poemCount": 1
+    },
+    {
+      "name": "裴璀",
+      "poemCount": 1
+    },
+    {
+      "name": "丘说",
+      "poemCount": 1
+    },
+    {
+      "name": "张齐贤",
+      "poemCount": 1
+    },
+    {
+      "name": "窦威",
+      "poemCount": 1
+    },
+    {
+      "name": "刘济",
+      "poemCount": 1
+    },
+    {
+      "name": "纪唐天",
+      "poemCount": 1
+    },
+    {
+      "name": "陈昭",
+      "poemCount": 1
+    },
+    {
+      "name": "张氏琰",
+      "poemCount": 1
+    },
+    {
+      "name": "程氏长文",
+      "poemCount": 1
+    },
+    {
+      "name": "僧子兰",
+      "poemCount": 1
+    },
+    {
+      "name": "张汯",
+      "poemCount": 1
+    },
+    {
+      "name": "刘元济",
+      "poemCount": 1
+    },
+    {
+      "name": "刘元淑",
+      "poemCount": 1
+    },
+    {
+      "name": "刘氏瑶",
+      "poemCount": 1
+    },
+    {
+      "name": "杨敬述进",
+      "poemCount": 1
+    },
+    {
+      "name": "吉中孚妻张氏",
+      "poemCount": 1
+    },
+    {
+      "name": "颜师古",
+      "poemCount": 1
+    },
+    {
+      "name": "萧德言",
+      "poemCount": 1
+    },
+    {
+      "name": "朱仲晦",
+      "poemCount": 1
+    },
+    {
+      "name": "狄仁杰",
+      "poemCount": 1
+    },
+    {
+      "name": "田游岩",
+      "poemCount": 1
+    },
+    {
+      "name": "邵升",
+      "poemCount": 1
+    },
+    {
+      "name": "杨敬述",
+      "poemCount": 1
+    },
+    {
+      "name": "乔侃",
+      "poemCount": 1
+    },
+    {
+      "name": "丘悦",
+      "poemCount": 1
+    },
+    {
+      "name": "司马逸客",
+      "poemCount": 1
+    },
+    {
+      "name": "吕太一",
+      "poemCount": 1
+    },
+    {
+      "name": "郑蜀宾",
+      "poemCount": 1
+    },
+    {
+      "name": "曲瞻",
+      "poemCount": 1
+    },
+    {
+      "name": "程行谌",
+      "poemCount": 1
+    },
+    {
+      "name": "褚秀",
+      "poemCount": 1
+    },
+    {
+      "name": "崔颂",
+      "poemCount": 1
+    },
+    {
+      "name": "孙翃",
+      "poemCount": 1
+    },
+    {
+      "name": "康庭芝",
+      "poemCount": 1
+    },
+    {
+      "name": "厍狄履温",
+      "poemCount": 1
+    },
+    {
+      "name": "李元操",
+      "poemCount": 1
+    },
+    {
+      "name": "庾光先",
+      "poemCount": 1
+    },
+    {
+      "name": "房白",
+      "poemCount": 1
+    },
+    {
+      "name": "贾躭",
+      "poemCount": 1
+    },
+    {
+      "name": "陈孙",
+      "poemCount": 1
+    },
+    {
+      "name": "吕牧",
+      "poemCount": 1
+    },
+    {
+      "name": "沈回",
+      "poemCount": 1
+    },
+    {
+      "name": "李夷简",
+      "poemCount": 1
+    },
+    {
+      "name": "何频瑜",
+      "poemCount": 1
+    },
+    {
+      "name": "车𬘔",
+      "poemCount": 1
+    },
+    {
+      "name": "韦纾",
+      "poemCount": 1
+    },
+    {
+      "name": "豆卢荣",
+      "poemCount": 1
+    },
+    {
+      "name": "邵偃",
+      "poemCount": 1
+    },
+    {
+      "name": "陈九流",
+      "poemCount": 1
+    },
+    {
+      "name": "夏方庆",
+      "poemCount": 1
+    },
+    {
+      "name": "陈师穆",
+      "poemCount": 1
+    },
+    {
+      "name": "高弁",
+      "poemCount": 1
+    },
+    {
+      "name": "张彤",
+      "poemCount": 1
+    },
+    {
+      "name": "万彤云",
+      "poemCount": 1
+    },
+    {
+      "name": "王损之",
+      "poemCount": 1
+    },
+    {
+      "name": "邵楚苌",
+      "poemCount": 1
+    },
+    {
+      "name": "郑俞",
+      "poemCount": 1
+    },
+    {
+      "name": "王鉴",
+      "poemCount": 1
+    },
+    {
+      "name": "胡直钧",
+      "poemCount": 1
+    },
+    {
+      "name": "俞简",
+      "poemCount": 1
+    },
+    {
+      "name": "李君何",
+      "poemCount": 1
+    },
+    {
+      "name": "曹著",
+      "poemCount": 1
+    },
+    {
+      "name": "裴澄",
+      "poemCount": 1
+    },
+    {
+      "name": "徐希仁",
+      "poemCount": 1
+    },
+    {
+      "name": "浩虚舟",
+      "poemCount": 1
+    },
+    {
+      "name": "陶雍",
+      "poemCount": 1
+    },
+    {
+      "name": "廖有方",
+      "poemCount": 1
+    },
+    {
+      "name": "纪元臯",
+      "poemCount": 1
+    },
+    {
+      "name": "吴晃",
+      "poemCount": 1
+    },
+    {
+      "name": "孔温业",
+      "poemCount": 1
+    },
+    {
+      "name": "长孙翱",
+      "poemCount": 1
+    },
+    {
+      "name": "王彦威",
+      "poemCount": 1
+    },
+    {
+      "name": "李章武",
+      "poemCount": 1
+    },
+    {
+      "name": "刘臯",
+      "poemCount": 1
+    },
+    {
+      "name": "李汶濡",
+      "poemCount": 1
+    },
+    {
+      "name": "牛征",
+      "poemCount": 1
+    },
+    {
+      "name": "羊昭业",
+      "poemCount": 1
+    },
+    {
+      "name": "郑合",
+      "poemCount": 1
+    },
+    {
+      "name": "裴皞",
+      "poemCount": 1
+    },
+    {
+      "name": "薛凖",
+      "poemCount": 1
+    },
+    {
+      "name": "张逈",
+      "poemCount": 1
+    },
+    {
+      "name": "荆浩",
+      "poemCount": 1
+    },
+    {
+      "name": "南诏骠信",
+      "poemCount": 1
+    },
+    {
+      "name": "朝衡",
+      "poemCount": 1
+    },
+    {
+      "name": "长屋",
+      "poemCount": 1
+    },
+    {
+      "name": "李赞华",
+      "poemCount": 1
+    },
+    {
+      "name": "郑颋",
+      "poemCount": 1
+    },
+    {
+      "name": "邓洵美",
+      "poemCount": 1
+    },
+    {
+      "name": "王易简",
+      "poemCount": 1
+    },
+    {
+      "name": "卢文纪",
+      "poemCount": 1
+    },
+    {
+      "name": "崔居俭",
+      "poemCount": 1
+    },
+    {
+      "name": "赵延寿",
+      "poemCount": 1
+    },
+    {
+      "name": "韩昭裔",
+      "poemCount": 1
+    },
+    {
+      "name": "张仁溥",
+      "poemCount": 1
+    },
+    {
+      "name": "杨昭俭",
+      "poemCount": 1
+    },
+    {
+      "name": "刘坦",
+      "poemCount": 1
+    },
+    {
+      "name": "李征古",
+      "poemCount": 1
+    },
+    {
+      "name": "马致恭",
+      "poemCount": 1
+    },
+    {
+      "name": "高越",
+      "poemCount": 1
+    },
+    {
+      "name": "包颕",
+      "poemCount": 1
+    },
+    {
+      "name": "查文徽",
+      "poemCount": 1
+    },
+    {
+      "name": "马彧",
+      "poemCount": 1
+    },
+    {
+      "name": "何昌龄",
+      "poemCount": 1
+    },
+    {
+      "name": "孙岘",
+      "poemCount": 1
+    },
+    {
+      "name": "谢仲宣",
+      "poemCount": 1
+    },
+    {
+      "name": "周庠",
+      "poemCount": 1
+    },
+    {
+      "name": "王锴",
+      "poemCount": 1
+    },
+    {
+      "name": "李浩弼",
+      "poemCount": 1
+    },
+    {
+      "name": "杨鼎夫",
+      "poemCount": 1
+    },
+    {
+      "name": "刘羲叟",
+      "poemCount": 1
+    },
+    {
+      "name": "张观",
+      "poemCount": 1
+    },
+    {
+      "name": "路洵美",
+      "poemCount": 1
+    },
+    {
+      "name": "杜建徽",
+      "poemCount": 1
+    },
+    {
+      "name": "沈韬文",
+      "poemCount": 1
+    },
+    {
+      "name": "何象",
+      "poemCount": 1
+    },
+    {
+      "name": "曾麻几",
+      "poemCount": 1
+    },
+    {
+      "name": "杨齐哲",
+      "poemCount": 1
+    },
+    {
+      "name": "刘夷道",
+      "poemCount": 1
+    },
+    {
+      "name": "颜舒",
+      "poemCount": 1
+    },
+    {
+      "name": "何赞",
+      "poemCount": 1
+    },
+    {
+      "name": "安鸿渐",
+      "poemCount": 1
+    },
+    {
+      "name": "李延陵",
+      "poemCount": 1
+    },
+    {
+      "name": "冯少吉",
+      "poemCount": 1
+    },
+    {
+      "name": "殷陶",
+      "poemCount": 1
+    },
+    {
+      "name": "韩雄",
+      "poemCount": 1
+    },
+    {
+      "name": "苗仲方",
+      "poemCount": 1
+    },
+    {
+      "name": "陈政",
+      "poemCount": 1
+    },
+    {
+      "name": "殷益",
+      "poemCount": 1
+    },
+    {
+      "name": "王邵",
+      "poemCount": 1
+    },
+    {
+      "name": "严郭",
+      "poemCount": 1
+    },
+    {
+      "name": "李伦",
+      "poemCount": 1
+    },
+    {
+      "name": "卢子发",
+      "poemCount": 1
+    },
+    {
+      "name": "王梦周",
+      "poemCount": 1
+    },
+    {
+      "name": "韦道逊",
+      "poemCount": 1
+    },
+    {
+      "name": "王揆",
+      "poemCount": 1
+    },
+    {
+      "name": "王言史",
+      "poemCount": 1
+    },
+    {
+      "name": "戴休珽",
+      "poemCount": 1
+    },
+    {
+      "name": "唐温如",
+      "poemCount": 1
+    },
+    {
+      "name": "麻温其",
+      "poemCount": 1
+    },
+    {
+      "name": "徐之才",
+      "poemCount": 1
+    },
+    {
+      "name": "刘元叔",
+      "poemCount": 1
+    },
+    {
+      "name": "冯待征",
+      "poemCount": 1
+    },
+    {
+      "name": "吴大江",
+      "poemCount": 1
+    },
+    {
+      "name": "方泽",
+      "poemCount": 1
+    },
+    {
+      "name": "徐介",
+      "poemCount": 1
+    },
+    {
+      "name": "吴英秀",
+      "poemCount": 1
+    },
+    {
+      "name": "颜胄",
+      "poemCount": 1
+    },
+    {
+      "name": "张敬徽",
+      "poemCount": 1
+    },
+    {
+      "name": "郭汭",
+      "poemCount": 1
+    },
+    {
+      "name": "贾宗",
+      "poemCount": 1
+    },
+    {
+      "name": "令狐挺",
+      "poemCount": 1
+    },
+    {
+      "name": "成㟧",
+      "poemCount": 1
+    },
+    {
+      "name": "丁居晦",
+      "poemCount": 1
+    },
+    {
+      "name": "徐元鼎",
+      "poemCount": 1
+    },
+    {
+      "name": "刘公兴",
+      "poemCount": 1
+    },
+    {
+      "name": "王若嵒",
+      "poemCount": 1
+    },
+    {
+      "name": "梁补阙",
+      "poemCount": 1
+    },
+    {
+      "name": "吴公",
+      "poemCount": 1
+    },
+    {
+      "name": "缪氏子",
+      "poemCount": 1
+    },
+    {
+      "name": "京兆韦氏子",
+      "poemCount": 1
+    },
+    {
+      "name": "景龙文馆学士",
+      "poemCount": 1
+    },
+    {
+      "name": "天宝时人",
+      "poemCount": 1
+    },
+    {
+      "name": "僖宗朝北省官",
+      "poemCount": 1
+    },
+    {
+      "name": "洪州将军",
+      "poemCount": 1
+    },
+    {
+      "name": "贞元文士",
+      "poemCount": 1
+    },
+    {
+      "name": "元和举子",
+      "poemCount": 1
+    },
+    {
+      "name": "懿宗朝举子",
+      "poemCount": 1
+    },
+    {
+      "name": "白衫举子",
+      "poemCount": 1
+    },
+    {
+      "name": "唐末朝士",
+      "poemCount": 1
+    },
+    {
+      "name": "太上隐君",
+      "poemCount": 1
+    },
+    {
+      "name": "黄山隐",
+      "poemCount": 1
+    },
+    {
+      "name": "婺州山中人",
+      "poemCount": 1
+    },
+    {
+      "name": "崔公佐客",
+      "poemCount": 1
+    },
+    {
+      "name": "江陵士子",
+      "poemCount": 1
+    },
+    {
+      "name": "吏部选人",
+      "poemCount": 1
+    },
+    {
+      "name": "建业卜者",
+      "poemCount": 1
+    },
+    {
+      "name": "天峤游人",
+      "poemCount": 1
+    },
+    {
+      "name": "骊山游人",
+      "poemCount": 1
+    },
+    {
+      "name": "衡州舟子",
+      "poemCount": 1
+    },
+    {
+      "name": "华山老人",
+      "poemCount": 1
+    },
+    {
+      "name": "终南山翁",
+      "poemCount": 1
+    },
+    {
+      "name": "安守范",
+      "poemCount": 1
+    },
+    {
+      "name": "郭廷谓",
+      "poemCount": 1
+    },
+    {
+      "name": "苐五琦",
+      "poemCount": 1
+    },
+    {
+      "name": "卢幷",
+      "poemCount": 1
+    },
+    {
+      "name": "王枳",
+      "poemCount": 1
+    },
+    {
+      "name": "李景遂",
+      "poemCount": 1
+    },
+    {
+      "name": "李弘茂",
+      "poemCount": 1
+    },
+    {
+      "name": "胡元龟",
+      "poemCount": 1
+    },
+    {
+      "name": "史虚白",
+      "poemCount": 1
+    },
+    {
+      "name": "朱勰",
+      "poemCount": 1
+    },
+    {
+      "name": "齐镐",
+      "poemCount": 1
+    },
+    {
+      "name": "庸仁杰",
+      "poemCount": 1
+    },
+    {
+      "name": "元德昭",
+      "poemCount": 1
+    },
+    {
+      "name": "王廷珪",
+      "poemCount": 1
+    },
+    {
+      "name": "石文德",
+      "poemCount": 1
+    },
+    {
+      "name": "钟元章",
+      "poemCount": 1
+    },
+    {
+      "name": "郭思",
+      "poemCount": 1
+    },
+    {
+      "name": "贺公",
+      "poemCount": 1
+    },
+    {
+      "name": "崔李二生",
+      "poemCount": 1
+    },
+    {
+      "name": "韩熙载客",
+      "poemCount": 1
+    },
+    {
+      "name": "武后宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "开元宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "德宗宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "宣宗宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "僖宗宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "金真德",
+      "poemCount": 1
+    },
+    {
+      "name": "宝历宫人",
+      "poemCount": 1
+    },
+    {
+      "name": "乔氏",
+      "poemCount": 1
+    },
+    {
+      "name": "林氏",
+      "poemCount": 1
+    },
+    {
+      "name": "王氏",
+      "poemCount": 1
+    },
+    {
+      "name": "张立本女",
+      "poemCount": 1
+    },
+    {
+      "name": "侯氏",
+      "poemCount": 1
+    },
+    {
+      "name": "慎氏",
+      "poemCount": 1
+    },
+    {
+      "name": "任氏",
+      "poemCount": 1
+    },
+    {
+      "name": "周仲美",
+      "poemCount": 1
+    },
+    {
+      "name": "红绡妓",
+      "poemCount": 1
+    },
+    {
+      "name": "严续姬",
+      "poemCount": 1
+    },
+    {
+      "name": "长孙佐转妻",
+      "poemCount": 1
+    },
+    {
+      "name": "刘元载妻",
+      "poemCount": 1
+    },
+    {
+      "name": "李主簿姬",
+      "poemCount": 1
+    },
+    {
+      "name": "湘驿女子",
+      "poemCount": 1
+    },
+    {
+      "name": "谁氏女",
+      "poemCount": 1
+    },
+    {
+      "name": "光\t威\t裒",
+      "poemCount": 1
+    },
+    {
+      "name": "太原妓",
+      "poemCount": 1
+    },
+    {
+      "name": "莲花妓",
+      "poemCount": 1
+    },
+    {
+      "name": "韩襄客",
+      "poemCount": 1
+    },
+    {
+      "name": "道恭",
+      "poemCount": 1
+    },
+    {
+      "name": "道会",
+      "poemCount": 1
+    },
+    {
+      "name": "中寤",
+      "poemCount": 1
+    },
+    {
+      "name": "宝月",
+      "poemCount": 1
+    },
+    {
+      "name": "含曦",
+      "poemCount": 1
+    },
+    {
+      "name": "恒超",
+      "poemCount": 1
+    },
+    {
+      "name": "元寂",
+      "poemCount": 1
+    },
+    {
+      "name": "谦光",
+      "poemCount": 1
+    },
+    {
+      "name": "智远",
+      "poemCount": 1
+    },
+    {
+      "name": "尚志",
+      "poemCount": 1
+    },
+    {
+      "name": "玄宝",
+      "poemCount": 1
+    },
+    {
+      "name": "释彪",
+      "poemCount": 1
+    },
+    {
+      "name": "法轮",
+      "poemCount": 1
+    },
+    {
+      "name": "常雅",
+      "poemCount": 1
+    },
+    {
+      "name": "唐末僧",
+      "poemCount": 1
+    },
+    {
+      "name": "尔鸟",
+      "poemCount": 1
+    },
+    {
+      "name": "荆州僧",
+      "poemCount": 1
+    },
+    {
+      "name": "申欢",
+      "poemCount": 1
+    },
+    {
+      "name": "吴涵虚",
+      "poemCount": 1
+    },
+    {
+      "name": "赵自然",
+      "poemCount": 1
+    },
+    {
+      "name": "蓝采和",
+      "poemCount": 1
+    },
+    {
+      "name": "清远道士",
+      "poemCount": 1
+    },
+    {
+      "name": "隐者",
+      "poemCount": 1
+    },
+    {
+      "name": "广陵道士",
+      "poemCount": 1
+    },
+    {
+      "name": "黄冠野夫",
+      "poemCount": 1
+    },
+    {
+      "name": "蜀中酒阁道人",
+      "poemCount": 1
+    },
+    {
+      "name": "章江书生",
+      "poemCount": 1
+    },
+    {
+      "name": "萼岭书生",
+      "poemCount": 1
+    },
+    {
+      "name": "成都醉道士",
+      "poemCount": 1
+    },
+    {
+      "name": "樵夫",
+      "poemCount": 1
+    },
+    {
+      "name": "李公佐仆",
+      "poemCount": 1
+    },
+    {
+      "name": "木客",
+      "poemCount": 1
+    },
+    {
+      "name": "青城丈人",
+      "poemCount": 1
+    },
+    {
+      "name": "太乙真君",
+      "poemCount": 1
+    },
+    {
+      "name": "太白山玄士",
+      "poemCount": 1
+    },
+    {
+      "name": "邻道场人",
+      "poemCount": 1
+    },
+    {
+      "name": "南溟夫人",
+      "poemCount": 1
+    },
+    {
+      "name": "青童",
+      "poemCount": 1
+    },
+    {
+      "name": "观梅女仙",
+      "poemCount": 1
+    },
+    {
+      "name": "桃花夫人",
+      "poemCount": 1
+    },
+    {
+      "name": "妙女",
+      "poemCount": 1
+    },
+    {
+      "name": "龙护老人",
+      "poemCount": 1
+    },
+    {
+      "name": "冥吏",
+      "poemCount": 1
+    },
+    {
+      "name": "太白山神",
+      "poemCount": 1
+    },
+    {
+      "name": "瀵水神",
+      "poemCount": 1
+    },
+    {
+      "name": "龙女",
+      "poemCount": 1
+    },
+    {
+      "name": "黄陵美人",
+      "poemCount": 1
+    },
+    {
+      "name": "吴兴神女",
+      "poemCount": 1
+    },
+    {
+      "name": "慕容垂",
+      "poemCount": 1
+    },
+    {
+      "name": "释明解",
+      "poemCount": 1
+    },
+    {
+      "name": "巴峡鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "河湄鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "介胄鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "书生",
+      "poemCount": 1
+    },
+    {
+      "name": "尉佗",
+      "poemCount": 1
+    },
+    {
+      "name": "刘溉",
+      "poemCount": 1
+    },
+    {
+      "name": "郑琼罗",
+      "poemCount": 1
+    },
+    {
+      "name": "襄阳旅殡举人",
+      "poemCount": 1
+    },
+    {
+      "name": "河中鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "石恪",
+      "poemCount": 1
+    },
+    {
+      "name": "赵𤰳",
+      "poemCount": 1
+    },
+    {
+      "name": "九华山白衣",
+      "poemCount": 1
+    },
+    {
+      "name": "田达诚借宅鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "长安中鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "隔窗鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "巴陵馆鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "冢中人",
+      "poemCount": 1
+    },
+    {
+      "name": "任彦思家鬼",
+      "poemCount": 1
+    },
+    {
+      "name": "峡中白衣",
+      "poemCount": 1
+    },
+    {
+      "name": "朱均",
+      "poemCount": 1
+    },
+    {
+      "name": "客户里女子",
+      "poemCount": 1
+    },
+    {
+      "name": "湘中女子",
+      "poemCount": 1
+    },
+    {
+      "name": "安邑坊女",
+      "poemCount": 1
+    },
+    {
+      "name": "魏朋妻",
+      "poemCount": 1
+    },
+    {
+      "name": "刘氏亡妇",
+      "poemCount": 1
+    },
+    {
+      "name": "肃宗",
+      "poemCount": 1
+    },
+    {
+      "name": "代宗",
+      "poemCount": 1
+    },
+    {
+      "name": "郭仁表",
+      "poemCount": 1
+    },
+    {
+      "name": "漳郡守",
+      "poemCount": 1
+    },
+    {
+      "name": "独孤遐叔妻白氏",
+      "poemCount": 1
+    },
+    {
+      "name": "张氏女",
+      "poemCount": 1
+    },
+    {
+      "name": "周延翰",
+      "poemCount": 1
+    },
+    {
+      "name": "任玠",
+      "poemCount": 1
+    },
+    {
+      "name": "胥偃",
+      "poemCount": 1
+    },
+    {
+      "name": "曾崇范妻",
+      "poemCount": 1
+    },
+    {
+      "name": "高祖",
+      "poemCount": 1
+    },
+    {
+      "name": "睿宗",
+      "poemCount": 1
+    },
+    {
+      "name": "省吏",
+      "poemCount": 1
+    },
+    {
+      "name": "选人",
+      "poemCount": 1
+    },
+    {
+      "name": "石抱忠",
+      "poemCount": 1
+    },
+    {
+      "name": "中宗朝优人",
+      "poemCount": 1
+    },
+    {
+      "name": "吴人",
+      "poemCount": 1
+    },
+    {
+      "name": "曲崇裕",
+      "poemCount": 1
+    },
+    {
+      "name": "邵景",
+      "poemCount": 1
+    },
+    {
+      "name": "冯道幕客",
+      "poemCount": 1
+    },
+    {
+      "name": "冯晖",
+      "poemCount": 1
+    },
+    {
+      "name": "太守",
+      "poemCount": 1
+    },
+    {
+      "name": "归氏子",
+      "poemCount": 1
+    },
+    {
+      "name": "座客",
+      "poemCount": 1
+    },
+    {
+      "name": "苏芸",
+      "poemCount": 1
+    },
+    {
+      "name": "何承裕",
+      "poemCount": 1
+    },
+    {
+      "name": "僧法轨",
+      "poemCount": 1
+    },
+    {
+      "name": "伶人",
+      "poemCount": 1
+    },
+    {
+      "name": "张翱",
+      "poemCount": 1
+    },
+    {
+      "name": "卢照隣",
+      "poemCount": 1
+    },
+    {
+      "name": "张绍",
+      "poemCount": 1
+    },
+    {
+      "name": "郑露",
+      "poemCount": 1
+    },
+    {
+      "name": "李敻",
+      "poemCount": 1
+    },
+    {
+      "name": "钱信",
+      "poemCount": 1
+    },
+    {
+      "name": "崔耿",
+      "poemCount": 1
+    },
+    {
+      "name": "扈载",
+      "poemCount": 1
+    },
+    {
+      "name": "薛光谦",
+      "poemCount": 1
+    },
+    {
+      "name": "马令",
+      "poemCount": 1
+    },
+    {
+      "name": "蜀主王衍",
+      "poemCount": 1
+    },
+    {
+      "name": "后蜀主孟昶",
+      "poemCount": 1
+    },
+    {
+      "name": "庾传素",
+      "poemCount": 1
+    },
+    {
+      "name": "刘侍读",
+      "poemCount": 1
+    },
+    {
+      "name": "王丽真女郎",
+      "poemCount": 1
+    },
+    {
+      "name": "惠文太子",
+      "poemCount": 1
+    },
+    {
+      "name": "马总",
+      "poemCount": 1
+    },
+    {
+      "name": "陈闰",
+      "poemCount": 1
+    },
+    {
+      "name": "金可纪",
+      "poemCount": 1
+    },
+    {
+      "name": "张野人",
+      "poemCount": 1
+    },
+    {
+      "name": "虞搆",
+      "poemCount": 1
+    },
+    {
+      "name": "顾効古",
+      "poemCount": 1
+    },
+    {
+      "name": "张牙",
+      "poemCount": 1
+    },
+    {
+      "name": "郢展",
+      "poemCount": 1
+    },
+    {
+      "name": "汉皓",
+      "poemCount": 1
+    },
+    {
+      "name": "道彦",
+      "poemCount": 1
+    },
+    {
+      "name": "冀金",
+      "poemCount": 1
+    },
+    {
+      "name": "子泰",
+      "poemCount": 1
+    },
+    {
+      "name": "绍伯",
+      "poemCount": 1
+    },
+    {
+      "name": "陆侍御",
+      "poemCount": 1
+    },
+    {
+      "name": "卢秀才",
+      "poemCount": 1
+    },
+    {
+      "name": "真元",
+      "poemCount": 1
+    },
+    {
+      "name": "良人",
+      "poemCount": 1
+    },
+    {
+      "name": "奉蚌",
+      "poemCount": 1
+    },
+    {
+      "name": "香儿",
+      "poemCount": 1
+    },
+    {
+      "name": "杨齐悊",
+      "poemCount": 1
+    },
+    {
+      "name": "房旭",
+      "poemCount": 1
+    },
+    {
+      "name": "□嘉惠",
+      "poemCount": 1
+    },
+    {
+      "name": "沙门日进",
+      "poemCount": 1
+    },
+    {
+      "name": "王重民",
+      "poemCount": 1
+    },
+    {
+      "name": "孙望辑录",
+      "poemCount": 1
+    },
+    {
+      "name": "贾言淑",
+      "poemCount": 1
+    },
+    {
+      "name": "李鹏",
+      "poemCount": 1
+    },
+    {
+      "name": "马友鹿",
+      "poemCount": 1
+    },
+    {
+      "name": "崔文邕",
+      "poemCount": 1
+    },
+    {
+      "name": "吉逾",
+      "poemCount": 1
+    },
+    {
+      "name": "于季友",
+      "poemCount": 1
+    },
+    {
+      "name": "魏深",
+      "poemCount": 1
+    },
+    {
+      "name": "李𧏖",
+      "poemCount": 1
+    },
+    {
+      "name": "杨氏",
+      "poemCount": 1
+    },
+    {
+      "name": "李夷邺",
+      "poemCount": 1
+    },
+    {
+      "name": "孟归唐",
+      "poemCount": 1
+    },
+    {
+      "name": "何蒙",
+      "poemCount": 1
+    },
+    {
+      "name": "颜真卿等",
+      "poemCount": 1
+    },
+    {
+      "name": "天目僧",
+      "poemCount": 1
+    },
+    {
+      "name": "杨勋",
+      "poemCount": 1
+    },
+    {
+      "name": "孙望",
+      "poemCount": 1
+    },
+    {
+      "name": "童养年",
+      "poemCount": 1
+    },
+    {
+      "name": "李渊",
+      "poemCount": 1
+    },
+    {
+      "name": "岑义",
+      "poemCount": 1
+    },
+    {
+      "name": "弘忍",
+      "poemCount": 1
+    },
+    {
+      "name": "刘秩",
+      "poemCount": 1
+    },
+    {
+      "name": "牛仙客",
+      "poemCount": 1
+    },
+    {
+      "name": "无际",
+      "poemCount": 1
+    },
+    {
+      "name": "刘乂",
+      "poemCount": 1
+    },
+    {
+      "name": "贾𫗧",
+      "poemCount": 1
+    },
+    {
+      "name": "山东野客",
+      "poemCount": 1
+    },
+    {
+      "name": "广文诸生",
+      "poemCount": 1
+    },
+    {
+      "name": "李忱",
+      "poemCount": 1
+    },
+    {
+      "name": "韩喜",
+      "poemCount": 1
+    },
+    {
+      "name": "李度",
+      "poemCount": 1
+    },
+    {
+      "name": "田敏",
+      "poemCount": 1
+    },
+    {
+      "name": "张振祖",
+      "poemCount": 1
+    },
+    {
+      "name": "成文干",
+      "poemCount": 1
+    },
+    {
+      "name": "皇甫继勋",
+      "poemCount": 1
+    },
+    {
+      "name": "危仔昌",
+      "poemCount": 1
+    },
+    {
+      "name": "唐希雅",
+      "poemCount": 1
+    },
+    {
+      "name": "谦明",
+      "poemCount": 1
+    },
+    {
+      "name": "屠环智",
+      "poemCount": 1
+    },
+    {
+      "name": "韦谦",
+      "poemCount": 1
+    },
+    {
+      "name": "陈长官",
+      "poemCount": 1
+    },
+    {
+      "name": "蒲禹卿",
+      "poemCount": 1
+    },
+    {
+      "name": "拓善",
+      "poemCount": 1
+    },
+    {
+      "name": "冯铢",
+      "poemCount": 1
+    },
+    {
+      "name": "向瓒",
+      "poemCount": 1
+    },
+    {
+      "name": "宋自然",
+      "poemCount": 1
+    },
+    {
+      "name": "村寺僧",
+      "poemCount": 1
+    },
+    {
+      "name": "王承旨",
+      "poemCount": 1
+    },
+    {
+      "name": "栖岩",
+      "poemCount": 1
+    },
+    {
+      "name": "卖药道人",
+      "poemCount": 1
+    },
+    {
+      "name": "史维翰",
+      "poemCount": 1
+    },
+    {
+      "name": "李渭",
+      "poemCount": 1
+    },
+    {
+      "name": "李钦止",
+      "poemCount": 1
+    },
+    {
+      "name": "施逵",
+      "poemCount": 1
+    },
+    {
+      "name": "清远居士",
+      "poemCount": 1
+    },
+    {
+      "name": "魏证",
+      "poemCount": 1
+    },
+    {
+      "name": "觉隐",
+      "poemCount": 1
+    },
+    {
+      "name": "嗜酒道人",
+      "poemCount": 1
+    },
+    {
+      "name": "虞臯",
+      "poemCount": 1
+    },
+    {
+      "name": "宁化九龙进士",
+      "poemCount": 1
+    },
+    {
+      "name": "晁衡",
+      "poemCount": 1
+    },
+    {
+      "name": "陆搢",
+      "poemCount": 1
+    },
+    {
+      "name": "郑元璹",
+      "poemCount": 1
+    },
+    {
+      "name": "高士廉",
+      "poemCount": 1
+    },
+    {
+      "name": "李靖",
+      "poemCount": 1
+    },
+    {
+      "name": "王威德",
+      "poemCount": 1
+    },
+    {
+      "name": "贾元逊",
+      "poemCount": 1
+    },
+    {
+      "name": "薛开府",
+      "poemCount": 1
+    },
+    {
+      "name": "萧钧",
+      "poemCount": 1
+    },
+    {
+      "name": "明解",
+      "poemCount": 1
+    },
+    {
+      "name": "李元礼",
+      "poemCount": 1
+    },
+    {
+      "name": "窥基",
+      "poemCount": 1
+    },
+    {
+      "name": "江满昌",
+      "poemCount": 1
+    },
+    {
+      "name": "颜曹",
+      "poemCount": 1
+    },
+    {
+      "name": "刘仁轨",
+      "poemCount": 1
+    },
+    {
+      "name": "苏焜",
+      "poemCount": 1
+    },
+    {
+      "name": "权龙襄",
+      "poemCount": 1
+    },
+    {
+      "name": "复礼",
+      "poemCount": 1
+    },
+    {
+      "name": "高迈",
+      "poemCount": 1
+    },
+    {
+      "name": "张栖贞",
+      "poemCount": 1
+    },
+    {
+      "name": "玄觉",
+      "poemCount": 1
+    },
+    {
+      "name": "昙伦",
+      "poemCount": 1
+    },
+    {
+      "name": "韦希损",
+      "poemCount": 1
+    },
+    {
+      "name": "道慈",
+      "poemCount": 1
+    },
+    {
+      "name": "□州司马",
+      "poemCount": 1
+    },
+    {
+      "name": "□同",
+      "poemCount": 1
+    },
+    {
+      "name": "冯□原",
+      "poemCount": 1
+    },
+    {
+      "name": "□冯",
+      "poemCount": 1
+    },
+    {
+      "name": "黄土县尉",
+      "poemCount": 1
+    },
+    {
+      "name": "雍州率□□□",
+      "poemCount": 1
+    },
+    {
+      "name": "孙□",
+      "poemCount": 1
+    },
+    {
+      "name": "徐峤",
+      "poemCount": 1
+    },
+    {
+      "name": "开元儒士",
+      "poemCount": 1
+    },
+    {
+      "name": "邢□",
+      "poemCount": 1
+    },
+    {
+      "name": "智封",
+      "poemCount": 1
+    },
+    {
+      "name": "王濬",
+      "poemCount": 1
+    },
+    {
+      "name": "张博望",
+      "poemCount": 1
+    },
+    {
+      "name": "李瓘",
+      "poemCount": 1
+    },
+    {
+      "name": "杜昆吾",
+      "poemCount": 1
+    },
+    {
+      "name": "郭虚己",
+      "poemCount": 1
+    },
+    {
+      "name": "李璆",
+      "poemCount": 1
+    },
+    {
+      "name": "李解",
+      "poemCount": 1
+    },
+    {
+      "name": "齐光乂",
+      "poemCount": 1
+    },
+    {
+      "name": "娄玄颖",
+      "poemCount": 1
+    },
+    {
+      "name": "许远",
+      "poemCount": 1
+    },
+    {
+      "name": "赵昂",
+      "poemCount": 1
+    },
+    {
+      "name": "苏㝢",
+      "poemCount": 1
+    },
+    {
+      "name": "□钊",
+      "poemCount": 1
+    },
+    {
+      "name": "张诚",
+      "poemCount": 1
+    },
+    {
+      "name": "于休烈",
+      "poemCount": 1
+    },
+    {
+      "name": "任公叔",
+      "poemCount": 1
+    },
+    {
+      "name": "杨员外",
+      "poemCount": 1
+    },
+    {
+      "name": "严氏",
+      "poemCount": 1
+    },
+    {
+      "name": "胡运",
+      "poemCount": 1
+    },
+    {
+      "name": "崔生",
+      "poemCount": 1
+    },
+    {
+      "name": "姜窈窕",
+      "poemCount": 1
+    },
+    {
+      "name": "李博士",
+      "poemCount": 1
+    },
+    {
+      "name": "大同济禅师",
+      "poemCount": 1
+    },
+    {
+      "name": "裴延龄",
+      "poemCount": 1
+    },
+    {
+      "name": "红螺山和尚",
+      "poemCount": 1
+    },
+    {
+      "name": "陈诩",
+      "poemCount": 1
+    },
+    {
+      "name": "李觐",
+      "poemCount": 1
+    },
+    {
+      "name": "陆质",
+      "poemCount": 1
+    },
+    {
+      "name": "澄观",
+      "poemCount": 1
+    },
+    {
+      "name": "吴𫖮",
+      "poemCount": 1
+    },
+    {
+      "name": "苏州刺史",
+      "poemCount": 1
+    },
+    {
+      "name": "顺宗皇帝李诵",
+      "poemCount": 1
+    },
+    {
+      "name": "齐推",
+      "poemCount": 1
+    },
+    {
+      "name": "路黄中",
+      "poemCount": 1
+    },
+    {
+      "name": "粲和尚",
+      "poemCount": 1
+    },
+    {
+      "name": "郭通",
+      "poemCount": 1
+    },
+    {
+      "name": "苏溪和尚",
+      "poemCount": 1
+    },
+    {
+      "name": "新罗僧",
+      "poemCount": 1
+    },
+    {
+      "name": "李直方",
+      "poemCount": 1
+    },
+    {
+      "name": "伏牛小师",
+      "poemCount": 1
+    },
+    {
+      "name": "韦贯之",
+      "poemCount": 1
+    },
+    {
+      "name": "李头陀",
+      "poemCount": 1
+    },
+    {
+      "name": "徐元弼",
+      "poemCount": 1
+    },
+    {
+      "name": "陈谏",
+      "poemCount": 1
+    },
+    {
+      "name": "孔仲良",
+      "poemCount": 1
+    },
+    {
+      "name": "薛昌朝",
+      "poemCount": 1
+    },
+    {
+      "name": "李敬彝",
+      "poemCount": 1
+    },
+    {
+      "name": "惟俨",
+      "poemCount": 1
+    },
+    {
+      "name": "直言",
+      "poemCount": 1
+    },
+    {
+      "name": "吕让",
+      "poemCount": 1
+    },
+    {
+      "name": "鉴空",
+      "poemCount": 1
+    },
+    {
+      "name": "开成朝士",
+      "poemCount": 1
+    },
+    {
+      "name": "陈嘏",
+      "poemCount": 1
+    },
+    {
+      "name": "宜春头陀",
+      "poemCount": 1
+    },
+    {
+      "name": "愚公谷人",
+      "poemCount": 1
+    },
+    {
+      "name": "陈商",
+      "poemCount": 1
+    },
+    {
+      "name": "李珏",
+      "poemCount": 1
+    },
+    {
+      "name": "淮南幕吏",
+      "poemCount": 1
+    },
+    {
+      "name": "灵祐",
+      "poemCount": 1
+    },
+    {
+      "name": "杨宇",
+      "poemCount": 1
+    },
+    {
+      "name": "清越",
+      "poemCount": 1
+    },
+    {
+      "name": "轩辕集",
+      "poemCount": 1
+    },
+    {
+      "name": "彦楚",
+      "poemCount": 1
+    },
+    {
+      "name": "道吾和尚",
+      "poemCount": 1
+    },
+    {
+      "name": "凌行婆",
+      "poemCount": 1
+    },
+    {
+      "name": "道允",
+      "poemCount": 1
+    },
+    {
+      "name": "京师小子弟",
+      "poemCount": 1
+    },
+    {
+      "name": "王□",
+      "poemCount": 1
+    },
+    {
+      "name": "刘瞻",
+      "poemCount": 1
+    },
+    {
+      "name": "潘炜",
+      "poemCount": 1
+    },
+    {
+      "name": "李庾",
+      "poemCount": 1
+    },
+    {
+      "name": "郑殷彝",
+      "poemCount": 1
+    },
+    {
+      "name": "濮阳人",
+      "poemCount": 1
+    },
+    {
+      "name": "郑昌图",
+      "poemCount": 1
+    },
+    {
+      "name": "文喜",
+      "poemCount": 1
+    },
+    {
+      "name": "归耕子",
+      "poemCount": 1
+    },
+    {
+      "name": "崔远",
+      "poemCount": 1
+    },
+    {
+      "name": "匡慧",
+      "poemCount": 1
+    },
+    {
+      "name": "黄璞",
+      "poemCount": 1
+    },
+    {
+      "name": "𬤇禅师",
+      "poemCount": 1
+    },
+    {
+      "name": "吴畦",
+      "poemCount": 1
+    },
+    {
+      "name": "狄常侍",
+      "poemCount": 1
+    },
+    {
+      "name": "通真道人",
+      "poemCount": 1
+    },
+    {
+      "name": "张文彻",
+      "poemCount": 1
+    },
+    {
+      "name": "郑郎中",
+      "poemCount": 1
+    },
+    {
+      "name": "韦说",
+      "poemCount": 1
+    },
+    {
+      "name": "后唐厨官",
+      "poemCount": 1
+    },
+    {
+      "name": "王思同",
+      "poemCount": 1
+    },
+    {
+      "name": "李愚",
+      "poemCount": 1
+    },
+    {
+      "name": "宇文翰",
+      "poemCount": 1
+    },
+    {
+      "name": "程逊",
+      "poemCount": 1
+    },
+    {
+      "name": "陶敞",
+      "poemCount": 1
+    },
+    {
+      "name": "胡徽",
+      "poemCount": 1
+    },
+    {
+      "name": "张休",
+      "poemCount": 1
+    },
+    {
+      "name": "张盈润",
+      "poemCount": 1
+    },
+    {
+      "name": "烟萝子",
+      "poemCount": 1
+    },
+    {
+      "name": "李鹗",
+      "poemCount": 1
+    },
+    {
+      "name": "苏允平",
+      "poemCount": 1
+    },
+    {
+      "name": "贾纬",
+      "poemCount": 1
+    },
+    {
+      "name": "徐台符",
+      "poemCount": 1
+    },
+    {
+      "name": "同州判官",
+      "poemCount": 1
+    },
+    {
+      "name": "五代外镇官",
+      "poemCount": 1
+    },
+    {
+      "name": "智晖",
+      "poemCount": 1
+    },
+    {
+      "name": "李沼",
+      "poemCount": 1
+    },
+    {
+      "name": "窦仪",
+      "poemCount": 1
+    },
+    {
+      "name": "窦俨",
+      "poemCount": 1
+    },
+    {
+      "name": "骆仲舒",
+      "poemCount": 1
+    },
+    {
+      "name": "刘东叔",
+      "poemCount": 1
+    },
+    {
+      "name": "梓潼双灯寺僧",
+      "poemCount": 1
+    },
+    {
+      "name": "谢调",
+      "poemCount": 1
+    },
+    {
+      "name": "薛熊",
+      "poemCount": 1
+    },
+    {
+      "name": "李善宁之子",
+      "poemCount": 1
+    },
+    {
+      "name": "陶彝之",
+      "poemCount": 1
+    },
+    {
+      "name": "归晓",
+      "poemCount": 1
+    },
+    {
+      "name": "欧阳持",
+      "poemCount": 1
+    },
+    {
+      "name": "彦光",
+      "poemCount": 1
+    },
+    {
+      "name": "齐己、牟儒",
+      "poemCount": 1
+    },
+    {
+      "name": "江文蔚",
+      "poemCount": 1
+    },
+    {
+      "name": "李□",
+      "poemCount": 1
+    },
+    {
+      "name": "毛大仙",
+      "poemCount": 1
+    },
+    {
+      "name": "隐微",
+      "poemCount": 1
+    },
+    {
+      "name": "相里宗",
+      "poemCount": 1
+    },
+    {
+      "name": "志端",
+      "poemCount": 1
+    },
+    {
+      "name": "开宝中江南叟",
+      "poemCount": 1
+    },
+    {
+      "name": "赵晟",
+      "poemCount": 1
+    },
+    {
+      "name": "王仲简",
+      "poemCount": 1
+    },
+    {
+      "name": "唐镐",
+      "poemCount": 1
+    },
+    {
+      "name": "徐熙",
+      "poemCount": 1
+    },
+    {
+      "name": "江直木",
+      "poemCount": 1
+    },
+    {
+      "name": "查元方",
+      "poemCount": 1
+    },
+    {
+      "name": "乐史",
+      "poemCount": 1
+    },
+    {
+      "name": "李从谦",
+      "poemCount": 1
+    },
+    {
+      "name": "蒋宗简",
+      "poemCount": 1
+    },
+    {
+      "name": "神禄",
+      "poemCount": 1
+    },
+    {
+      "name": "钱元㺷",
+      "poemCount": 1
+    },
+    {
+      "name": "灵照",
+      "poemCount": 1
+    },
+    {
+      "name": "措多",
+      "poemCount": 1
+    },
+    {
+      "name": "钱弘儇",
+      "poemCount": 1
+    },
+    {
+      "name": "德韶",
+      "poemCount": 1
+    },
+    {
+      "name": "永安",
+      "poemCount": 1
+    },
+    {
+      "name": "瑜禅师",
+      "poemCount": 1
+    },
+    {
+      "name": "范赞时",
+      "poemCount": 1
+    },
+    {
+      "name": "江景防",
+      "poemCount": 1
+    },
+    {
+      "name": "遇臻",
+      "poemCount": 1
+    },
+    {
+      "name": "洪寿",
+      "poemCount": 1
+    },
+    {
+      "name": "黄夷简",
+      "poemCount": 1
+    },
+    {
+      "name": "王十八郎",
+      "poemCount": 1
+    },
+    {
+      "name": "王审知",
+      "poemCount": 1
+    },
+    {
+      "name": "玄应",
+      "poemCount": 1
+    },
+    {
+      "name": "定御",
+      "poemCount": 1
+    },
+    {
+      "name": "韦添",
+      "poemCount": 1
+    },
+    {
+      "name": "陈致雍",
+      "poemCount": 1
+    },
+    {
+      "name": "守安",
+      "poemCount": 1
+    },
+    {
+      "name": "何景山",
+      "poemCount": 1
+    },
+    {
+      "name": "李观象",
+      "poemCount": 1
+    },
+    {
+      "name": "廖处士",
+      "poemCount": 1
+    },
+    {
+      "name": "程嵩",
+      "poemCount": 1
+    },
+    {
+      "name": "郁山主",
+      "poemCount": 1
+    },
+    {
+      "name": "璘禅师",
+      "poemCount": 1
+    },
+    {
+      "name": "林楚材",
+      "poemCount": 1
+    },
+    {
+      "name": "孙光宪同寮",
+      "poemCount": 1
+    },
+    {
+      "name": "王家乐",
+      "poemCount": 1
+    },
+    {
+      "name": "李仁悦",
+      "poemCount": 1
+    },
+    {
+      "name": "孟昶",
+      "poemCount": 1
+    },
+    {
+      "name": "王处厚",
+      "poemCount": 1
+    },
+    {
+      "name": "周□",
+      "poemCount": 1
+    },
+    {
+      "name": "灵岩",
+      "poemCount": 1
+    },
+    {
+      "name": "牛承直",
+      "poemCount": 1
+    },
+    {
+      "name": "王国华",
+      "poemCount": 1
+    },
+    {
+      "name": "元□□",
+      "poemCount": 1
+    },
+    {
+      "name": "毛熙圣",
+      "poemCount": 1
+    },
+    {
+      "name": "司马□",
+      "poemCount": 1
+    },
+    {
+      "name": "存初公",
+      "poemCount": 1
+    },
+    {
+      "name": "李驿",
+      "poemCount": 1
+    },
+    {
+      "name": "李思聪",
+      "poemCount": 1
+    },
+    {
+      "name": "李善美",
+      "poemCount": 1
+    },
+    {
+      "name": "李嘉运",
+      "poemCount": 1
+    },
+    {
+      "name": "李端公",
+      "poemCount": 1
+    },
+    {
+      "name": "孟安序",
+      "poemCount": 1
+    },
+    {
+      "name": "尚隆之、吴永素",
+      "poemCount": 1
+    },
+    {
+      "name": "范崇",
+      "poemCount": 1
+    },
+    {
+      "name": "高瀛",
+      "poemCount": 1
+    },
+    {
+      "name": "孙誧",
+      "poemCount": 1
+    },
+    {
+      "name": "徐魁",
+      "poemCount": 1
+    },
+    {
+      "name": "章导",
+      "poemCount": 1
+    },
+    {
+      "name": "许古",
+      "poemCount": 1
+    },
+    {
+      "name": "淑徳郡主",
+      "poemCount": 1
+    },
+    {
+      "name": "张彦胜",
+      "poemCount": 1
+    },
+    {
+      "name": "陈充",
+      "poemCount": 1
+    },
+    {
+      "name": "陈端",
+      "poemCount": 1
+    },
+    {
+      "name": "陈嘉",
+      "poemCount": 1
+    },
+    {
+      "name": "陶令君",
+      "poemCount": 1
+    },
+    {
+      "name": "崔元明",
+      "poemCount": 1
+    },
+    {
+      "name": "杨明",
+      "poemCount": 1
+    },
+    {
+      "name": "杨邺",
+      "poemCount": 1
+    },
+    {
+      "name": "齐𫖮",
+      "poemCount": 1
+    },
+    {
+      "name": "邓廷闻",
+      "poemCount": 1
+    },
+    {
+      "name": "裴极",
+      "poemCount": 1
+    },
+    {
+      "name": "裴相公",
+      "poemCount": 1
+    },
+    {
+      "name": "刘珃",
+      "poemCount": 1
+    },
+    {
+      "name": "萧沼",
+      "poemCount": 1
+    },
+    {
+      "name": "萧铎",
+      "poemCount": 1
+    },
+    {
+      "name": "萧辟",
+      "poemCount": 1
+    },
+    {
+      "name": "钱叔献",
+      "poemCount": 1
+    },
+    {
+      "name": "曹真人",
+      "poemCount": 1
+    },
+    {
+      "name": "徐真君",
+      "poemCount": 1
+    },
+    {
+      "name": "彭真君",
+      "poemCount": 1
+    },
+    {
+      "name": "贺兰求",
+      "poemCount": 1
+    },
+    {
+      "name": "董大仙",
+      "poemCount": 1
+    },
+    {
+      "name": "逸人不顾",
+      "poemCount": 1
+    },
+    {
+      "name": "芒鞵道人",
+      "poemCount": 1
+    },
+    {
+      "name": "大宗",
+      "poemCount": 1
+    },
+    {
+      "name": "南粤",
+      "poemCount": 1
+    },
+    {
+      "name": "惠𫖮",
+      "poemCount": 1
+    },
+    {
+      "name": "德最",
+      "poemCount": 1
+    },
+    {
+      "name": "慧集法师",
+      "poemCount": 1
+    },
+    {
+      "name": "朱彦时",
+      "poemCount": 1
+    },
+    {
+      "name": "阴真君",
+      "poemCount": 1
+    },
+    {
+      "name": "葛玄",
+      "poemCount": 1
+    },
+    {
+      "name": "刘思真",
+      "poemCount": 1
+    },
+    {
+      "name": "戴良",
+      "poemCount": 1
+    },
+    {
+      "name": "徐干",
+      "poemCount": 1
+    },
+    {
+      "name": "王融",
+      "poemCount": 1
+    },
+    {
+      "name": "董初",
+      "poemCount": 0
+    },
+    {
+      "name": "罗维",
+      "poemCount": 0
+    },
+    {
+      "name": "李得",
+      "poemCount": 0
+    },
+    {
+      "name": "潘佐",
+      "poemCount": 0
+    },
+    {
+      "name": "钱戭",
+      "poemCount": 0
+    },
+    {
+      "name": "张元正",
+      "poemCount": 0
+    },
+    {
+      "name": "神龙从臣",
+      "poemCount": 0
+    },
+    {
+      "name": "李玉箫",
+      "poemCount": 0
+    },
+    {
+      "name": "舞柘枝女",
+      "poemCount": 0
+    },
+    {
+      "name": "隐求",
+      "poemCount": 0
+    },
+    {
+      "name": "刘吉",
+      "poemCount": 0
+    },
+    {
+      "name": "王宠",
+      "poemCount": 0
+    },
+    {
+      "name": "朱佐日",
+      "poemCount": 0
+    },
+    {
+      "name": "李𬜪",
+      "poemCount": 0
+    },
+    {
+      "name": "杨溥",
+      "poemCount": 0
+    },
+    {
+      "name": "魏玄同",
+      "poemCount": 0
+    },
+    {
+      "name": "张芬",
+      "poemCount": 0
+    },
+    {
+      "name": "崔□",
+      "poemCount": 0
+    },
+    {
+      "name": "毕诚",
+      "poemCount": 0
+    },
+    {
+      "name": "赵崇",
+      "poemCount": 0
+    }
+  ]
+}
