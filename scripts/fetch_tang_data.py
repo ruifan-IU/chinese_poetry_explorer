@@ -10,9 +10,12 @@ Downloads only what this project needs:
 
 Fetch Tang poets data including portraits, aliases, birth and death dates, and sitelinks from WikiData.
 
-Safe to re-run: already-downloaded files are skipped.
+Safe to re-run: already-downloaded files are skipped. Wikidata results are
+re-fetched when their query file changes (tracked by a hash stored in the
+saved JSON); delete the file to force a refresh.
 """
 
+import hashlib
 import json
 import urllib.error
 import urllib.parse
@@ -44,21 +47,33 @@ def fetch(repo_path: str, dest: Path) -> None:
         return
 
     url = REPO_BASE + "/" + urllib.parse.quote(repo_path)
-    with urllib.request.urlopen(url) as resp:
+    with urllib.request.urlopen(url, timeout=90) as resp:
         data = resp.read()
 
     dest.parent.mkdir(parents=True, exist_ok=True)
-    dest.write_bytes(data)
+    tmp = dest.with_suffix(dest.suffix + ".tmp")
+    tmp.write_bytes(data)
+    tmp.replace(dest)
     print(f"  saved {dest.name} ({len(data):,} bytes)")
 
 
 def fetch_wikidata(query_file: Path, dest: Path) -> None:
     """Run a SPARQL query against the Wikidata Query Service, save the JSON results."""
-    if dest.exists():
-        print(f"  skip (already downloaded): {dest.name}")
-        return
 
     query = query_file.read_text(encoding="utf-8")
+    query_hash = hashlib.sha256(query.encode("utf-8")).hexdigest()
+
+    # Reuse the cache only if it was produced by this exact query. A file
+    # that is unreadable or lacks a hash is treated as stale, not as an error.
+    if dest.exists():
+        try:
+            cached = json.loads(dest.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, UnicodeDecodeError):
+            cached = {}
+        if isinstance(cached, dict) and cached.get("queryHash") == query_hash:
+            print(f"  skip (query unchanged): {dest.name}")
+            return
+
     url = WIKIDATA_SPARQL_URL + "?" + urllib.parse.urlencode({"query": query})
     req = urllib.request.Request(url, headers=WIKIDATA_HEADERS)
 
@@ -77,7 +92,9 @@ def fetch_wikidata(query_file: Path, dest: Path) -> None:
         ) from e
     except (urllib.error.URLError, TimeoutError) as e:
         # HTTPError subclasses URLError, so it must be caught first (above).
-        raise WikidataQueryError(f"Wikidata query {name}: could not reach the server ({e})") from e
+        raise WikidataQueryError(
+            f"Wikidata query {name}: could not reach the server ({e})"
+        ) from e
 
     # 2. Content: the body isn't SPARQL JSON results (truncated, or an HTML
     # error page from a proxy). Read first, then parse, so we can show it.
@@ -96,9 +113,14 @@ def fetch_wikidata(query_file: Path, dest: Path) -> None:
     if not rows:
         raise WikidataQueryError(f"Wikidata query {name} returned 0 rows")
 
+    data["queryHash"] = query_hash
+    # Write to a temp file, then rename: the rename is atomic, so an
+    # interrupted run never leaves a half-written cache behind.
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with open(dest, "w", encoding="utf-8") as file:
+    tmp = dest.with_suffix(dest.suffix + ".tmp")
+    with open(tmp, "w", encoding="utf-8") as file:
         json.dump(data, file, ensure_ascii=False, indent=2)
+    tmp.replace(dest)
     print(f"  saved {dest.name} ({len(rows):,} rows)")
 
 
