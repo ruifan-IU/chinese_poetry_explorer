@@ -34,6 +34,10 @@ QUERIES_DIR = Path(__file__).parent / "queries"
 OUT_DIR = Path(__file__).parent.parent / "prisma" / "data" / "raw" / "tang"
 
 
+class WikidataQueryError(RuntimeError):
+    """A Wikidata query failed or returned unusable results."""
+
+
 def fetch(repo_path: str, dest: Path) -> None:
     if dest.exists():
         print(f"  skip (already downloaded): {dest.name}")
@@ -58,21 +62,44 @@ def fetch_wikidata(query_file: Path, dest: Path) -> None:
     url = WIKIDATA_SPARQL_URL + "?" + urllib.parse.urlencode({"query": query})
     req = urllib.request.Request(url, headers=WIKIDATA_HEADERS)
 
+    name = query_file.name
+
+    # 1. Transport: the request itself failed.
     try:
         with urllib.request.urlopen(req, timeout=90) as resp:
-            data = json.load(resp)
+            body = resp.read()
     except urllib.error.HTTPError as e:
         # The body carries the useful part, e.g. a user-agent policy notice
         # or a SPARQL syntax error with the offending line.
-        raise RuntimeError(
-            f"Wikidata query {query_file.name} failed with HTTP {e.code}:\n"
+        raise WikidataQueryError(
+            f"Wikidata query {name} failed with HTTP {e.code}:\n"
             f"{e.read().decode('utf-8', errors='replace')[:1000]}"
         ) from e
+    except (urllib.error.URLError, TimeoutError) as e:
+        # HTTPError subclasses URLError, so it must be caught first (above).
+        raise WikidataQueryError(f"Wikidata query {name}: could not reach the server ({e})") from e
+
+    # 2. Content: the body isn't SPARQL JSON results (truncated, or an HTML
+    # error page from a proxy). Read first, then parse, so we can show it.
+    try:
+        data = json.loads(body)
+        rows = data["results"]["bindings"]
+    except (json.JSONDecodeError, KeyError, TypeError) as e:
+        preview = body[:300].decode("utf-8", errors="replace")
+        raise WikidataQueryError(
+            f"Wikidata query {name} returned {len(body):,} bytes that aren't valid "
+            f"SPARQL JSON results (truncated?). Response starts with:\n{preview}"
+        ) from e
+
+    # 3. Semantics: valid but empty -- usually a typo'd property or item ID.
+    # Never cache this, or every later run would silently reuse it.
+    if not rows:
+        raise WikidataQueryError(f"Wikidata query {name} returned 0 rows")
 
     dest.parent.mkdir(parents=True, exist_ok=True)
-    with open(dest, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"  saved {dest.name} ({len(data['results']['bindings']):,} rows)")
+    with open(dest, "w", encoding="utf-8") as file:
+        json.dump(data, file, ensure_ascii=False, indent=2)
+    print(f"  saved {dest.name} ({len(rows):,} rows)")
 
 
 def main() -> None:
