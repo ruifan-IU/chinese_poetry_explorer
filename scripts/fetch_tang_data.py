@@ -7,8 +7,8 @@ Downloads only what this project needs:
 - 全唐诗/poet.tang.*.json        poems (paragraphs, title, author)
 - 全唐诗/唐诗三百首.json          curated "300 Tang Poems" anthology
 - 蒙学/qianjiashi.json          千家诗 anthology (fame signal; Tang + Song)
-- rank/poet/poet.tang.rank.*.json  search-engine hit counts, index-aligned
-                                    with the poet.tang.*.json files
+
+Fetch Tang poets data including portraits, aliases, birth and death dates, and sitelinks from WikiData.
 
 Safe to re-run: already-downloaded files are skipped.
 """
@@ -89,15 +89,8 @@ def main() -> None:
     for i in INDICES:
         fetch(f"全唐诗/poet.tang.{i}.json", OUT_DIR / "poems" / f"poet.tang.{i}.json")
 
-    print(f"Fetching {len(INDICES)} rank files...")
-    for i in INDICES:
-        fetch(
-            f"rank/poet/poet.tang.rank.{i}.json",
-            OUT_DIR / "rank" / f"poet.tang.rank.{i}.json",
-        )
-
     print("Fetching Tang poets from Wikidata...")
-    fetch_wikidata(QUERIES_DIR / "tang_poets.rq", OUT_DIR / "wikidata.json")
+    fetch_wikidata(QUERIES_DIR / "tang_poets.rq", OUT_DIR / "wikidata_tang_poets.json")
 
     print("Done.")
 
