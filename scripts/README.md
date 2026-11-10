@@ -66,7 +66,10 @@ An empty result is never cached.
 `tang_poets.rq` selects items with occupation *poet* (`P106 = Q49757`) and
 country of citizenship *Tang dynasty* (`P27 = Q9683`). For each item it returns:
 
-- label and Chinese aliases (`zh`, `zh-hant`, `zh-hans`, with duplicates removed);
+- label, falling back through `zh-hant → zh-hans → zh → mul → en`. Without the
+  `zh`/`zh-hans` fallbacks, items labelled only in those variants came back with
+  their QID as the label (33 items) and could never match by name;
+- Chinese aliases (`zh`, `zh-hant`, `zh-hans`, with duplicates removed);
 - portrait (`P18`);
 - birth and death dates (`P569`, `P570`);
 - `wikibase:sitelinks`, the number of Wikipedia editions with an article on the poet.
@@ -166,7 +169,26 @@ names, both converted to Simplified Chinese, in two tiers:
 
 If a name matches more than one item, `resolve_ambiguous()` decides which one to
 use, or none. Many Wikidata items share names, especially the bulk-imported
-items with no Wikipedia articles.
+items with no Wikipedia articles. It applies cautious filters in order, because
+a wrong match (another person's portrait and dates) is worse than no match:
+
+1. **Reject items that belong to another local poet.** If a candidate's label is
+   a *different* name in the local poet list, the match came through a shared
+   courtesy or Buddhist name. For example, 虚中 matches both 王毂 (字虚中) and
+   the monk 释虚中; 王毂 is rejected and 释虚中 is used. Only labels are checked,
+   not aliases: an alias that is also a local name usually means the same
+   person is listed twice locally (皎然 / 清昼). If exactly one candidate is
+   left it is used; if none are left the poet stays unmatched.
+2. **Sitelinks:** a candidate with a unique highest sitelink count is used.
+   Candidates tied for the highest count go on to step 3.
+3. **Duplicate items:** the tied candidates are accepted as duplicate items for
+   one person only if at least two of them share a known birth or death year
+   and no years conflict. Missing dates count as unknown, not as agreement;
+   otherwise almost every pair of bulk-imported items without data would pass.
+   The oldest item (lowest QID, compared numerically) is used.
+
+Running step 1 before step 2 matters. On sitelinks alone, 陆羽 (26 sitelinks,
+字鸿渐) would take the name of the monk 释鸿渐.
 
 Outputs:
 
@@ -180,13 +202,13 @@ Outputs:
     the same person listed under two names in the source (武则天/武曌,
     李冶/李季兰), so they are candidates for merging.
 
-Latest run (before ambiguity resolution): 2,331 of 3,628 poets matched, covering
-44,532 of 56,446 poems.
+Latest run: 2,371 of 3,628 poets matched, covering 46,037 of 56,446 poems.
+63 name clashes were resolved and 101 left for review.
 
 ## Status and next steps
 
 - [ ] `fame_score()` in `clean_tang_data.py`: combine the anthology signals into `fame`.
-- [ ] `resolve_ambiguous()` in `match_wikidata_poets.py`: the rule for name clashes.
+- [x] `resolve_ambiguous()` in `match_wikidata_poets.py`: the rule for name clashes.
 - [ ] Unmatched famous poets (齐己, 贯休, 皮日休…): probably missing from the
       query because their Wikidata items lack `P27 = Tang dynasty`. Needs a
       second lookup by name.

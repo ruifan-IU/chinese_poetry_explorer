@@ -1,10 +1,12 @@
 {
   "summary": {
-    "none": 1161,
-    "alias": 374,
-    "label": 1957,
-    "label-ambiguous (unresolved)": 125,
-    "alias-ambiguous (unresolved)": 11
+    "none": 1156,
+    "alias": 369,
+    "label": 1939,
+    "label-ambiguous": 56,
+    "label-ambiguous (unresolved)": 97,
+    "alias-ambiguous (unresolved)": 4,
+    "alias-ambiguous": 7
   },
   "collisions": {
     "Q9738": [
@@ -14,10 +16,6 @@
     "Q708347": [
       "刘子玄",
       "刘知几"
-    ],
-    "Q45477654": [
-      "庄南杰",
-      "英才"
     ],
     "Q45519847": [
       "余延寿",
@@ -131,6 +129,10 @@
       "郑中丞",
       "郑儋"
     ],
+    "Q11644522": [
+      "清昼",
+      "皎然"
+    ],
     "Q45452659": [
       "大易",
       "太易"
@@ -154,234 +156,12 @@
   },
   "ambiguous": [
     {
-      "name": "皎然",
-      "poemCount": 487,
-      "candidates": [
-        {
-          "qid": "Q11644522",
-          "label": "释皎然",
-          "aliases": [
-            "清昼",
-            "皎然",
-            "释皎然"
-          ],
-          "sitelinks": 7,
-          "birthYear": 730,
-          "deathYear": 799,
-          "picture": null
-        },
-        {
-          "qid": "Q45602935",
-          "label": "释皎然",
-          "aliases": [
-            "皎然",
-            "长生和尚"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "李端",
-      "poemCount": 273,
-      "candidates": [
-        {
-          "qid": "Q11097649",
-          "label": "李端",
-          "aliases": [
-            "正己"
-          ],
-          "sitelinks": 6,
-          "birthYear": 732,
-          "deathYear": 792,
-          "picture": null
-        },
-        {
-          "qid": "Q45495797",
-          "label": "李端",
-          "aliases": [
-            "公表"
-          ],
-          "sitelinks": 0,
-          "birthYear": 732,
-          "deathYear": 792,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "李涉",
-      "poemCount": 135,
-      "candidates": [
-        {
-          "qid": "Q18909427",
-          "label": "李涉",
-          "aliases": [
-            "青溪子"
-          ],
-          "sitelinks": 2,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45550194",
-          "label": "李涉",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 742,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "刘商",
-      "poemCount": 128,
-      "candidates": [
-        {
-          "qid": "Q28410510",
-          "label": "刘商",
-          "aliases": [],
-          "sitelinks": 2,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45482594",
-          "label": "刘商",
-          "aliases": [
-            "子夏"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45672816",
-          "label": "刘商",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 772,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "刘言史",
-      "poemCount": 82,
-      "candidates": [
-        {
-          "qid": "Q10900406",
-          "label": "刘言史",
-          "aliases": [],
-          "sitelinks": 2,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45479948",
-          "label": "刘言史",
-          "aliases": [
-            "刘枣强"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 812,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "崔道融",
-      "poemCount": 79,
-      "candidates": [
-        {
-          "qid": "Q45601381",
-          "label": "崔道融",
-          "aliases": [
-            "东瓯散人"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 907,
-          "picture": null
-        },
-        {
-          "qid": "Q45472896",
-          "label": "崔道融",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 742,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "刘驾",
-      "poemCount": 73,
-      "candidates": [
-        {
-          "qid": "Q9471229",
-          "label": "刘驾",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45480940",
-          "label": "刘驾",
-          "aliases": [
-            "司南"
-          ],
-          "sitelinks": 0,
-          "birthYear": 822,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "崔国辅",
-      "poemCount": 51,
-      "candidates": [
-        {
-          "qid": "Q18908517",
-          "label": "崔国辅",
-          "aliases": [],
-          "sitelinks": 4,
-          "birthYear": 678,
-          "deathYear": 755,
-          "picture": null
-        },
-        {
-          "qid": "Q45422623",
-          "label": "崔国辅",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "来鹄",
       "poemCount": 30,
       "candidates": [
         {
           "qid": "Q11100028",
-          "label": "Q11100028",
+          "label": "来鹏",
           "aliases": [
             "来鹄"
           ],
@@ -429,128 +209,6 @@
           "sitelinks": 0,
           "birthYear": 734,
           "deathYear": 793,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "赵彦昭",
-      "poemCount": 21,
-      "candidates": [
-        {
-          "qid": "Q8070578",
-          "label": "赵彦昭",
-          "aliases": [
-            "赵彦昭"
-          ],
-          "sitelinks": 3,
-          "birthYear": 650,
-          "deathYear": 714,
-          "picture": null
-        },
-        {
-          "qid": "Q45565833",
-          "label": "赵彦昭",
-          "aliases": [
-            "奂然"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "崔融",
-      "poemCount": 20,
-      "candidates": [
-        {
-          "qid": "Q3370134",
-          "label": "崔融",
-          "aliases": [
-            "安成",
-            "文"
-          ],
-          "sitelinks": 7,
-          "birthYear": 653,
-          "deathYear": 706,
-          "picture": null
-        },
-        {
-          "qid": "Q45602090",
-          "label": "崔融",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "虚中",
-      "poemCount": 20,
-      "candidates": [
-        {
-          "qid": "Q45446246",
-          "label": "王毂",
-          "aliases": [
-            "临沂子",
-            "虚中"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45595884",
-          "label": "释虚中",
-          "aliases": [
-            "虚中"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "王翰",
-      "poemCount": 18,
-      "candidates": [
-        {
-          "qid": "Q717319",
-          "label": "王翰",
-          "aliases": [
-            "子羽",
-            "王瀚"
-          ],
-          "sitelinks": 13,
-          "birthYear": 685,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45446314",
-          "label": "王翰",
-          "aliases": [
-            "王干"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45402082",
-          "label": "王翰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null
         }
       ]
@@ -628,30 +286,6 @@
       ]
     },
     {
-      "name": "王湾",
-      "poemCount": 11,
-      "candidates": [
-        {
-          "qid": "Q7967656",
-          "label": "王湾",
-          "aliases": [],
-          "sitelinks": 7,
-          "birthYear": 693,
-          "deathYear": 751,
-          "picture": null
-        },
-        {
-          "qid": "Q45675455",
-          "label": "王湾",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 791,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "姚系",
       "poemCount": 10,
       "candidates": [
@@ -680,21 +314,21 @@
       "poemCount": 9,
       "candidates": [
         {
-          "qid": "Q45510539",
-          "label": "李嶷",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45599925",
           "label": "李嶷",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 757,
+          "picture": null
+        },
+        {
+          "qid": "Q45510539",
+          "label": "李嶷",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -731,21 +365,21 @@
       "poemCount": 8,
       "candidates": [
         {
-          "qid": "Q45504620",
-          "label": "李涛",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45594056",
           "label": "李涛",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 782,
+          "picture": null
+        },
+        {
+          "qid": "Q45504620",
+          "label": "李涛",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -772,34 +406,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 697,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "王起",
-      "poemCount": 7,
-      "candidates": [
-        {
-          "qid": "Q18908337",
-          "label": "王起",
-          "aliases": [
-            "举之",
-            "当世仲尼",
-            "文懿"
-          ],
-          "sitelinks": 2,
-          "birthYear": 760,
-          "deathYear": 847,
-          "picture": null
-        },
-        {
-          "qid": "Q45662162",
-          "label": "王起",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 820,
           "picture": null
         }
       ]
@@ -933,33 +539,6 @@
       ]
     },
     {
-      "name": "王铎",
-      "poemCount": 5,
-      "candidates": [
-        {
-          "qid": "Q7967418",
-          "label": "王铎",
-          "aliases": [
-            "昭范",
-            "王铎"
-          ],
-          "sitelinks": 5,
-          "birthYear": null,
-          "deathYear": 884,
-          "picture": null
-        },
-        {
-          "qid": "Q45676766",
-          "label": "王铎",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 748,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "裴𫍯",
       "poemCount": 5,
       "candidates": [
@@ -1010,33 +589,6 @@
       ]
     },
     {
-      "name": "元万顷",
-      "poemCount": 4,
-      "candidates": [
-        {
-          "qid": "Q11387763",
-          "label": "元万顷",
-          "aliases": [
-            "元万顷",
-            "北门学士"
-          ],
-          "sitelinks": 3,
-          "birthYear": 650,
-          "deathYear": 689,
-          "picture": null
-        },
-        {
-          "qid": "Q45632690",
-          "label": "元万顷",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 699,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李休烈",
       "poemCount": 4,
       "candidates": [
@@ -1065,15 +617,6 @@
       "poemCount": 4,
       "candidates": [
         {
-          "qid": "Q45505778",
-          "label": "李深",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45655086",
           "label": "李深",
           "aliases": [],
@@ -1081,56 +624,11 @@
           "birthYear": null,
           "deathYear": null,
           "picture": null
-        }
-      ]
-    },
-    {
-      "name": "李观",
-      "poemCount": 4,
-      "candidates": [
-        {
-          "qid": "Q11097997",
-          "label": "李观",
-          "aliases": [
-            "元宾",
-            "李观"
-          ],
-          "sitelinks": 2,
-          "birthYear": 766,
-          "deathYear": 794,
-          "picture": null
         },
         {
-          "qid": "Q45565566",
-          "label": "李观",
+          "qid": "Q45505778",
+          "label": "李深",
           "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 799,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "袁郊",
-      "poemCount": 4,
-      "candidates": [
-        {
-          "qid": "Q24840506",
-          "label": "袁郊",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": 844,
-          "picture": null
-        },
-        {
-          "qid": "Q45577775",
-          "label": "袁郊",
-          "aliases": [
-            "之仪",
-            "之干"
-          ],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -1165,40 +663,18 @@
       ]
     },
     {
-      "name": "智常",
-      "poemCount": 4,
-      "candidates": [
-        {
-          "qid": "Q9282631",
-          "label": "释智常",
-          "aliases": [
-            "归宗和尚",
-            "智常",
-            "至真禅师",
-            "赤眼归宗和尚"
-          ],
-          "sitelinks": 2,
-          "birthYear": 750,
-          "deathYear": null,
-          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Priest%20Zhichang%20and%20courtier%20Libo.jpg"
-        },
-        {
-          "qid": "Q45612902",
-          "label": "释智常",
-          "aliases": [
-            "智常"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李岑",
       "poemCount": 3,
       "candidates": [
+        {
+          "qid": "Q45553133",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 782,
+          "picture": null
+        },
         {
           "qid": "Q45498949",
           "label": "李岑",
@@ -1225,41 +701,6 @@
           "birthYear": null,
           "deathYear": null,
           "picture": null
-        },
-        {
-          "qid": "Q45553133",
-          "label": "李岑",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 782,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "张众甫",
-      "poemCount": 3,
-      "candidates": [
-        {
-          "qid": "Q22100823",
-          "label": "张众甫",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45528190",
-          "label": "张众甫",
-          "aliases": [
-            "子初"
-          ],
-          "sitelinks": 0,
-          "birthYear": 715,
-          "deathYear": 782,
-          "picture": null
         }
       ]
     },
@@ -1268,21 +709,21 @@
       "poemCount": 3,
       "candidates": [
         {
-          "qid": "Q45502031",
-          "label": "郑常",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 760,
-          "picture": null
-        },
-        {
           "qid": "Q45556765",
           "label": "郑常",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 787,
+          "picture": null
+        },
+        {
+          "qid": "Q45502031",
+          "label": "郑常",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 760,
           "picture": null
         }
       ]
@@ -1315,46 +756,9 @@
       ]
     },
     {
-      "name": "陈峤",
-      "poemCount": 3,
-      "candidates": [
-        {
-          "qid": "Q45375039",
-          "label": "陈峤",
-          "aliases": [
-            "延封"
-          ],
-          "sitelinks": 1,
-          "birthYear": 825,
-          "deathYear": 899,
-          "picture": null
-        },
-        {
-          "qid": "Q45541409",
-          "label": "陈峤",
-          "aliases": [
-            "景山"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李荣",
       "poemCount": 3,
       "candidates": [
-        {
-          "qid": "Q45502184",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
         {
           "qid": "Q45548686",
           "label": "李荣",
@@ -1363,59 +767,11 @@
           "birthYear": null,
           "deathYear": 792,
           "picture": null
-        }
-      ]
-    },
-    {
-      "name": "法常",
-      "poemCount": 3,
-      "candidates": [
-        {
-          "qid": "Q9201031",
-          "label": "释法常",
-          "aliases": [
-            "大梅和尚",
-            "法常"
-          ],
-          "sitelinks": 3,
-          "birthYear": 752,
-          "deathYear": 839,
-          "picture": null
         },
         {
-          "qid": "Q45559676",
-          "label": "释法常",
-          "aliases": [
-            "法常"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "王晙",
-      "poemCount": 2,
-      "candidates": [
-        {
-          "qid": "Q7967501",
-          "label": "王晙",
-          "aliases": [
-            "忠烈"
-          ],
-          "sitelinks": 5,
-          "birthYear": 601,
-          "deathYear": 732,
-          "picture": null
-        },
-        {
-          "qid": "Q45439660",
-          "label": "王晙",
-          "aliases": [
-            "光庭"
-          ],
+          "qid": "Q45502184",
+          "label": "李荣",
+          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -1445,32 +801,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 868,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "苑咸",
-      "poemCount": 2,
-      "candidates": [
-        {
-          "qid": "Q15908148",
-          "label": "苑咸",
-          "aliases": [
-            "咸"
-          ],
-          "sitelinks": 2,
-          "birthYear": 710,
-          "deathYear": 758,
-          "picture": null
-        },
-        {
-          "qid": "Q45545420",
-          "label": "苑咸",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null
         }
       ]
@@ -1519,60 +849,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "李谅",
-      "poemCount": 2,
-      "candidates": [
-        {
-          "qid": "Q4260728",
-          "label": "李谅",
-          "aliases": [
-            "复言",
-            "李谅"
-          ],
-          "sitelinks": 3,
-          "birthYear": 775,
-          "deathYear": 833,
-          "picture": null
-        },
-        {
-          "qid": "Q45574930",
-          "label": "李谅",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 797,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "曹汾",
-      "poemCount": 2,
-      "candidates": [
-        {
-          "qid": "Q45595232",
-          "label": "曹汾",
-          "aliases": [
-            "子晋",
-            "道谦"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 874,
-          "picture": null
-        },
-        {
-          "qid": "Q45584300",
-          "label": "曹汾",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 874,
           "picture": null
         }
       ]
@@ -1708,21 +984,21 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45494346",
-          "label": "李士元",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45696328",
           "label": "李士元",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 868,
+          "picture": null
+        },
+        {
+          "qid": "Q45494346",
+          "label": "李士元",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -1756,21 +1032,21 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45478314",
-          "label": "刘云",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45567345",
           "label": "刘云",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 757,
+          "picture": null
+        },
+        {
+          "qid": "Q45478314",
+          "label": "刘云",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -1796,30 +1072,6 @@
           "aliases": [
             "智通"
           ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "封行高",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q45488119",
-          "label": "封行高",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": 655,
-          "picture": null
-        },
-        {
-          "qid": "Q45563563",
-          "label": "封行高",
-          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -1856,21 +1108,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45498286",
-          "label": "李如璧",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45541601",
           "label": "李如璧",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 756,
+          "picture": null
+        },
+        {
+          "qid": "Q45498286",
+          "label": "李如璧",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -1928,21 +1180,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45462207",
-          "label": "卢崇道",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45576034",
           "label": "卢崇道",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 706,
+          "picture": null
+        },
+        {
+          "qid": "Q45462207",
+          "label": "卢崇道",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -1952,7 +1204,7 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45609897",
+          "qid": "Q45599969",
           "label": "崔珪",
           "aliases": [],
           "sitelinks": 0,
@@ -1961,7 +1213,7 @@
           "picture": null
         },
         {
-          "qid": "Q45599969",
+          "qid": "Q45609897",
           "label": "崔珪",
           "aliases": [],
           "sitelinks": 0,
@@ -2024,21 +1276,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45505583",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45600675",
           "label": "李清",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 794,
+          "picture": null
+        },
+        {
+          "qid": "Q45505583",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2122,21 +1374,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45506635",
-          "label": "于结",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 784,
-          "picture": null
-        },
-        {
           "qid": "Q45709724",
           "label": "于结",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45506635",
+          "label": "于结",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 784,
           "picture": null
         }
       ]
@@ -2173,21 +1425,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45500154",
-          "label": "崔绩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 672,
-          "picture": null
-        },
-        {
           "qid": "Q45600806",
           "label": "崔绩",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45500154",
+          "label": "崔绩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 672,
           "picture": null
         }
       ]
@@ -2214,30 +1466,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 800,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "崔瓘",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q18908615",
-          "label": "崔瓘",
-          "aliases": [],
-          "sitelinks": 2,
-          "birthYear": null,
-          "deathYear": 770,
-          "picture": null
-        },
-        {
-          "qid": "Q45421918",
-          "label": "崔瓘",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null
         }
       ]
@@ -2293,44 +1521,9 @@
       ]
     },
     {
-      "name": "袁高",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q45577973",
-          "label": "袁高",
-          "aliases": [
-            "公颐"
-          ],
-          "sitelinks": 2,
-          "birthYear": 728,
-          "deathYear": 787,
-          "picture": null
-        },
-        {
-          "qid": "Q45687781",
-          "label": "袁高",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 730,
-          "deathYear": 790,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "陆瀍",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45590349",
-          "label": "陆瀍",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 776,
-          "picture": null
-        },
         {
           "qid": "Q45539021",
           "label": "陆瀍",
@@ -2338,6 +1531,15 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null
+        },
+        {
+          "qid": "Q45590349",
+          "label": "陆瀍",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 776,
           "picture": null
         }
       ]
@@ -2347,21 +1549,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45487673",
-          "label": "郑据",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 797,
-          "picture": null
-        },
-        {
           "qid": "Q45556701",
           "label": "郑据",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": 761,
           "deathYear": 845,
+          "picture": null
+        },
+        {
+          "qid": "Q45487673",
+          "label": "郑据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 797,
           "picture": null
         }
       ]
@@ -2395,21 +1597,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45533194",
-          "label": "张复",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45695445",
           "label": "张复",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 860,
+          "picture": null
+        },
+        {
+          "qid": "Q45533194",
+          "label": "张复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2439,45 +1641,9 @@
       ]
     },
     {
-      "name": "裴思谦",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q10516229",
-          "label": "裴思谦",
-          "aliases": [
-            "自牧",
-            "裴思谦"
-          ],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45669014",
-          "label": "裴思谦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 843,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李损之",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45504079",
-          "label": "李损之",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
         {
           "qid": "Q45577152",
           "label": "李损之",
@@ -2485,6 +1651,15 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 649,
+          "picture": null
+        },
+        {
+          "qid": "Q45504079",
+          "label": "李损之",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2623,21 +1798,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45463428",
-          "label": "田章",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45606212",
           "label": "田章",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 860,
+          "picture": null
+        },
+        {
+          "qid": "Q45463428",
+          "label": "田章",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2647,21 +1822,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45498879",
-          "label": "李邺",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45698090",
           "label": "李邺",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 851,
+          "picture": null
+        },
+        {
+          "qid": "Q45498879",
+          "label": "李邺",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2745,32 +1920,6 @@
       ]
     },
     {
-      "name": "李克恭",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q11095512",
-          "label": "李克恭",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": 920,
-          "picture": null
-        },
-        {
-          "qid": "Q45498746",
-          "label": "李克恭",
-          "aliases": [
-            "李允恭"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李屿",
       "poemCount": 1,
       "candidates": [
@@ -2801,21 +1950,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45497707",
-          "label": "李旭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45573464",
           "label": "李旭",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 723,
+          "picture": null
+        },
+        {
+          "qid": "Q45497707",
+          "label": "李旭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -2899,7 +2048,7 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45419666",
+          "qid": "Q45451880",
           "label": "韦鼎",
           "aliases": [],
           "sitelinks": 0,
@@ -2908,7 +2057,7 @@
           "picture": null
         },
         {
-          "qid": "Q45451880",
+          "qid": "Q45419666",
           "label": "韦鼎",
           "aliases": [],
           "sitelinks": 0,
@@ -3049,21 +2198,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45499281",
-          "label": "李何",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45555643",
           "label": "李何",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 765,
+          "picture": null
+        },
+        {
+          "qid": "Q45499281",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -3191,44 +2340,9 @@
       ]
     },
     {
-      "name": "韩泰",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q17029914",
-          "label": "韩泰",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": 800,
-          "picture": null
-        },
-        {
-          "qid": "Q45610385",
-          "label": "韩泰",
-          "aliases": [
-            "安平"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 831,
-          "picture": null
-        }
-      ]
-    },
-    {
       "name": "李郁",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45500396",
-          "label": "李郁",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
         {
           "qid": "Q45612923",
           "label": "李郁",
@@ -3236,6 +2350,15 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 859,
+          "picture": null
+        },
+        {
+          "qid": "Q45500396",
+          "label": "李郁",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -3396,21 +2519,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45504556",
-          "label": "李兼",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45695573",
           "label": "李兼",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 792,
+          "picture": null
+        },
+        {
+          "qid": "Q45504556",
+          "label": "李兼",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -3420,21 +2543,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45508749",
-          "label": "李缜",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45600812",
           "label": "李缜",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 831,
+          "picture": null
+        },
+        {
+          "qid": "Q45508749",
+          "label": "李缜",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -3468,21 +2591,21 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45499347",
-          "label": "李伯良",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
           "qid": "Q45700757",
           "label": "李伯良",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 625,
+          "picture": null
+        },
+        {
+          "qid": "Q45499347",
+          "label": "李伯良",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null
         }
       ]
@@ -3535,99 +2658,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "鸿渐",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q948270",
-          "label": "陆羽",
-          "aliases": [
-            "东岗子",
-            "季疵",
-            "桑苧翁",
-            "竟陵子",
-            "茶仙",
-            "茶圣",
-            "茶神",
-            "陆疾",
-            "陆羽",
-            "鸿渐"
-          ],
-          "sitelinks": 26,
-          "birthYear": 733,
-          "deathYear": 804,
-          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Lu%20Y%C3%BC.png"
-        },
-        {
-          "qid": "Q45606023",
-          "label": "释鸿渐",
-          "aliases": [
-            "鸿渐"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "子言",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q11137925",
-          "label": "沈传师",
-          "aliases": [
-            "子言"
-          ],
-          "sitelinks": 2,
-          "birthYear": 769,
-          "deathYear": 827,
-          "picture": null
-        },
-        {
-          "qid": "Q45436986",
-          "label": "释子言",
-          "aliases": [
-            "子言"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        }
-      ]
-    },
-    {
-      "name": "法满",
-      "poemCount": 1,
-      "candidates": [
-        {
-          "qid": "Q45559806",
-          "label": "释法满",
-          "aliases": [
-            "法满"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null
-        },
-        {
-          "qid": "Q45474088",
-          "label": "朱君绪",
-          "aliases": [
-            "法满"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 720,
           "picture": null
         }
       ]
@@ -3839,10 +2869,6 @@
       "poemCount": 32
     },
     {
-      "name": "孟贯",
-      "poemCount": 31
-    },
-    {
       "name": "修睦",
       "poemCount": 31
     },
@@ -4051,10 +3077,6 @@
       "poemCount": 10
     },
     {
-      "name": "盖嘉运",
-      "poemCount": 10
-    },
-    {
       "name": "樊铸",
       "poemCount": 10
     },
@@ -4251,10 +3273,6 @@
       "poemCount": 6
     },
     {
-      "name": "殷遥",
-      "poemCount": 6
-    },
-    {
       "name": "许稷",
       "poemCount": 6
     },
@@ -4332,10 +3350,6 @@
     },
     {
       "name": "楼颕",
-      "poemCount": 5
-    },
-    {
-      "name": "温宪",
       "poemCount": 5
     },
     {
@@ -6352,10 +5366,6 @@
     },
     {
       "name": "李主簿姬",
-      "poemCount": 1
-    },
-    {
-      "name": "湘驿女子",
       "poemCount": 1
     },
     {

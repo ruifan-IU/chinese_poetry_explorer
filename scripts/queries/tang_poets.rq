@@ -7,7 +7,7 @@ SELECT ?item ?itemLabel (SAMPLE(?pic) AS ?picture) (SAMPLE(?birthDate) AS ?birth
   OPTIONAL {?item wdt:P18 ?pic.}
   OPTIONAL {?item wdt:P569 ?birthDate.}
   OPTIONAL {?item wdt:P570 ?deathDate.}
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh-hant,mul,en". }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh-hant,zh,zh-hans,mul,en". }
 }
 GROUP BY ?item ?itemLabel ?sitelinks
 ORDER BY DESC(?sitelinks)
