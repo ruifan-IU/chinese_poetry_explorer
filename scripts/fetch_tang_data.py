@@ -21,6 +21,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from tang_cleaning import UNKNOWN_POET_NAME, normalize_author
 
 REPO_BASE = "https://raw.githubusercontent.com/chinese-poetry/chinese-poetry/master"
 INDICES = range(0, 58000, 1000)  # poet.tang.0.json ... poet.tang.57000.json
@@ -57,7 +58,14 @@ def fetch(repo_path: str, dest: Path) -> None:
     print(f"  saved {dest.name} ({len(data):,} bytes)")
 
 
-def fetch_wikidata(query_file: Path, dest: Path) -> None:
+def fetch_wikidata_by_name(authors: list[dict]) -> None:
+    known_names = {a["name"] for a in authors}
+    normalized_names = {normalize_author(name, known_names) for name in known_names} - {
+        UNKNOWN_POET_NAME
+    }
+
+
+def fetch_wikidata_tang_poets(query_file: Path, dest: Path) -> None:
     """Run a SPARQL query against the Wikidata Query Service, save the JSON results."""
 
     query = query_file.read_text(encoding="utf-8")
@@ -139,7 +147,9 @@ def main() -> None:
         fetch(f"全唐诗/poet.tang.{i}.json", OUT_DIR / "poems" / f"poet.tang.{i}.json")
 
     print("Fetching Tang poets from Wikidata...")
-    fetch_wikidata(QUERIES_DIR / "tang_poets.rq", OUT_DIR / "wikidata_tang_poets.json")
+    fetch_wikidata_tang_poets(
+        QUERIES_DIR / "tang_poets.rq", OUT_DIR / "wikidata_tang_poets.json"
+    )
 
     print("Done.")
 

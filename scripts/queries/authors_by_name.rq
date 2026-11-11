@@ -1,0 +1,23 @@
+SELECT ?item ?itemLabel ?searchName (SAMPLE(?pic) AS ?picture) (SAMPLE(?birthDate) AS ?birth) (SAMPLE(?deathDate) AS ?death) ?sitelinks (GROUP_CONCAT(DISTINCT STR(?alias); separator="|") AS ?aliases) WHERE {
+  VALUES ?name { {NAMES} }
+  ?item rdfs:label|skos:altLabel ?name.
+  # The same name is sent once per language tag (@zh-hant, @zh, @zh-hans);
+  # STR() drops the tag so one item found three ways groups into one row.
+  BIND(STR(?name) AS ?searchName)
+  ?item wikibase:sitelinks ?sitelinks.
+
+  # Period filter: drop items whose known dates rule out the Tang era
+  # (born after 1000, or died before 580). Items without dates are kept:
+  # missing data is not evidence against them.
+  FILTER NOT EXISTS { ?item wdt:P569 ?b. FILTER(YEAR(?b) > 1000) }
+  FILTER NOT EXISTS { ?item wdt:P570 ?d. FILTER(YEAR(?d) < 580) }
+
+  OPTIONAL {?item skos:altLabel ?alias.
+           FILTER(LANG(?alias) IN ("zh", "zh-hant", "zh-hans"))}
+  OPTIONAL {?item wdt:P18 ?pic.}
+  OPTIONAL {?item wdt:P569 ?birthDate.}
+  OPTIONAL {?item wdt:P570 ?deathDate.}
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "zh-hant,zh,zh-hans,mul,en". }
+}
+GROUP BY ?item ?itemLabel ?searchName ?sitelinks
+ORDER BY DESC(?sitelinks)
