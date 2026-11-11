@@ -4,13 +4,16 @@ SELECT ?item ?itemLabel ?searchName (SAMPLE(?pic) AS ?picture) (SAMPLE(?birthDat
   # The same name is sent once per language tag (@zh-hant, @zh, @zh-hans);
   # STR() drops the tag so one item found three ways groups into one row.
   BIND(STR(?name) AS ?searchName)
+  # Humans only. A name search also finds places and works (永安 is a town);
+  # the old query got this for free from occupation = poet.
+  ?item wdt:P31 wd:Q5.
   ?item wikibase:sitelinks ?sitelinks.
 
   # Period filter: drop items whose known dates rule out the Tang era
-  # (born after 1000, or died before 580). Items without dates are kept:
-  # missing data is not evidence against them.
-  FILTER NOT EXISTS { ?item wdt:P569 ?b. FILTER(YEAR(?b) > 1000) }
-  FILTER NOT EXISTS { ?item wdt:P570 ?d. FILTER(YEAR(?d) < 580) }
+  # (born before 500 or after 1000, died before 580 or after 1100). Items
+  # without dates are kept: missing data is not evidence against them.
+  FILTER NOT EXISTS { ?item wdt:P569 ?b. FILTER(YEAR(?b) < 500 || YEAR(?b) > 1000) }
+  FILTER NOT EXISTS { ?item wdt:P570 ?d. FILTER(YEAR(?d) < 580 || YEAR(?d) > 1100) }
 
   OPTIONAL {?item skos:altLabel ?alias.
            FILTER(LANG(?alias) IN ("zh", "zh-hant", "zh-hans"))}
