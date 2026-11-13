@@ -48,3 +48,6 @@ lib/prisma-client/
 prisma/data/raw/
 prisma/data/cleaned/
 prisma/data/*.json
+
+# cache
+scripts/__pycache__

@@ -182,13 +182,28 @@ def match_poet(
     name: str, by_label: dict, by_alias: dict, local_names: set[str]
 ) -> tuple[str, dict | None, list[dict]]:
     """Return (method, chosen candidate or None, all candidates considered)."""
-    for method, index in (("label", by_label), ("alias", by_alias)):
-        hits = index.get(name, [])
-        if len(hits) == 1:
-            return method, hits[0], hits
-        if hits:
-            chosen = resolve_ambiguous(name, hits, local_names)
-            return f"{method}-ambiguous", chosen, hits
+    label_hits = by_label.get(name, [])
+    alias_hits = by_alias.get(name, [])
+    label_qids = {c["qid"] for c in label_hits}
+
+    # One entry per item: an item can match by label *and* alias (Q6505629 has
+    # 龐蘊 as its zh-hant label and as a zh alias). Counted twice, it would tie
+    # with itself in resolve_ambiguous. Label hits go first.
+    combined = label_hits + [c for c in alias_hits if c["qid"] not in label_qids]
+
+    if len(combined) == 1:
+        hit = combined[0]
+        method = "label" if hit["qid"] in label_qids else "alias"
+        return method, hit, combined
+    if combined:
+        chosen = resolve_ambiguous(name, combined, local_names)
+        if chosen:
+            method = "label" if chosen["qid"] in label_qids else "alias"
+        else:
+            # Unresolved: report the tier the clash came from.
+            method = "label" if label_hits else "alias"
+        return f"{method}-ambiguous", chosen, combined
+
     return "none", None, []
 
 

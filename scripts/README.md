@@ -211,11 +211,23 @@ both queries, and once per local name that found it (王灣 and 王湾, or 李�
 - `foundBy`: the local names (Simplified) whose by-name search found it.
 
 Local poet names are then compared with Wikidata names, both converted to
-Simplified Chinese, in two tiers:
+Simplified Chinese. A local name can match an item in two ways:
 
-1. **Label:** the Wikidata item's main name.
-2. **Alias:** courtesy names (字), style names (号) and alternative spellings.
-   These are tried second because different people often share them.
+- **Label:** the Wikidata item's main name.
+- **Alias:** courtesy names (字), style names (号) and alternative spellings.
+
+Label and alias matches are collected **together** into one list of
+candidates, with each item listed once even if it matches both ways. An earlier
+version tried labels first and stopped at the first label match. That picked
+the wrong item in 38 cases, where a namesake's label equals the local name but
+the real poet is only reachable through an alias:
+
+- 朱庆余 matched a 0-sitelink item labelled 朱庆余; the poet Q11093704 is
+  labelled 朱可久;
+- 李适 and 李昂 are the personal names of the emperors 唐德宗 (Q9755) and
+  唐文宗 (Q9790), whose labels are their temple names.
+
+`matchMethod` records whether the chosen item matched by label or by alias.
 
 If a name matches more than one item, `resolve_ambiguous()` decides which one to
 use, or none. Many Wikidata items share names, especially the bulk-imported
@@ -260,23 +272,27 @@ Outputs:
     the same person listed under two names in the source (武则天/武曌,
     李冶/李季兰), so they are candidates for merging.
 
-Latest run: 2,910 of 3,628 poets matched, covering 52,014 of 56,446 poems
-(92%). 1,184 name clashes were resolved, 214 left for review, and 504 poets
-have no candidate at all. Before the by-name lookup it was 2,371 poets and
-46,037 poems.
+Latest run: 2,905 of 3,628 poets matched, covering 52,014 of 56,446 poems
+(92%). 1,241 name clashes were resolved, 219 left for review (209 from labels,
+10 from aliases), and 504 poets have no candidate at all. Before the by-name
+lookup it was 2,371 poets and 46,037 poems.
 
-**Known issue:** the label tier ends the search as soon as a label matches. In
-38 cases a non-poet item whose label is exactly the local name wins over the
-real poet, who is only reachable through an alias. For example 朱庆余 matches a
-0-sitelink item labelled 朱庆余, while the poet Q11093704 is labelled 朱可久.
+Combining labels and aliases corrected 40 matches, but moved 16 poets that
+label-first matching had resolved into review. An alias now adds a second Tang
+poet as a candidate, and steps 3–4 can't choose between them: 牛峤 (a variant
+spelling 牛𫊸, probably a duplicate item), 卢殷 (卢隠, with conflicting dates).
+For 子兰 the old match was probably wrong, so review is the better outcome.
+Preferring label matches among several Tang poets would resolve some of these.
 
 ## Status and next steps
 
 - [ ] `fame_score()` in `clean_tang_data.py`: combine the anthology signals into `fame`.
 - [x] `resolve_ambiguous()` in `match_wikidata_poets.py`: the rule for name clashes.
 - [x] Unmatched famous poets (齐己, 贯休, 皮日休…): found by the by-name lookup.
-- [ ] Cross-tier matching in `match_poet()`: when no label match is a Tang
-      poet, also consider alias matches (the 38 cases above).
+- [x] Cross-tier matching in `match_poet()`: label and alias matches compete
+      as one list of candidates.
+- [ ] Optional: prefer label matches among several Tang-poet candidates, to
+      resolve some of the 16 poets moved to review.
 - [ ] Merge the duplicate local poets found by `collisions` and by candidates
       whose `foundBy` lists two local names.
 - [ ] Portraits: download the `P18` images from Wikimedia Commons with their
