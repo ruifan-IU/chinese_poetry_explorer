@@ -31,6 +31,18 @@ AUDIT_DIR = DATA_DIR / "audit" / "tang"
 
 t2s = OpenCC("t2s").convert
 
+# Local poet (Simplified) -> QID, for poets the rules get wrong. Each entry
+# overrides matching entirely, so it needs its own evidence; note it here.
+MANUAL_MATCHES = {
+    # The 開元-era official, not 唐文宗 (Q9790, personal name 李昂), whom the
+    # alias matched. CBDB 92964: 考功員外郎, 知貢舉 in 開元24 (736).
+    "李昂": "Q45500865",
+    # The Southern Tang ruler (後主煜), not the obscure Tang 李煜 (d. 712)
+    # that step 2 prefers for being tagged a Tang poet.
+    "李煜": "Q378528",
+    "李璟": "Q718254",
+}
+
 
 def _year(binding: dict | None) -> int | None:
     """'0701-05-23T00:00:00Z' -> 701. Negative years (BCE) keep their sign."""
@@ -94,10 +106,14 @@ def load_candidates() -> list[dict]:
     return candidates
 
 
-def build_index(candidates: list[dict], key: str) -> dict[str, list[dict]]:
+def build_index(candidates: list[dict], *keys: str) -> dict[str, list[dict]]:
+    """Map each name in the given fields to the candidates that have it."""
     index = defaultdict(list)
     for c in candidates:
-        names = c[key] if isinstance(c[key], list) else [c[key]]
+        names = set()
+        for key in keys:
+            names.update(c[key] if isinstance(c[key], list) else [c[key]])
+        # A set, so an item listed under one name by two fields is indexed once.
         for name in names:
             index[name].append(c)
     return index
@@ -214,8 +230,23 @@ def main() -> None:
     local_names = {p["name"] for p in poets}
 
     candidates = load_candidates()
+    by_qid = {c["qid"]: c for c in candidates}
+    # Fail loudly rather than silently ignore an entry that no longer applies
+    # (a renamed poet, or an item the queries stopped returning).
+    for name, qid in MANUAL_MATCHES.items():
+        if name not in local_names:
+            raise ValueError(f"MANUAL_MATCHES: {name} is not a local poet")
+        if qid not in by_qid:
+            raise ValueError(
+                f"MANUAL_MATCHES: {qid} ({name}) not in the Wikidata results"
+            )
+
     by_label = build_index(candidates, "label")
-    by_alias = build_index(candidates, "aliases")
+    # foundBy counts as an alias: Wikidata matched that name exactly against
+    # one of the item's labels or aliases. It covers names our label and
+    # aliases miss, such as a zh-hans label when the label kept is zh-hant
+    # (唐中宗 for Q9717, labelled 李顯).
+    by_alias = build_index(candidates, "aliases", "foundBy")
 
     matches, ambiguous, unmatched = {}, [], []
     methods = Counter()
@@ -223,7 +254,11 @@ def main() -> None:
 
     for poet in poets:
         name = poet["name"]
-        method, chosen, hits = match_poet(name, by_label, by_alias, local_names)
+        if name in MANUAL_MATCHES:
+            chosen = by_qid[MANUAL_MATCHES[name]]
+            method, hits = "manual", [chosen]
+        else:
+            method, chosen, hits = match_poet(name, by_label, by_alias, local_names)
         methods[method if chosen or method == "none" else f"{method} (unresolved)"] += 1
 
         if chosen:

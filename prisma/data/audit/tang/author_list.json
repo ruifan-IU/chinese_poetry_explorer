@@ -57,16 +57,18 @@
   {
     "name": "齐己",
     "alternativeNames": [
+      "僧齊己",
       "齊己"
     ],
-    "poemCount": 820
+    "poemCount": 836
   },
   {
     "name": "贯休",
     "alternativeNames": [
+      "僧貫休",
       "貫休"
     ],
-    "poemCount": 735
+    "poemCount": 768
   },
   {
     "name": "易静",
@@ -163,9 +165,10 @@
   {
     "name": "皎然",
     "alternativeNames": [
+      "僧皎然",
       "皎然"
     ],
-    "poemCount": 487
+    "poemCount": 503
   },
   {
     "name": "张籍",
@@ -762,6 +765,15 @@
     "poemCount": 117
   },
   {
+    "name": "唐太宗",
+    "alternativeNames": [
+      "太宗皇帝",
+      "李世民",
+      "太宗皇帝李世民"
+    ],
+    "poemCount": 111
+  },
+  {
     "name": "吕温",
     "alternativeNames": [
       "呂溫"
@@ -774,14 +786,6 @@
       "曹鄴"
     ],
     "poemCount": 111
-  },
-  {
-    "name": "太宗皇帝",
-    "alternativeNames": [
-      "太宗皇帝",
-      "太宗皇帝李世民"
-    ],
-    "poemCount": 110
   },
   {
     "name": "卢仝",
@@ -1001,6 +1005,16 @@
     "poemCount": 79
   },
   {
+    "name": "唐玄宗",
+    "alternativeNames": [
+      "明皇帝",
+      "唐明皇",
+      "李隆基",
+      "玄宗皇帝李隆基"
+    ],
+    "poemCount": 78
+  },
+  {
     "name": "于鹄",
     "alternativeNames": [
       "于鵠"
@@ -1050,19 +1064,19 @@
     "poemCount": 72
   },
   {
-    "name": "明皇帝",
-    "alternativeNames": [
-      "明皇帝",
-      "玄宗皇帝李隆基"
-    ],
-    "poemCount": 71
-  },
-  {
     "name": "王涯",
     "alternativeNames": [
       "王涯"
     ],
     "poemCount": 71
+  },
+  {
+    "name": "李煜",
+    "alternativeNames": [
+      "後主煜",
+      "李煜"
+    ],
+    "poemCount": 69
   },
   {
     "name": "牟融",
@@ -1170,6 +1184,15 @@
     "poemCount": 57
   },
   {
+    "name": "武则天",
+    "alternativeNames": [
+      "則天皇后",
+      "武則天",
+      "武曌"
+    ],
+    "poemCount": 56
+  },
+  {
     "name": "褚亮",
     "alternativeNames": [
       "褚亮"
@@ -1210,13 +1233,6 @@
       "高駢"
     ],
     "poemCount": 55
-  },
-  {
-    "name": "后主煜",
-    "alternativeNames": [
-      "後主煜"
-    ],
-    "poemCount": 54
   },
   {
     "name": "于武陵",
@@ -1287,13 +1303,6 @@
       "崔峒"
     ],
     "poemCount": 49
-  },
-  {
-    "name": "则天皇后",
-    "alternativeNames": [
-      "則天皇后"
-    ],
-    "poemCount": 48
   },
   {
     "name": "于𣸣",
@@ -1612,13 +1621,6 @@
     "poemCount": 33
   },
   {
-    "name": "僧贯休",
-    "alternativeNames": [
-      "僧貫休"
-    ],
-    "poemCount": 33
-  },
-  {
     "name": "上官仪",
     "alternativeNames": [
       "上官儀"
@@ -1871,6 +1873,14 @@
     "poemCount": 28
   },
   {
+    "name": "子兰",
+    "alternativeNames": [
+      "僧子蘭",
+      "子蘭"
+    ],
+    "poemCount": 27
+  },
+  {
     "name": "刘威",
     "alternativeNames": [
       "劉威"
@@ -1909,13 +1919,6 @@
     "name": "章谒",
     "alternativeNames": [
       "章謁"
-    ],
-    "poemCount": 26
-  },
-  {
-    "name": "子兰",
-    "alternativeNames": [
-      "子蘭"
     ],
     "poemCount": 26
   },
@@ -2323,7 +2326,7 @@
     "poemCount": 18
   },
   {
-    "name": "德宗皇帝",
+    "name": "唐德宗",
     "alternativeNames": [
       "德宗皇帝",
       "德宗皇帝李适"
@@ -2406,20 +2409,6 @@
       "從諗"
     ],
     "poemCount": 17
-  },
-  {
-    "name": "僧齐己",
-    "alternativeNames": [
-      "僧齊己"
-    ],
-    "poemCount": 16
-  },
-  {
-    "name": "僧皎然",
-    "alternativeNames": [
-      "僧皎然"
-    ],
-    "poemCount": 16
   },
   {
     "name": "阎朝隐",
@@ -2530,13 +2519,6 @@
     "name": "蒋吉",
     "alternativeNames": [
       "蔣吉"
-    ],
-    "poemCount": 15
-  },
-  {
-    "name": "李煜",
-    "alternativeNames": [
-      "李煜"
     ],
     "poemCount": 15
   },
@@ -2816,7 +2798,7 @@
     "poemCount": 13
   },
   {
-    "name": "高宗皇帝",
+    "name": "唐高宗",
     "alternativeNames": [
       "高宗皇帝",
       "高宗皇帝李治"
@@ -2824,7 +2806,7 @@
     "poemCount": 12
   },
   {
-    "name": "宣宗皇帝",
+    "name": "唐宣宗",
     "alternativeNames": [
       "宣宗皇帝",
       "宣宗皇帝李忱"
@@ -3444,6 +3426,14 @@
     "poemCount": 9
   },
   {
+    "name": "王衍",
+    "alternativeNames": [
+      "後主衍",
+      "王衍"
+    ],
+    "poemCount": 8
+  },
+  {
     "name": "蜀太后徐氏",
     "alternativeNames": [
       "蜀太后徐氏"
@@ -3689,23 +3679,16 @@
     "poemCount": 8
   },
   {
-    "name": "中宗皇帝",
+    "name": "唐中宗",
     "alternativeNames": [
       "中宗皇帝"
     ],
     "poemCount": 7
   },
   {
-    "name": "文宗皇帝",
+    "name": "唐文宗",
     "alternativeNames": [
       "文宗皇帝"
-    ],
-    "poemCount": 7
-  },
-  {
-    "name": "武则天",
-    "alternativeNames": [
-      "武則天"
     ],
     "poemCount": 7
   },
@@ -4064,13 +4047,6 @@
     "name": "徐贤妃",
     "alternativeNames": [
       "徐賢妃"
-    ],
-    "poemCount": 6
-  },
-  {
-    "name": "后主衍",
-    "alternativeNames": [
-      "後主衍"
     ],
     "poemCount": 6
   },
@@ -4523,7 +4499,15 @@
     "poemCount": 6
   },
   {
-    "name": "昭宗皇帝",
+    "name": "唐肃宗",
+    "alternativeNames": [
+      "肅宗皇帝",
+      "肅宗"
+    ],
+    "poemCount": 5
+  },
+  {
+    "name": "唐昭宗",
     "alternativeNames": [
       "昭宗皇帝"
     ],
@@ -5161,13 +5145,6 @@
       "岑真人"
     ],
     "poemCount": 5
-  },
-  {
-    "name": "肃宗皇帝",
-    "alternativeNames": [
-      "肅宗皇帝"
-    ],
-    "poemCount": 4
   },
   {
     "name": "吴越王钱镠",
@@ -6036,13 +6013,6 @@
     "name": "朱千乘",
     "alternativeNames": [
       "朱千乘"
-    ],
-    "poemCount": 4
-  },
-  {
-    "name": "唐明皇",
-    "alternativeNames": [
-      "唐明皇"
     ],
     "poemCount": 4
   },
@@ -7553,9 +7523,10 @@
     "poemCount": 3
   },
   {
-    "name": "南唐嗣主李璟",
+    "name": "李璟",
     "alternativeNames": [
-      "南唐嗣主李璟"
+      "南唐嗣主李璟",
+      "李璟"
     ],
     "poemCount": 3
   },
@@ -7591,13 +7562,6 @@
     "name": "来鹏",
     "alternativeNames": [
       "來鵬"
-    ],
-    "poemCount": 3
-  },
-  {
-    "name": "李隆基",
-    "alternativeNames": [
-      "李隆基"
     ],
     "poemCount": 3
   },
@@ -7936,6 +7900,14 @@
       "馮友仁"
     ],
     "poemCount": 3
+  },
+  {
+    "name": "唐睿宗",
+    "alternativeNames": [
+      "睿宗皇帝",
+      "睿宗"
+    ],
+    "poemCount": 2
   },
   {
     "name": "章怀太子",
@@ -11492,13 +11464,6 @@
     "poemCount": 2
   },
   {
-    "name": "王衍",
-    "alternativeNames": [
-      "王衍"
-    ],
-    "poemCount": 2
-  },
-  {
     "name": "花蘂夫人",
     "alternativeNames": [
       "花蘂夫人"
@@ -11567,13 +11532,6 @@
       "若訥"
     ],
     "poemCount": 2
-  },
-  {
-    "name": "睿宗皇帝",
-    "alternativeNames": [
-      "睿宗皇帝"
-    ],
-    "poemCount": 1
   },
   {
     "name": "文德皇后",
@@ -11852,13 +11810,6 @@
     "name": "程氏长文",
     "alternativeNames": [
       "程氏長文"
-    ],
-    "poemCount": 1
-  },
-  {
-    "name": "僧子兰",
-    "alternativeNames": [
-      "僧子蘭"
     ],
     "poemCount": 1
   },
@@ -19311,13 +19262,6 @@
     "poemCount": 1
   },
   {
-    "name": "肃宗",
-    "alternativeNames": [
-      "肅宗"
-    ],
-    "poemCount": 1
-  },
-  {
     "name": "代宗",
     "alternativeNames": [
       "代宗"
@@ -19426,13 +19370,6 @@
     "name": "高祖",
     "alternativeNames": [
       "高祖"
-    ],
-    "poemCount": 1
-  },
-  {
-    "name": "睿宗",
-    "alternativeNames": [
-      "睿宗"
     ],
     "poemCount": 1
   },
@@ -21159,20 +21096,6 @@
     "poemCount": 1
   },
   {
-    "name": "李世民",
-    "alternativeNames": [
-      "李世民"
-    ],
-    "poemCount": 1
-  },
-  {
-    "name": "武曌",
-    "alternativeNames": [
-      "武曌"
-    ],
-    "poemCount": 1
-  },
-  {
     "name": "左匡政",
     "alternativeNames": [
       "左匡政"
@@ -22622,7 +22545,7 @@
     "poemCount": 1
   },
   {
-    "name": "顺宗皇帝李诵",
+    "name": "唐顺宗",
     "alternativeNames": [
       "順宗皇帝李誦"
     ],
@@ -25376,13 +25299,6 @@
     "name": "杨溥",
     "alternativeNames": [
       "楊溥"
-    ],
-    "poemCount": 0
-  },
-  {
-    "name": "李璟",
-    "alternativeNames": [
-      "李璟"
     ],
     "poemCount": 0
   },

@@ -1,21 +1,22 @@
 {
   "summary": {
-    "none": 504,
-    "alias-ambiguous": 107,
-    "alias": 378,
-    "label-ambiguous": 1134,
-    "label": 1286,
-    "label-ambiguous (unresolved)": 209,
+    "label": 1287,
+    "alias": 381,
+    "label-ambiguous": 1137,
+    "none": 481,
+    "alias-ambiguous": 104,
+    "manual": 3,
+    "label-ambiguous (unresolved)": 211,
     "alias-ambiguous (unresolved)": 10
   },
   "collisions": {
-    "Q9738": [
-      "武则天",
-      "武曌"
-    ],
     "Q45465103": [
       "丘说",
       "丘悦"
+    ],
+    "Q11644522": [
+      "皎然",
+      "清昼"
     ],
     "Q45519847": [
       "余延寿",
@@ -97,10 +98,6 @@
       "郑中丞",
       "郑儋"
     ],
-    "Q11644522": [
-      "清昼",
-      "皎然"
-    ],
     "Q65799531": [
       "越溪杨女",
       "杨氏"
@@ -137,11 +134,6 @@
       "贺兰暹",
       "贺兰遂"
     ],
-    "Q9746": [
-      "唐明皇",
-      "李隆基",
-      "释玄宗"
-    ],
     "Q1036789": [
       "钱弘俶",
       "钱俶"
@@ -153,11 +145,10 @@
       "poemCount": 78,
       "candidates": [
         {
-          "qid": "Q17011709",
+          "qid": "Q30017996",
           "label": "章孝标",
           "aliases": [
-            "章孝标",
-            "道正"
+            "章孝标"
           ],
           "sitelinks": 1,
           "birthYear": null,
@@ -169,10 +160,11 @@
           ]
         },
         {
-          "qid": "Q30017996",
+          "qid": "Q17011709",
           "label": "章孝标",
           "aliases": [
-            "章孝标"
+            "章孝标",
+            "道正"
           ],
           "sitelinks": 1,
           "birthYear": null,
@@ -190,7 +182,7 @@
       "poemCount": 60,
       "candidates": [
         {
-          "qid": "Q10412907",
+          "qid": "Q48929760",
           "label": "王周",
           "aliases": [],
           "sitelinks": 2,
@@ -203,7 +195,7 @@
           ]
         },
         {
-          "qid": "Q48929760",
+          "qid": "Q10412907",
           "label": "王周",
           "aliases": [],
           "sitelinks": 2,
@@ -360,19 +352,6 @@
       "poemCount": 33,
       "candidates": [
         {
-          "qid": "Q45551787",
-          "label": "林宽",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "林宽"
-          ]
-        },
-        {
           "qid": "Q45617384",
           "label": "林宽",
           "aliases": [],
@@ -387,6 +366,19 @@
         },
         {
           "qid": "Q45622881",
+          "label": "林宽",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "林宽"
+          ]
+        },
+        {
+          "qid": "Q45551787",
           "label": "林宽",
           "aliases": [],
           "sitelinks": 0,
@@ -441,7 +433,7 @@
     },
     {
       "name": "子兰",
-      "poemCount": 26,
+      "poemCount": 27,
       "candidates": [
         {
           "qid": "Q10944059",
@@ -512,7 +504,7 @@
       "poemCount": 19,
       "candidates": [
         {
-          "qid": "Q45687134",
+          "qid": "Q104723585",
           "label": "郭震",
           "aliases": [],
           "sitelinks": 1,
@@ -525,7 +517,7 @@
           ]
         },
         {
-          "qid": "Q104723585",
+          "qid": "Q45687134",
           "label": "郭震",
           "aliases": [],
           "sitelinks": 1,
@@ -604,6 +596,19 @@
       "poemCount": 19,
       "candidates": [
         {
+          "qid": "Q45413308",
+          "label": "王初",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王初"
+          ]
+        },
+        {
           "qid": "Q45431848",
           "label": "王初",
           "aliases": [],
@@ -618,19 +623,6 @@
         },
         {
           "qid": "Q45439401",
-          "label": "王初",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王初"
-          ]
-        },
-        {
-          "qid": "Q45413308",
           "label": "王初",
           "aliases": [],
           "sitelinks": 0,
@@ -749,19 +741,6 @@
           ]
         },
         {
-          "qid": "Q45633055",
-          "label": "薛据",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 701,
-          "deathYear": 767,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "薛据"
-          ]
-        },
-        {
           "qid": "Q65914370",
           "label": "薛据",
           "aliases": [],
@@ -770,6 +749,19 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "薛据"
+          ]
+        },
+        {
+          "qid": "Q45633055",
+          "label": "薛据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 701,
+          "deathYear": 767,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "薛据"
           ]
@@ -1017,19 +1009,6 @@
           ]
         },
         {
-          "qid": "Q45626065",
-          "label": "李嶷",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 718,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李嶷"
-          ]
-        },
-        {
           "qid": "Q45510539",
           "label": "李嶷",
           "aliases": [],
@@ -1038,6 +1017,19 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": true,
+          "foundBy": [
+            "李嶷"
+          ]
+        },
+        {
+          "qid": "Q45626065",
+          "label": "李嶷",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 718,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李嶷"
           ]
@@ -1156,12 +1148,12 @@
           ]
         },
         {
-          "qid": "Q45640505",
+          "qid": "Q45610534",
           "label": "李纾",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 798,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -1169,12 +1161,12 @@
           ]
         },
         {
-          "qid": "Q45610534",
+          "qid": "Q45640505",
           "label": "李纾",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 798,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -1265,6 +1257,21 @@
           ]
         },
         {
+          "qid": "Q11097337",
+          "label": "李涛",
+          "aliases": [
+            "李涛"
+          ],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/2008Taipei101RunUp%20Press%20Conference%20Tao%20Lee.jpg",
+          "isTangPoet": false,
+          "foundBy": [
+            "李涛"
+          ]
+        },
+        {
           "qid": "Q45521581",
           "label": "李涛",
           "aliases": [
@@ -1276,21 +1283,6 @@
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李涛"
-          ]
-        },
-        {
-          "qid": "Q11097337",
-          "label": "李涛",
-          "aliases": [
-            "李涛"
-          ],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/2008Taipei101RunUp%20Press%20Conference%20Tao%20Lee.jpg",
           "isTangPoet": false,
           "foundBy": [
             "李涛"
@@ -1336,21 +1328,6 @@
           ]
         },
         {
-          "qid": "Q45424112",
-          "label": "李涛",
-          "aliases": [
-            "养源"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李涛"
-          ]
-        },
-        {
           "qid": "Q45357570",
           "label": "李涛",
           "aliases": [
@@ -1367,14 +1344,16 @@
           ]
         },
         {
-          "qid": "Q45504620",
+          "qid": "Q45424112",
           "label": "李涛",
-          "aliases": [],
+          "aliases": [
+            "养源"
+          ],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "李涛"
           ]
@@ -1388,6 +1367,19 @@
           "deathYear": 890,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李涛"
+          ]
+        },
+        {
+          "qid": "Q45504620",
+          "label": "李涛",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李涛"
           ]
@@ -1578,12 +1570,12 @@
           ]
         },
         {
-          "qid": "Q45549627",
+          "qid": "Q45380687",
           "label": "郑损",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 885,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -1591,12 +1583,12 @@
           ]
         },
         {
-          "qid": "Q45380687",
+          "qid": "Q45549627",
           "label": "郑损",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 885,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -1730,47 +1722,6 @@
           ]
         },
         {
-          "qid": "Q45613718",
-          "label": "张琰",
-          "aliases": [
-            "张炎"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "张琰"
-          ]
-        },
-        {
-          "qid": "Q45482401",
-          "label": "张琰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张琰"
-          ]
-        },
-        {
-          "qid": "Q45531370",
-          "label": "张琰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张琰"
-          ]
-        },
-        {
           "qid": "Q45415156",
           "label": "张琰",
           "aliases": [],
@@ -1797,20 +1748,59 @@
           ]
         },
         {
-          "qid": "Q45534705",
+          "qid": "Q45531370",
           "label": "张琰",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "张琰"
           ]
         },
         {
           "qid": "Q45642096",
+          "label": "张琰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张琰"
+          ]
+        },
+        {
+          "qid": "Q45482401",
+          "label": "张琰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张琰"
+          ]
+        },
+        {
+          "qid": "Q45682086",
+          "label": "张琰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张琰"
+          ]
+        },
+        {
+          "qid": "Q45692545",
           "label": "张琰",
           "aliases": [],
           "sitelinks": 0,
@@ -1862,32 +1852,6 @@
           ]
         },
         {
-          "qid": "Q45682086",
-          "label": "张琰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张琰"
-          ]
-        },
-        {
-          "qid": "Q45692545",
-          "label": "张琰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张琰"
-          ]
-        },
-        {
           "qid": "Q45613242",
           "label": "张琰",
           "aliases": [],
@@ -1896,6 +1860,34 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "张琰"
+          ]
+        },
+        {
+          "qid": "Q45534705",
+          "label": "张琰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "张琰"
+          ]
+        },
+        {
+          "qid": "Q45613718",
+          "label": "张琰",
+          "aliases": [
+            "张炎"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "张琰"
           ]
@@ -1999,19 +1991,6 @@
           ]
         },
         {
-          "qid": "Q45514659",
-          "label": "张鼎",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张鼎"
-          ]
-        },
-        {
           "qid": "Q45440076",
           "label": "张鼎",
           "aliases": [],
@@ -2051,7 +2030,7 @@
           ]
         },
         {
-          "qid": "Q45536288",
+          "qid": "Q45514659",
           "label": "张鼎",
           "aliases": [],
           "sitelinks": 0,
@@ -2065,32 +2044,6 @@
         },
         {
           "qid": "Q45636844",
-          "label": "张鼎",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张鼎"
-          ]
-        },
-        {
-          "qid": "Q45570922",
-          "label": "张鼎",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张鼎"
-          ]
-        },
-        {
-          "qid": "Q45572958",
           "label": "张鼎",
           "aliases": [],
           "sitelinks": 0,
@@ -2129,6 +2082,32 @@
           ]
         },
         {
+          "qid": "Q45570922",
+          "label": "张鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张鼎"
+          ]
+        },
+        {
+          "qid": "Q45572958",
+          "label": "张鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张鼎"
+          ]
+        },
+        {
           "qid": "Q45597980",
           "label": "张鼎",
           "aliases": [],
@@ -2143,6 +2122,19 @@
         },
         {
           "qid": "Q45603327",
+          "label": "张鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张鼎"
+          ]
+        },
+        {
+          "qid": "Q45536288",
           "label": "张鼎",
           "aliases": [],
           "sitelinks": 0,
@@ -2279,32 +2271,6 @@
           ]
         },
         {
-          "qid": "Q45533387",
-          "label": "张衮",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张衮"
-          ]
-        },
-        {
-          "qid": "Q45568097",
-          "label": "张衮",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张衮"
-          ]
-        },
-        {
           "qid": "Q45662344",
           "label": "张衮",
           "aliases": [],
@@ -2344,6 +2310,19 @@
           ]
         },
         {
+          "qid": "Q45568097",
+          "label": "张衮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张衮"
+          ]
+        },
+        {
           "qid": "Q45699085",
           "label": "张衮",
           "aliases": [],
@@ -2358,6 +2337,19 @@
         },
         {
           "qid": "Q65907242",
+          "label": "张衮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张衮"
+          ]
+        },
+        {
+          "qid": "Q45533387",
           "label": "张衮",
           "aliases": [],
           "sitelinks": 0,
@@ -2389,12 +2381,12 @@
           ]
         },
         {
-          "qid": "Q45497447",
+          "qid": "Q26159456",
           "label": "李休烈",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 688,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -2402,12 +2394,12 @@
           ]
         },
         {
-          "qid": "Q26159456",
+          "qid": "Q45497447",
           "label": "李休烈",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 688,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -2444,19 +2436,6 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
-          "foundBy": [
-            "李深"
-          ]
-        },
-        {
-          "qid": "Q45505778",
-          "label": "李深",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
           "foundBy": [
             "李深"
           ]
@@ -2501,7 +2480,20 @@
           ]
         },
         {
-          "qid": "Q45621884",
+          "qid": "Q45505778",
+          "label": "李深",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李深"
+          ]
+        },
+        {
+          "qid": "Q45525845",
           "label": "李深",
           "aliases": [],
           "sitelinks": 0,
@@ -2527,20 +2519,7 @@
           ]
         },
         {
-          "qid": "Q45525845",
-          "label": "李深",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李深"
-          ]
-        },
-        {
-          "qid": "Q45646368",
+          "qid": "Q45621884",
           "label": "李深",
           "aliases": [],
           "sitelinks": 0,
@@ -2561,6 +2540,19 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": true,
+          "foundBy": [
+            "李深"
+          ]
+        },
+        {
+          "qid": "Q45646368",
+          "label": "李深",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李深"
           ]
@@ -2718,7 +2710,7 @@
           ]
         },
         {
-          "qid": "Q45412196",
+          "qid": "Q45442643",
           "label": "李浩",
           "aliases": [],
           "sitelinks": 0,
@@ -2757,7 +2749,20 @@
           ]
         },
         {
-          "qid": "Q45507306",
+          "qid": "Q45412196",
+          "label": "李浩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李浩"
+          ]
+        },
+        {
+          "qid": "Q45457793",
           "label": "李浩",
           "aliases": [],
           "sitelinks": 0,
@@ -2796,19 +2801,6 @@
           ]
         },
         {
-          "qid": "Q45442643",
-          "label": "李浩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李浩"
-          ]
-        },
-        {
           "qid": "Q45491387",
           "label": "李浩",
           "aliases": [],
@@ -2822,20 +2814,7 @@
           ]
         },
         {
-          "qid": "Q45457793",
-          "label": "李浩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李浩"
-          ]
-        },
-        {
-          "qid": "Q45580389",
+          "qid": "Q45507306",
           "label": "李浩",
           "aliases": [],
           "sitelinks": 0,
@@ -2862,6 +2841,19 @@
         },
         {
           "qid": "Q45522086",
+          "label": "李浩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李浩"
+          ]
+        },
+        {
+          "qid": "Q45580389",
           "label": "李浩",
           "aliases": [],
           "sitelinks": 0,
@@ -2934,7 +2926,7 @@
           ]
         },
         {
-          "qid": "Q45477429",
+          "qid": "Q45682884",
           "label": "张元一",
           "aliases": [],
           "sitelinks": 0,
@@ -2947,7 +2939,7 @@
           ]
         },
         {
-          "qid": "Q45682884",
+          "qid": "Q45477429",
           "label": "张元一",
           "aliases": [],
           "sitelinks": 0,
@@ -3002,7 +2994,7 @@
       "poemCount": 3,
       "candidates": [
         {
-          "qid": "Q97350928",
+          "qid": "Q45543096",
           "label": "陈嘉言",
           "aliases": [],
           "sitelinks": 1,
@@ -3028,7 +3020,7 @@
           ]
         },
         {
-          "qid": "Q45543096",
+          "qid": "Q97350928",
           "label": "陈嘉言",
           "aliases": [],
           "sitelinks": 1,
@@ -3070,6 +3062,19 @@
           ]
         },
         {
+          "qid": "Q45516519",
+          "label": "陈嘉言",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈嘉言"
+          ]
+        },
+        {
           "qid": "Q45553282",
           "label": "陈嘉言",
           "aliases": [],
@@ -3084,19 +3089,6 @@
         },
         {
           "qid": "Q45594973",
-          "label": "陈嘉言",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈嘉言"
-          ]
-        },
-        {
-          "qid": "Q45516519",
           "label": "陈嘉言",
           "aliases": [],
           "sitelinks": 0,
@@ -3229,19 +3221,6 @@
           ]
         },
         {
-          "qid": "Q45553133",
-          "label": "李岑",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 782,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李岑"
-          ]
-        },
-        {
           "qid": "Q45498949",
           "label": "李岑",
           "aliases": [],
@@ -3281,14 +3260,14 @@
           ]
         },
         {
-          "qid": "Q45602258",
+          "qid": "Q45553133",
           "label": "李岑",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 757,
+          "deathYear": 782,
           "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
             "李岑"
           ]
@@ -3300,6 +3279,19 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李岑"
+          ]
+        },
+        {
+          "qid": "Q45602258",
+          "label": "李岑",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 757,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -3404,6 +3396,19 @@
           ]
         },
         {
+          "qid": "Q45556765",
+          "label": "郑常",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 787,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "郑常"
+          ]
+        },
+        {
           "qid": "Q45502031",
           "label": "郑常",
           "aliases": [],
@@ -3425,19 +3430,6 @@
           "deathYear": 797,
           "picture": null,
           "isTangPoet": false,
-          "foundBy": [
-            "郑常"
-          ]
-        },
-        {
-          "qid": "Q45556765",
-          "label": "郑常",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 787,
-          "picture": null,
-          "isTangPoet": true,
           "foundBy": [
             "郑常"
           ]
@@ -3502,6 +3494,25 @@
           ]
         },
         {
+          "qid": "Q11094719",
+          "label": "朱虚",
+          "aliases": [
+            "于园",
+            "介庵",
+            "可庵",
+            "若虚",
+            "邵斋"
+          ],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "若虚"
+          ]
+        },
+        {
           "qid": "Q45667058",
           "label": "李万实",
           "aliases": [
@@ -3527,40 +3538,6 @@
           "sitelinks": 1,
           "birthYear": null,
           "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "若虚"
-          ]
-        },
-        {
-          "qid": "Q11094719",
-          "label": "朱虚",
-          "aliases": [
-            "于园",
-            "介庵",
-            "可庵",
-            "若虚",
-            "邵斋"
-          ],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "若虚"
-          ]
-        },
-        {
-          "qid": "Q45544966",
-          "label": "释若虚",
-          "aliases": [
-            "若虚"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 949,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -3622,6 +3599,21 @@
           "sitelinks": 0,
           "birthYear": 682,
           "deathYear": 732,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "若虚"
+          ]
+        },
+        {
+          "qid": "Q45544966",
+          "label": "释若虚",
+          "aliases": [
+            "若虚"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 949,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -3735,6 +3727,58 @@
           ]
         },
         {
+          "qid": "Q45438126",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45441082",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 792,
+          "deathYear": 857,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45442196",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45442834",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
           "qid": "Q45414529",
           "label": "李荣",
           "aliases": [],
@@ -3826,6 +3870,32 @@
           ]
         },
         {
+          "qid": "Q45449908",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45453772",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
           "qid": "Q45475317",
           "label": "李荣",
           "aliases": [],
@@ -3853,84 +3923,6 @@
         },
         {
           "qid": "Q45481597",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45438126",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45441082",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 792,
-          "deathYear": 857,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45442196",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45442834",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45548686",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 792,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45550925",
           "label": "李荣",
           "aliases": [],
           "sitelinks": 0,
@@ -3982,27 +3974,14 @@
           ]
         },
         {
-          "qid": "Q45449908",
+          "qid": "Q45502184",
           "label": "李荣",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45453772",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
             "李荣"
           ]
@@ -4034,7 +4013,7 @@
           ]
         },
         {
-          "qid": "Q45628843",
+          "qid": "Q45508337",
           "label": "李荣",
           "aliases": [],
           "sitelinks": 0,
@@ -4047,7 +4026,33 @@
           ]
         },
         {
-          "qid": "Q45633787",
+          "qid": "Q45510504",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45548686",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 792,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45550925",
           "label": "李荣",
           "aliases": [],
           "sitelinks": 0,
@@ -4112,32 +4117,6 @@
           ]
         },
         {
-          "qid": "Q45508337",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45510504",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
           "qid": "Q45580587",
           "label": "李荣",
           "aliases": [],
@@ -4164,46 +4143,33 @@
           ]
         },
         {
-          "qid": "Q45591287",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45502184",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
-          "qid": "Q45644488",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
           "qid": "Q45614224",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45628843",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45591287",
           "label": "李荣",
           "aliases": [],
           "sitelinks": 0,
@@ -4268,19 +4234,6 @@
           ]
         },
         {
-          "qid": "Q45666559",
-          "label": "李荣",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李荣"
-          ]
-        },
-        {
           "qid": "Q45652794",
           "label": "李荣",
           "aliases": [],
@@ -4333,6 +4286,45 @@
           ]
         },
         {
+          "qid": "Q45633787",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45644488",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
+          "qid": "Q45666559",
+          "label": "李荣",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李荣"
+          ]
+        },
+        {
           "qid": "Q45698117",
           "label": "李荣",
           "aliases": [],
@@ -4352,10 +4344,10 @@
       "poemCount": 3,
       "candidates": [
         {
-          "qid": "Q45392855",
+          "qid": "Q45434205",
           "label": "李隲",
           "aliases": [
-            "显夫"
+            "天升"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -4367,10 +4359,10 @@
           ]
         },
         {
-          "qid": "Q45434205",
+          "qid": "Q45392855",
           "label": "李隲",
           "aliases": [
-            "天升"
+            "显夫"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -4477,12 +4469,12 @@
       "poemCount": 3,
       "candidates": [
         {
-          "qid": "Q45544469",
+          "qid": "Q45496489",
           "label": "李惟",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 725,
+          "deathYear": 820,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -4490,12 +4482,12 @@
           ]
         },
         {
-          "qid": "Q45496489",
+          "qid": "Q45544469",
           "label": "李惟",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 820,
+          "deathYear": 725,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -4550,6 +4542,19 @@
           ]
         },
         {
+          "qid": "Q65813511",
+          "label": "王操",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王操"
+          ]
+        },
+        {
           "qid": "Q45665417",
           "label": "王操",
           "aliases": [],
@@ -4564,19 +4569,6 @@
         },
         {
           "qid": "Q45679455",
-          "label": "王操",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王操"
-          ]
-        },
-        {
-          "qid": "Q65813511",
           "label": "王操",
           "aliases": [],
           "sitelinks": 0,
@@ -4707,36 +4699,6 @@
           ]
         },
         {
-          "qid": "Q45501164",
-          "label": "王训",
-          "aliases": [
-            "庭训"
-          ],
-          "sitelinks": 0,
-          "birthYear": 677,
-          "deathYear": 744,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王训"
-          ]
-        },
-        {
-          "qid": "Q45515724",
-          "label": "王训",
-          "aliases": [
-            "训"
-          ],
-          "sitelinks": 0,
-          "birthYear": 727,
-          "deathYear": 767,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王训"
-          ]
-        },
-        {
           "qid": "Q45505843",
           "label": "王训",
           "aliases": [],
@@ -4815,19 +4777,6 @@
           ]
         },
         {
-          "qid": "Q45580035",
-          "label": "王训",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王训"
-          ]
-        },
-        {
           "qid": "Q45592491",
           "label": "王训",
           "aliases": [],
@@ -4842,6 +4791,19 @@
         },
         {
           "qid": "Q45599096",
+          "label": "王训",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王训"
+          ]
+        },
+        {
+          "qid": "Q45580035",
           "label": "王训",
           "aliases": [],
           "sitelinks": 0,
@@ -4873,6 +4835,36 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王训"
+          ]
+        },
+        {
+          "qid": "Q45501164",
+          "label": "王训",
+          "aliases": [
+            "庭训"
+          ],
+          "sitelinks": 0,
+          "birthYear": 677,
+          "deathYear": 744,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王训"
+          ]
+        },
+        {
+          "qid": "Q45515724",
+          "label": "王训",
+          "aliases": [
+            "训"
+          ],
+          "sitelinks": 0,
+          "birthYear": 727,
+          "deathYear": 767,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -5020,6 +5012,19 @@
           ]
         },
         {
+          "qid": "Q45436634",
+          "label": "李穆",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 809,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李穆"
+          ]
+        },
+        {
           "qid": "Q45392906",
           "label": "李穆",
           "aliases": [],
@@ -5041,19 +5046,6 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
-          "foundBy": [
-            "李穆"
-          ]
-        },
-        {
-          "qid": "Q45436634",
-          "label": "李穆",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 809,
-          "picture": null,
-          "isTangPoet": true,
           "foundBy": [
             "李穆"
           ]
@@ -5098,7 +5090,7 @@
           ]
         },
         {
-          "qid": "Q45602107",
+          "qid": "Q45600522",
           "label": "李穆",
           "aliases": [],
           "sitelinks": 0,
@@ -5111,7 +5103,7 @@
           ]
         },
         {
-          "qid": "Q45600522",
+          "qid": "Q45602107",
           "label": "李穆",
           "aliases": [],
           "sitelinks": 0,
@@ -5464,11 +5456,9 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45359246",
+          "qid": "Q45655825",
           "label": "杜常",
-          "aliases": [
-            "正甫"
-          ],
+          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -5479,9 +5469,11 @@
           ]
         },
         {
-          "qid": "Q45655825",
+          "qid": "Q45359246",
           "label": "杜常",
-          "aliases": [],
+          "aliases": [
+            "正甫"
+          ],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -5623,7 +5615,7 @@
           ]
         },
         {
-          "qid": "Q45624027",
+          "qid": "Q45587681",
           "label": "王𪟝",
           "aliases": [],
           "sitelinks": 0,
@@ -5636,7 +5628,7 @@
           ]
         },
         {
-          "qid": "Q45587681",
+          "qid": "Q45624027",
           "label": "王𪟝",
           "aliases": [],
           "sitelinks": 0,
@@ -5720,6 +5712,19 @@
       "poemCount": 2,
       "candidates": [
         {
+          "qid": "Q45436614",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
           "qid": "Q45459322",
           "label": "李聪",
           "aliases": [],
@@ -5746,7 +5751,7 @@
           ]
         },
         {
-          "qid": "Q45436614",
+          "qid": "Q45450071",
           "label": "李聪",
           "aliases": [],
           "sitelinks": 0,
@@ -5754,6 +5759,71 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
+          "qid": "Q45484870",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
+          "qid": "Q45484997",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
+          "qid": "Q45518381",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
+          "qid": "Q45522622",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李聪"
+          ]
+        },
+        {
+          "qid": "Q45509469",
+          "label": "李聪",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李聪"
           ]
@@ -5798,45 +5868,6 @@
           ]
         },
         {
-          "qid": "Q45484870",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
-          "qid": "Q45484997",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
-          "qid": "Q45450071",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
           "qid": "Q45628237",
           "label": "李聪",
           "aliases": [],
@@ -5850,20 +5881,7 @@
           ]
         },
         {
-          "qid": "Q45509469",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
-          "qid": "Q45518381",
+          "qid": "Q45611124",
           "label": "李聪",
           "aliases": [],
           "sitelinks": 0,
@@ -5876,7 +5894,7 @@
           ]
         },
         {
-          "qid": "Q45522622",
+          "qid": "Q45658404",
           "label": "李聪",
           "aliases": [],
           "sitelinks": 0,
@@ -5890,19 +5908,6 @@
         },
         {
           "qid": "Q45639635",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
-          "qid": "Q45611124",
           "label": "李聪",
           "aliases": [],
           "sitelinks": 0,
@@ -5929,19 +5934,6 @@
         },
         {
           "qid": "Q45676047",
-          "label": "李聪",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李聪"
-          ]
-        },
-        {
-          "qid": "Q45658404",
           "label": "李聪",
           "aliases": [],
           "sitelinks": 0,
@@ -6038,19 +6030,6 @@
           ]
         },
         {
-          "qid": "Q45530912",
-          "label": "李士元",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李士元"
-          ]
-        },
-        {
           "qid": "Q45494346",
           "label": "李士元",
           "aliases": [],
@@ -6064,14 +6043,14 @@
           ]
         },
         {
-          "qid": "Q45696328",
+          "qid": "Q45530912",
           "label": "李士元",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 868,
+          "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "李士元"
           ]
@@ -6101,6 +6080,19 @@
           "foundBy": [
             "李士元"
           ]
+        },
+        {
+          "qid": "Q45696328",
+          "label": "李士元",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 868,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李士元"
+          ]
         }
       ]
     },
@@ -6109,12 +6101,12 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45524318",
+          "qid": "Q45557212",
           "label": "郑蕡",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 885,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -6122,12 +6114,12 @@
           ]
         },
         {
-          "qid": "Q45557212",
+          "qid": "Q45524318",
           "label": "郑蕡",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 885,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -6141,6 +6133,19 @@
       "poemCount": 2,
       "candidates": [
         {
+          "qid": "Q45507801",
+          "label": "陈德诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈德诚"
+          ]
+        },
+        {
           "qid": "Q45543356",
           "label": "陈德诚",
           "aliases": [
@@ -6150,19 +6155,6 @@
           "sitelinks": 0,
           "birthYear": 925,
           "deathYear": 964,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈德诚"
-          ]
-        },
-        {
-          "qid": "Q45507801",
-          "label": "陈德诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -6189,6 +6181,19 @@
           ]
         },
         {
+          "qid": "Q120699547",
+          "label": "刘云",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "刘云"
+          ]
+        },
+        {
           "qid": "Q55732756",
           "label": "刘云",
           "aliases": [],
@@ -6203,19 +6208,6 @@
         },
         {
           "qid": "Q61097188",
-          "label": "刘云",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "刘云"
-          ]
-        },
-        {
-          "qid": "Q120699547",
           "label": "刘云",
           "aliases": [],
           "sitelinks": 1,
@@ -6260,13 +6252,9 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45608355",
+          "qid": "Q11069844",
           "label": "彭晓",
-          "aliases": [
-            "真一子",
-            "秀川",
-            "秀皮"
-          ],
+          "aliases": [],
           "sitelinks": 1,
           "birthYear": null,
           "deathYear": null,
@@ -6277,9 +6265,13 @@
           ]
         },
         {
-          "qid": "Q11069844",
+          "qid": "Q45608355",
           "label": "彭晓",
-          "aliases": [],
+          "aliases": [
+            "真一子",
+            "秀川",
+            "秀皮"
+          ],
           "sitelinks": 1,
           "birthYear": null,
           "deathYear": null,
@@ -6315,6 +6307,48 @@
           "sitelinks": 1,
           "birthYear": null,
           "deathYear": 615,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "裴通"
+          ]
+        },
+        {
+          "qid": "Q45625217",
+          "label": "裴通",
+          "aliases": [
+            "又玄",
+            "文玄"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "裴通"
+          ]
+        },
+        {
+          "qid": "Q45668862",
+          "label": "裴通",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "裴通"
+          ]
+        },
+        {
+          "qid": "Q65913080",
+          "label": "裴通",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -6359,48 +6393,6 @@
           "foundBy": [
             "裴通"
           ]
-        },
-        {
-          "qid": "Q45668862",
-          "label": "裴通",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "裴通"
-          ]
-        },
-        {
-          "qid": "Q65913080",
-          "label": "裴通",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "裴通"
-          ]
-        },
-        {
-          "qid": "Q45625217",
-          "label": "裴通",
-          "aliases": [
-            "又玄",
-            "文玄"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "裴通"
-          ]
         }
       ]
     },
@@ -6409,7 +6401,7 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45592554",
+          "qid": "Q45414193",
           "label": "陶晟",
           "aliases": [],
           "sitelinks": 0,
@@ -6422,7 +6414,7 @@
           ]
         },
         {
-          "qid": "Q45414193",
+          "qid": "Q45592554",
           "label": "陶晟",
           "aliases": [],
           "sitelinks": 0,
@@ -6551,33 +6543,33 @@
           ]
         },
         {
-          "qid": "Q45419611",
-          "label": "张嵩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张嵩"
-          ]
-        },
-        {
-          "qid": "Q45439716",
-          "label": "张嵩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张嵩"
-          ]
-        },
-        {
           "qid": "Q45567703",
+          "label": "张嵩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张嵩"
+          ]
+        },
+        {
+          "qid": "Q45652623",
+          "label": "张嵩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张嵩"
+          ]
+        },
+        {
+          "qid": "Q45659427",
           "label": "张嵩",
           "aliases": [],
           "sitelinks": 0,
@@ -6604,6 +6596,32 @@
         },
         {
           "qid": "Q136544953",
+          "label": "张嵩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张嵩"
+          ]
+        },
+        {
+          "qid": "Q45419611",
+          "label": "张嵩",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张嵩"
+          ]
+        },
+        {
+          "qid": "Q45439716",
           "label": "张嵩",
           "aliases": [],
           "sitelinks": 0,
@@ -6682,32 +6700,6 @@
         },
         {
           "qid": "Q45695696",
-          "label": "张嵩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张嵩"
-          ]
-        },
-        {
-          "qid": "Q45652623",
-          "label": "张嵩",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张嵩"
-          ]
-        },
-        {
-          "qid": "Q45659427",
           "label": "张嵩",
           "aliases": [],
           "sitelinks": 0,
@@ -6823,7 +6815,7 @@
       "poemCount": 2,
       "candidates": [
         {
-          "qid": "Q45471821",
+          "qid": "Q45378675",
           "label": "张连",
           "aliases": [],
           "sitelinks": 0,
@@ -6849,7 +6841,7 @@
           ]
         },
         {
-          "qid": "Q45378675",
+          "qid": "Q45471821",
           "label": "张连",
           "aliases": [],
           "sitelinks": 0,
@@ -6934,7 +6926,7 @@
           ]
         },
         {
-          "qid": "Q45446373",
+          "qid": "Q45526978",
           "label": "陈昭",
           "aliases": [],
           "sitelinks": 0,
@@ -6947,7 +6939,7 @@
           ]
         },
         {
-          "qid": "Q45451416",
+          "qid": "Q45537011",
           "label": "陈昭",
           "aliases": [],
           "sitelinks": 0,
@@ -6986,33 +6978,33 @@
           ]
         },
         {
-          "qid": "Q45526978",
-          "label": "陈昭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈昭"
-          ]
-        },
-        {
-          "qid": "Q45537011",
-          "label": "陈昭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈昭"
-          ]
-        },
-        {
           "qid": "Q45636872",
+          "label": "陈昭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈昭"
+          ]
+        },
+        {
+          "qid": "Q45446373",
+          "label": "陈昭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈昭"
+          ]
+        },
+        {
+          "qid": "Q45451416",
           "label": "陈昭",
           "aliases": [],
           "sitelinks": 0,
@@ -7122,7 +7114,7 @@
           ]
         },
         {
-          "qid": "Q45544965",
+          "qid": "Q65903728",
           "label": "王德真",
           "aliases": [],
           "sitelinks": 0,
@@ -7135,7 +7127,7 @@
           ]
         },
         {
-          "qid": "Q65903728",
+          "qid": "Q45544965",
           "label": "王德真",
           "aliases": [],
           "sitelinks": 0,
@@ -7169,32 +7161,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45544170",
-          "label": "邵升",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "邵升"
-          ]
-        },
-        {
-          "qid": "Q45589444",
-          "label": "邵升",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "邵升"
-          ]
-        },
-        {
           "qid": "Q45460117",
           "label": "邵升",
           "aliases": [],
@@ -7222,6 +7188,32 @@
         },
         {
           "qid": "Q45490311",
+          "label": "邵升",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "邵升"
+          ]
+        },
+        {
+          "qid": "Q45544170",
+          "label": "邵升",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "邵升"
+          ]
+        },
+        {
+          "qid": "Q45589444",
           "label": "邵升",
           "aliases": [],
           "sitelinks": 0,
@@ -7285,12 +7277,12 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45453629",
+          "qid": "Q45559017",
           "label": "牛凤及",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 691,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -7298,12 +7290,12 @@
           ]
         },
         {
-          "qid": "Q45559017",
+          "qid": "Q45453629",
           "label": "牛凤及",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 691,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -7330,12 +7322,12 @@
           ]
         },
         {
-          "qid": "Q45541601",
+          "qid": "Q45498286",
           "label": "李如璧",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 756,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -7356,12 +7348,12 @@
           ]
         },
         {
-          "qid": "Q45498286",
+          "qid": "Q45541601",
           "label": "李如璧",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 756,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -7436,7 +7428,7 @@
           ]
         },
         {
-          "qid": "Q45591270",
+          "qid": "Q61094755",
           "label": "王景",
           "aliases": [],
           "sitelinks": 1,
@@ -7449,7 +7441,7 @@
           ]
         },
         {
-          "qid": "Q61094755",
+          "qid": "Q45591270",
           "label": "王景",
           "aliases": [],
           "sitelinks": 1,
@@ -7468,6 +7460,32 @@
             "野民",
             "野民集"
           ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王景"
+          ]
+        },
+        {
+          "qid": "Q45640157",
+          "label": "王景",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 848,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王景"
+          ]
+        },
+        {
+          "qid": "Q45645833",
+          "label": "王景",
+          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -7517,6 +7535,32 @@
           ]
         },
         {
+          "qid": "Q65905637",
+          "label": "王景",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王景"
+          ]
+        },
+        {
+          "qid": "Q65908818",
+          "label": "王景",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王景"
+          ]
+        },
+        {
           "qid": "Q45445465",
           "label": "王景",
           "aliases": [],
@@ -7531,32 +7575,6 @@
         },
         {
           "qid": "Q45545798",
-          "label": "王景",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王景"
-          ]
-        },
-        {
-          "qid": "Q45640157",
-          "label": "王景",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 848,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王景"
-          ]
-        },
-        {
-          "qid": "Q45645833",
           "label": "王景",
           "aliases": [],
           "sitelinks": 0,
@@ -7593,32 +7611,6 @@
           "foundBy": [
             "王景"
           ]
-        },
-        {
-          "qid": "Q65905637",
-          "label": "王景",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王景"
-          ]
-        },
-        {
-          "qid": "Q65908818",
-          "label": "王景",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王景"
-          ]
         }
       ]
     },
@@ -7626,6 +7618,19 @@
       "name": "崔颂",
       "poemCount": 1,
       "candidates": [
+        {
+          "qid": "Q18908680",
+          "label": "崔颂",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "崔颂"
+          ]
+        },
         {
           "qid": "Q45362749",
           "label": "崔颂",
@@ -7643,10 +7648,10 @@
           ]
         },
         {
-          "qid": "Q18908680",
+          "qid": "Q45600416",
           "label": "崔颂",
           "aliases": [],
-          "sitelinks": 1,
+          "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
@@ -7662,19 +7667,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 971,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "崔颂"
-          ]
-        },
-        {
-          "qid": "Q45600416",
-          "label": "崔颂",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -7746,7 +7738,7 @@
           ]
         },
         {
-          "qid": "Q45609897",
+          "qid": "Q45599969",
           "label": "崔珪",
           "aliases": [],
           "sitelinks": 0,
@@ -7759,7 +7751,7 @@
           ]
         },
         {
-          "qid": "Q45599969",
+          "qid": "Q45609897",
           "label": "崔珪",
           "aliases": [],
           "sitelinks": 0,
@@ -7842,14 +7834,14 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45532642",
+          "qid": "Q45555702",
           "label": "郑绍",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 759,
+          "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
             "郑绍"
           ]
@@ -7868,14 +7860,14 @@
           ]
         },
         {
-          "qid": "Q45555702",
+          "qid": "Q45532642",
           "label": "郑绍",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 759,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "郑绍"
           ]
@@ -7926,14 +7918,12 @@
           ]
         },
         {
-          "qid": "Q45598536",
+          "qid": "Q45442769",
           "label": "李清",
-          "aliases": [
-            "克明"
-          ],
+          "aliases": [],
           "sitelinks": 0,
-          "birthYear": 585,
-          "deathYear": 652,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -7942,6 +7932,58 @@
         },
         {
           "qid": "Q45459445",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45468449",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45472182",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45495289",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45487070",
           "label": "李清",
           "aliases": [],
           "sitelinks": 0,
@@ -7981,123 +8023,6 @@
         },
         {
           "qid": "Q45506847",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45468449",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45472182",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45442769",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45550631",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 891,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45487070",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45540797",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45620072",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 749,
-          "deathYear": 821,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45576447",
-          "label": "李清",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李清"
-          ]
-        },
-        {
-          "qid": "Q45495289",
           "label": "李清",
           "aliases": [],
           "sitelinks": 0,
@@ -8162,7 +8087,7 @@
           ]
         },
         {
-          "qid": "Q45646310",
+          "qid": "Q45540797",
           "label": "李清",
           "aliases": [],
           "sitelinks": 0,
@@ -8170,6 +8095,58 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45550631",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 891,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45576447",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45620072",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 749,
+          "deathYear": 821,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45600675",
+          "label": "李清",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 794,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李清"
           ]
@@ -8201,14 +8178,29 @@
           ]
         },
         {
-          "qid": "Q45600675",
+          "qid": "Q45646310",
           "label": "李清",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 794,
+          "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
+          "foundBy": [
+            "李清"
+          ]
+        },
+        {
+          "qid": "Q45598536",
+          "label": "李清",
+          "aliases": [
+            "克明"
+          ],
+          "sitelinks": 0,
+          "birthYear": 585,
+          "deathYear": 652,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李清"
           ]
@@ -8382,6 +8374,7 @@
           "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Zhaozong.jpg",
           "isTangPoet": false,
           "foundBy": [
+            "唐昭宗",
             "李晔"
           ]
         },
@@ -8525,19 +8518,6 @@
           ]
         },
         {
-          "qid": "Q45456201",
-          "label": "裴达",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 818,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "裴达"
-          ]
-        },
-        {
           "qid": "Q45470406",
           "label": "裴达",
           "aliases": [],
@@ -8590,6 +8570,19 @@
           ]
         },
         {
+          "qid": "Q45456201",
+          "label": "裴达",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 818,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "裴达"
+          ]
+        },
+        {
           "qid": "Q45641903",
           "label": "裴达",
           "aliases": [],
@@ -8635,12 +8628,12 @@
           ]
         },
         {
-          "qid": "Q45674329",
+          "qid": "Q45449856",
           "label": "韦执中",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 818,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -8648,12 +8641,12 @@
           ]
         },
         {
-          "qid": "Q45449856",
+          "qid": "Q45674329",
           "label": "韦执中",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 818,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -8785,6 +8778,19 @@
       "poemCount": 1,
       "candidates": [
         {
+          "qid": "Q45556701",
+          "label": "郑据",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 761,
+          "deathYear": 845,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "郑据"
+          ]
+        },
+        {
           "qid": "Q45487673",
           "label": "郑据",
           "aliases": [],
@@ -8822,19 +8828,6 @@
           "foundBy": [
             "郑据"
           ]
-        },
-        {
-          "qid": "Q45556701",
-          "label": "郑据",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 761,
-          "deathYear": 845,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "郑据"
-          ]
         }
       ]
     },
@@ -8849,19 +8842,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "裴澄"
-          ]
-        },
-        {
-          "qid": "Q45667964",
-          "label": "裴澄",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 802,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -8888,6 +8868,19 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "裴澄"
+          ]
+        },
+        {
+          "qid": "Q45667964",
+          "label": "裴澄",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 802,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -8933,7 +8926,7 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q97994540",
+          "qid": "Q45663664",
           "label": "陶雍",
           "aliases": [],
           "sitelinks": 0,
@@ -8946,7 +8939,7 @@
           ]
         },
         {
-          "qid": "Q45663664",
+          "qid": "Q97994540",
           "label": "陶雍",
           "aliases": [],
           "sitelinks": 0,
@@ -9038,6 +9031,19 @@
           ]
         },
         {
+          "qid": "Q45659044",
+          "label": "张复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张复"
+          ]
+        },
+        {
           "qid": "Q45426215",
           "label": "张复",
           "aliases": [],
@@ -9052,6 +9058,19 @@
         },
         {
           "qid": "Q45428490",
+          "label": "张复",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张复"
+          ]
+        },
+        {
+          "qid": "Q45635669",
           "label": "张复",
           "aliases": [],
           "sitelinks": 0,
@@ -9083,32 +9102,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 900,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张复"
-          ]
-        },
-        {
-          "qid": "Q65821113",
-          "label": "张复",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张复"
-          ]
-        },
-        {
-          "qid": "Q45635669",
-          "label": "张复",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -9181,7 +9174,7 @@
           ]
         },
         {
-          "qid": "Q45659044",
+          "qid": "Q65821113",
           "label": "张复",
           "aliases": [],
           "sitelinks": 0,
@@ -9245,12 +9238,12 @@
           ]
         },
         {
-          "qid": "Q45577152",
+          "qid": "Q45504079",
           "label": "李损之",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 649,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -9258,12 +9251,12 @@
           ]
         },
         {
-          "qid": "Q45504079",
+          "qid": "Q45577152",
           "label": "李损之",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 649,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -9430,45 +9423,6 @@
           ]
         },
         {
-          "qid": "Q45437455",
-          "label": "李质",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 809,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李质"
-          ]
-        },
-        {
-          "qid": "Q45511202",
-          "label": "李质",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李质"
-          ]
-        },
-        {
-          "qid": "Q45636238",
-          "label": "李质",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 737,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李质"
-          ]
-        },
-        {
           "qid": "Q45569135",
           "label": "李质",
           "aliases": [],
@@ -9495,12 +9449,51 @@
           ]
         },
         {
+          "qid": "Q45511202",
+          "label": "李质",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李质"
+          ]
+        },
+        {
+          "qid": "Q45437455",
+          "label": "李质",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 809,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李质"
+          ]
+        },
+        {
           "qid": "Q65910845",
           "label": "李质",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李质"
+          ]
+        },
+        {
+          "qid": "Q45636238",
+          "label": "李质",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 737,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -9722,19 +9715,6 @@
           ]
         },
         {
-          "qid": "Q45498879",
-          "label": "李邺",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李邺"
-          ]
-        },
-        {
           "qid": "Q45601474",
           "label": "李邺",
           "aliases": [],
@@ -9743,6 +9723,19 @@
           "deathYear": 801,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李邺"
+          ]
+        },
+        {
+          "qid": "Q45498879",
+          "label": "李邺",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李邺"
           ]
@@ -9861,21 +9854,6 @@
           ]
         },
         {
-          "qid": "Q45497384",
-          "label": "李廷璧",
-          "aliases": [
-            "冠祥"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李廷璧"
-          ]
-        },
-        {
           "qid": "Q45481936",
           "label": "李廷璧",
           "aliases": [
@@ -9886,6 +9864,21 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李廷璧"
+          ]
+        },
+        {
+          "qid": "Q45497384",
+          "label": "李廷璧",
+          "aliases": [
+            "冠祥"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李廷璧"
           ]
@@ -10009,19 +10002,6 @@
           ]
         },
         {
-          "qid": "Q45508188",
-          "label": "李旭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 739,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李旭"
-          ]
-        },
-        {
           "qid": "Q25252548",
           "label": "李旭",
           "aliases": [],
@@ -10035,12 +10015,25 @@
           ]
         },
         {
-          "qid": "Q45634518",
+          "qid": "Q45497707",
           "label": "李旭",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李旭"
+          ]
+        },
+        {
+          "qid": "Q45508188",
+          "label": "李旭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 739,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -10061,14 +10054,14 @@
           ]
         },
         {
-          "qid": "Q45497707",
+          "qid": "Q45634518",
           "label": "李旭",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "李旭"
           ]
@@ -10208,45 +10201,6 @@
           ]
         },
         {
-          "qid": "Q45533866",
-          "label": "李京",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李京"
-          ]
-        },
-        {
-          "qid": "Q45554536",
-          "label": "李京",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李京"
-          ]
-        },
-        {
-          "qid": "Q45501646",
-          "label": "李京",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李京"
-          ]
-        },
-        {
           "qid": "Q45394076",
           "label": "李京",
           "aliases": [],
@@ -10268,6 +10222,45 @@
           "deathYear": 787,
           "picture": null,
           "isTangPoet": true,
+          "foundBy": [
+            "李京"
+          ]
+        },
+        {
+          "qid": "Q45501646",
+          "label": "李京",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李京"
+          ]
+        },
+        {
+          "qid": "Q45533866",
+          "label": "李京",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李京"
+          ]
+        },
+        {
+          "qid": "Q45554536",
+          "label": "李京",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李京"
           ]
@@ -10333,32 +10326,6 @@
           ]
         },
         {
-          "qid": "Q45394591",
-          "label": "刘坦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "刘坦"
-          ]
-        },
-        {
-          "qid": "Q65880314",
-          "label": "刘坦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "刘坦"
-          ]
-        },
-        {
           "qid": "Q45480219",
           "label": "刘坦",
           "aliases": [],
@@ -10396,6 +10363,32 @@
           "foundBy": [
             "刘坦"
           ]
+        },
+        {
+          "qid": "Q45394591",
+          "label": "刘坦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "刘坦"
+          ]
+        },
+        {
+          "qid": "Q65880314",
+          "label": "刘坦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "刘坦"
+          ]
         }
       ]
     },
@@ -10403,19 +10396,6 @@
       "name": "韦遵",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45452009",
-          "label": "韦遵",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "韦遵"
-          ]
-        },
         {
           "qid": "Q45469628",
           "label": "韦遵",
@@ -10451,6 +10431,19 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "韦遵"
+          ]
+        },
+        {
+          "qid": "Q45452009",
+          "label": "韦遵",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "韦遵"
           ]
@@ -10520,19 +10513,6 @@
           ]
         },
         {
-          "qid": "Q45451880",
-          "label": "韦鼎",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "韦鼎"
-          ]
-        },
-        {
           "qid": "Q45419666",
           "label": "韦鼎",
           "aliases": [],
@@ -10557,6 +10537,19 @@
           "foundBy": [
             "韦鼎"
           ]
+        },
+        {
+          "qid": "Q45451880",
+          "label": "韦鼎",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "韦鼎"
+          ]
         }
       ]
     },
@@ -10564,19 +10557,6 @@
       "name": "何昌龄",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45434438",
-          "label": "何昌龄",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "何昌龄"
-          ]
-        },
         {
           "qid": "Q45519137",
           "label": "何昌龄",
@@ -10592,6 +10572,19 @@
         },
         {
           "qid": "Q45575580",
+          "label": "何昌龄",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "何昌龄"
+          ]
+        },
+        {
+          "qid": "Q45434438",
           "label": "何昌龄",
           "aliases": [],
           "sitelinks": 0,
@@ -10655,6 +10648,21 @@
       "poemCount": 1,
       "candidates": [
         {
+          "qid": "Q45414371",
+          "label": "王沂",
+          "aliases": [
+            "师鲁"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王沂"
+          ]
+        },
+        {
           "qid": "Q45649054",
           "label": "王沂",
           "aliases": [
@@ -10685,29 +10693,14 @@
           ]
         },
         {
-          "qid": "Q45414371",
-          "label": "王沂",
-          "aliases": [
-            "师鲁"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王沂"
-          ]
-        },
-        {
-          "qid": "Q45432263",
+          "qid": "Q45441141",
           "label": "王沂",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
             "王沂"
           ]
@@ -10739,20 +10732,33 @@
           ]
         },
         {
-          "qid": "Q45441141",
+          "qid": "Q45634561",
           "label": "王沂",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "王沂"
           ]
         },
         {
-          "qid": "Q45634561",
+          "qid": "Q45432263",
+          "label": "王沂",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王沂"
+          ]
+        },
+        {
+          "qid": "Q65820782",
           "label": "王沂",
           "aliases": [],
           "sitelinks": 0,
@@ -10776,19 +10782,6 @@
           "foundBy": [
             "王沂"
           ]
-        },
-        {
-          "qid": "Q65820782",
-          "label": "王沂",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王沂"
-          ]
         }
       ]
     },
@@ -10796,22 +10789,6 @@
       "name": "丁元和",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45606089",
-          "label": "丁元和",
-          "aliases": [
-            "淘沙子"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "丁元和",
-            "淘沙子"
-          ]
-        },
         {
           "qid": "Q45709448",
           "label": "丁元和",
@@ -10839,6 +10816,22 @@
           "isTangPoet": false,
           "foundBy": [
             "丁元和"
+          ]
+        },
+        {
+          "qid": "Q45606089",
+          "label": "丁元和",
+          "aliases": [
+            "淘沙子"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "丁元和",
+            "淘沙子"
           ]
         }
       ]
@@ -10907,7 +10900,7 @@
           ]
         },
         {
-          "qid": "Q45511698",
+          "qid": "Q45444876",
           "label": "张观",
           "aliases": [],
           "sitelinks": 0,
@@ -10920,7 +10913,7 @@
           ]
         },
         {
-          "qid": "Q45444876",
+          "qid": "Q45511698",
           "label": "张观",
           "aliases": [],
           "sitelinks": 0,
@@ -10993,6 +10986,21 @@
           ]
         },
         {
+          "qid": "Q45360739",
+          "label": "张震",
+          "aliases": [
+            "彦亨"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
           "qid": "Q45583202",
           "label": "张震",
           "aliases": [
@@ -11013,21 +11021,6 @@
           "aliases": [
             "东父",
             "无隐居士"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q45360739",
-          "label": "张震",
-          "aliases": [
-            "彦亨"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -11069,59 +11062,7 @@
           ]
         },
         {
-          "qid": "Q45472025",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
           "qid": "Q45425138",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q45535818",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q45536482",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q45552006",
           "label": "张震",
           "aliases": [],
           "sitelinks": 0,
@@ -11173,7 +11114,7 @@
           ]
         },
         {
-          "qid": "Q45567916",
+          "qid": "Q45472025",
           "label": "张震",
           "aliases": [],
           "sitelinks": 0,
@@ -11238,6 +11179,32 @@
           ]
         },
         {
+          "qid": "Q45552006",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
+          "qid": "Q45567916",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
           "qid": "Q45697156",
           "label": "张震",
           "aliases": [],
@@ -11246,45 +11213,6 @@
           "deathYear": 749,
           "picture": null,
           "isTangPoet": true,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q45617845",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q116436085",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张震"
-          ]
-        },
-        {
-          "qid": "Q136544976",
-          "label": "张震",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
           "foundBy": [
             "张震"
           ]
@@ -11316,7 +11244,72 @@
           ]
         },
         {
+          "qid": "Q45617845",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
+          "qid": "Q45535818",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
+          "qid": "Q45536482",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
           "qid": "Q65916266",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
+          "qid": "Q116436085",
+          "label": "张震",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张震"
+          ]
+        },
+        {
+          "qid": "Q136544976",
           "label": "张震",
           "aliases": [],
           "sitelinks": 0,
@@ -11361,6 +11354,21 @@
           "deathYear": 606,
           "picture": null,
           "isTangPoet": false,
+          "foundBy": [
+            "李曜"
+          ]
+        },
+        {
+          "qid": "Q45510471",
+          "label": "李曜",
+          "aliases": [
+            "李擢"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
           "foundBy": [
             "李曜"
           ]
@@ -11416,21 +11424,6 @@
           "foundBy": [
             "李曜"
           ]
-        },
-        {
-          "qid": "Q45510471",
-          "label": "李曜",
-          "aliases": [
-            "李擢"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李曜"
-          ]
         }
       ]
     },
@@ -11438,6 +11431,45 @@
       "name": "李何",
       "poemCount": 1,
       "candidates": [
+        {
+          "qid": "Q45457259",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 814,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李何"
+          ]
+        },
+        {
+          "qid": "Q45499281",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李何"
+          ]
+        },
+        {
+          "qid": "Q45591921",
+          "label": "李何",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李何"
+          ]
+        },
         {
           "qid": "Q45510685",
           "label": "李何",
@@ -11465,45 +11497,6 @@
           ]
         },
         {
-          "qid": "Q45499281",
-          "label": "李何",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李何"
-          ]
-        },
-        {
-          "qid": "Q45457259",
-          "label": "李何",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 814,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李何"
-          ]
-        },
-        {
-          "qid": "Q45591921",
-          "label": "李何",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李何"
-          ]
-        },
-        {
           "qid": "Q45667485",
           "label": "李何",
           "aliases": [],
@@ -11522,6 +11515,123 @@
       "name": "李伦",
       "poemCount": 1,
       "candidates": [
+        {
+          "qid": "Q45419453",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45449944",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45455848",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45456685",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45492039",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45497859",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": 797,
+          "deathYear": 858,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45618004",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45635201",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 792,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
+        {
+          "qid": "Q45655624",
+          "label": "李伦",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李伦"
+          ]
+        },
         {
           "qid": "Q45508754",
           "label": "李伦",
@@ -11576,123 +11686,6 @@
         },
         {
           "qid": "Q45557003",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45492039",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45497859",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": 797,
-          "deathYear": 858,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45419453",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45449944",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45455848",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45456685",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45618004",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45635201",
-          "label": "李伦",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 792,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李伦"
-          ]
-        },
-        {
-          "qid": "Q45655624",
           "label": "李伦",
           "aliases": [],
           "sitelinks": 0,
@@ -12073,21 +12066,6 @@
           ]
         },
         {
-          "qid": "Q45584797",
-          "label": "王约",
-          "aliases": [
-            "资博"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王约"
-          ]
-        },
-        {
           "qid": "Q45652217",
           "label": "王约",
           "aliases": [
@@ -12112,6 +12090,36 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王约"
+          ]
+        },
+        {
+          "qid": "Q45584797",
+          "label": "王约",
+          "aliases": [
+            "资博"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王约"
+          ]
+        },
+        {
+          "qid": "Q45610805",
+          "label": "王约",
+          "aliases": [
+            "伏仁"
+          ],
+          "sitelinks": 0,
+          "birthYear": 603,
+          "deathYear": 659,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -12158,33 +12166,7 @@
           ]
         },
         {
-          "qid": "Q45359822",
-          "label": "王约",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王约"
-          ]
-        },
-        {
           "qid": "Q45466714",
-          "label": "王约",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王约"
-          ]
-        },
-        {
-          "qid": "Q45544203",
           "label": "王约",
           "aliases": [],
           "sitelinks": 0,
@@ -12210,6 +12192,19 @@
           ]
         },
         {
+          "qid": "Q45544203",
+          "label": "王约",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王约"
+          ]
+        },
+        {
           "qid": "Q45606047",
           "label": "王约",
           "aliases": [],
@@ -12223,7 +12218,7 @@
           ]
         },
         {
-          "qid": "Q45608139",
+          "qid": "Q45359822",
           "label": "王约",
           "aliases": [],
           "sitelinks": 0,
@@ -12249,14 +12244,12 @@
           ]
         },
         {
-          "qid": "Q45610805",
+          "qid": "Q45608139",
           "label": "王约",
-          "aliases": [
-            "伏仁"
-          ],
+          "aliases": [],
           "sitelinks": 0,
-          "birthYear": 603,
-          "deathYear": 659,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -12270,18 +12263,15 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45554459",
+          "qid": "Q45465622",
           "label": "郑师贞",
-          "aliases": [
-            "郑师冉"
-          ],
+          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 847,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
-            "郑师冉",
             "郑师贞"
           ]
         },
@@ -12299,15 +12289,18 @@
           ]
         },
         {
-          "qid": "Q45465622",
+          "qid": "Q45554459",
           "label": "郑师贞",
-          "aliases": [],
+          "aliases": [
+            "郑师冉"
+          ],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 847,
+          "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
+            "郑师冉",
             "郑师贞"
           ]
         },
@@ -12366,12 +12359,12 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45522230",
+          "qid": "Q45556512",
           "label": "郑衮",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 808,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -12379,12 +12372,12 @@
           ]
         },
         {
-          "qid": "Q45556512",
+          "qid": "Q45522230",
           "label": "郑衮",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": null,
+          "deathYear": 808,
           "picture": null,
           "isTangPoet": true,
           "foundBy": [
@@ -12556,7 +12549,7 @@
           ]
         },
         {
-          "qid": "Q45546710",
+          "qid": "Q45516655",
           "label": "李郁",
           "aliases": [],
           "sitelinks": 0,
@@ -12569,7 +12562,33 @@
           ]
         },
         {
-          "qid": "Q45558990",
+          "qid": "Q45661073",
+          "label": "李郁",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李郁"
+          ]
+        },
+        {
+          "qid": "Q45683338",
+          "label": "李郁",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 903,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李郁"
+          ]
+        },
+        {
+          "qid": "Q65811671",
           "label": "李郁",
           "aliases": [],
           "sitelinks": 0,
@@ -12608,7 +12627,7 @@
           ]
         },
         {
-          "qid": "Q45516655",
+          "qid": "Q45546710",
           "label": "李郁",
           "aliases": [],
           "sitelinks": 0,
@@ -12621,38 +12640,12 @@
           ]
         },
         {
-          "qid": "Q65811671",
+          "qid": "Q45558990",
           "label": "李郁",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李郁"
-          ]
-        },
-        {
-          "qid": "Q45661073",
-          "label": "李郁",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李郁"
-          ]
-        },
-        {
-          "qid": "Q45683338",
-          "label": "李郁",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 903,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -12821,12 +12814,12 @@
           ]
         },
         {
-          "qid": "Q45564680",
+          "qid": "Q45536568",
           "label": "李范",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 799,
+          "deathYear": 748,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -12834,12 +12827,12 @@
           ]
         },
         {
-          "qid": "Q45536568",
+          "qid": "Q45564680",
           "label": "李范",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 748,
+          "deathYear": 799,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -12920,6 +12913,19 @@
       "poemCount": 1,
       "candidates": [
         {
+          "qid": "Q45440550",
+          "label": "郑说",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "郑说"
+          ]
+        },
+        {
           "qid": "Q45535068",
           "label": "郑说",
           "aliases": [],
@@ -12939,45 +12945,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 800,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "郑说"
-          ]
-        },
-        {
-          "qid": "Q45588823",
-          "label": "郑说",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 892,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "郑说"
-          ]
-        },
-        {
-          "qid": "Q45440550",
-          "label": "郑说",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "郑说"
-          ]
-        },
-        {
-          "qid": "Q45493552",
-          "label": "郑说",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 760,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -13009,6 +12976,32 @@
           "foundBy": [
             "郑说"
           ]
+        },
+        {
+          "qid": "Q45493552",
+          "label": "郑说",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 760,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "郑说"
+          ]
+        },
+        {
+          "qid": "Q45588823",
+          "label": "郑说",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 892,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "郑说"
+          ]
         }
       ]
     },
@@ -13017,16 +13010,14 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45625354",
+          "qid": "Q65917694",
           "label": "裴淑",
-          "aliases": [
-            "柔之"
-          ],
+          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": true,
+          "isTangPoet": false,
           "foundBy": [
             "裴淑"
           ]
@@ -13071,14 +13062,16 @@
           ]
         },
         {
-          "qid": "Q65917694",
+          "qid": "Q45625354",
           "label": "裴淑",
-          "aliases": [],
+          "aliases": [
+            "柔之"
+          ],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
-          "isTangPoet": false,
+          "isTangPoet": true,
           "foundBy": [
             "裴淑"
           ]
@@ -13395,8 +13388,8 @@
           ]
         },
         {
-          "qid": "Q45504681",
-          "label": "汪庄",
+          "qid": "Q45391183",
+          "label": "文隆子",
           "aliases": [
             "尚志"
           ],
@@ -13425,11 +13418,10 @@
           ]
         },
         {
-          "qid": "Q45650127",
-          "label": "王东",
+          "qid": "Q45504681",
+          "label": "汪庄",
           "aliases": [
-            "尚志",
-            "王东"
+            "尚志"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -13441,10 +13433,11 @@
           ]
         },
         {
-          "qid": "Q45391183",
-          "label": "文隆子",
+          "qid": "Q45650127",
+          "label": "王东",
           "aliases": [
-            "尚志"
+            "尚志",
+            "王东"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -13461,21 +13454,6 @@
       "name": "任玠",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45417952",
-          "label": "任玠",
-          "aliases": [
-            "温和"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "任玠"
-          ]
-        },
         {
           "qid": "Q45636451",
           "label": "任玠",
@@ -13495,6 +13473,21 @@
           "qid": "Q45542343",
           "label": "任玠",
           "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "任玠"
+          ]
+        },
+        {
+          "qid": "Q45417952",
+          "label": "任玠",
+          "aliases": [
+            "温和"
+          ],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -13543,6 +13536,19 @@
       "poemCount": 1,
       "candidates": [
         {
+          "qid": "Q45652750",
+          "label": "何承裕",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "何承裕"
+          ]
+        },
+        {
           "qid": "Q45433811",
           "label": "何承裕",
           "aliases": [
@@ -13556,19 +13562,6 @@
           "foundBy": [
             "何承裕"
           ]
-        },
-        {
-          "qid": "Q45652750",
-          "label": "何承裕",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "何承裕"
-          ]
         }
       ]
     },
@@ -13576,19 +13569,6 @@
       "name": "李兼",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45548721",
-          "label": "李兼",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李兼"
-          ]
-        },
         {
           "qid": "Q45504556",
           "label": "李兼",
@@ -13598,6 +13578,19 @@
           "deathYear": null,
           "picture": null,
           "isTangPoet": true,
+          "foundBy": [
+            "李兼"
+          ]
+        },
+        {
+          "qid": "Q45548721",
+          "label": "李兼",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李兼"
           ]
@@ -13627,58 +13620,6 @@
           "aliases": [
             "云翔"
           ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张翱"
-          ]
-        },
-        {
-          "qid": "Q45479016",
-          "label": "张翱",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张翱"
-          ]
-        },
-        {
-          "qid": "Q45482022",
-          "label": "张翱",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张翱"
-          ]
-        },
-        {
-          "qid": "Q45503689",
-          "label": "张翱",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张翱"
-          ]
-        },
-        {
-          "qid": "Q45529741",
-          "label": "张翱",
-          "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
@@ -13728,7 +13669,46 @@
           ]
         },
         {
-          "qid": "Q45554263",
+          "qid": "Q45529741",
+          "label": "张翱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张翱"
+          ]
+        },
+        {
+          "qid": "Q45479016",
+          "label": "张翱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张翱"
+          ]
+        },
+        {
+          "qid": "Q45482022",
+          "label": "张翱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张翱"
+          ]
+        },
+        {
+          "qid": "Q45503689",
           "label": "张翱",
           "aliases": [],
           "sitelinks": 0,
@@ -13742,6 +13722,32 @@
         },
         {
           "qid": "Q45660291",
+          "label": "张翱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张翱"
+          ]
+        },
+        {
+          "qid": "Q45554263",
+          "label": "张翱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张翱"
+          ]
+        },
+        {
+          "qid": "Q65913062",
           "label": "张翱",
           "aliases": [],
           "sitelinks": 0,
@@ -13768,19 +13774,6 @@
         },
         {
           "qid": "Q45618479",
-          "label": "张翱",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张翱"
-          ]
-        },
-        {
-          "qid": "Q65913062",
           "label": "张翱",
           "aliases": [],
           "sitelinks": 0,
@@ -13911,25 +13904,12 @@
           ]
         },
         {
-          "qid": "Q45550923",
+          "qid": "Q45502688",
           "label": "李缜",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李缜"
-          ]
-        },
-        {
-          "qid": "Q45627772",
-          "label": "李缜",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 853,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -13950,12 +13930,25 @@
           ]
         },
         {
-          "qid": "Q45502688",
+          "qid": "Q45550923",
           "label": "李缜",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李缜"
+          ]
+        },
+        {
+          "qid": "Q45627772",
+          "label": "李缜",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 853,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -14111,46 +14104,20 @@
           ]
         },
         {
+          "qid": "Q45524880",
+          "label": "李淮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李淮"
+          ]
+        },
+        {
           "qid": "Q45528216",
-          "label": "李淮",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李淮"
-          ]
-        },
-        {
-          "qid": "Q45622854",
-          "label": "李淮",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李淮"
-          ]
-        },
-        {
-          "qid": "Q45632064",
-          "label": "李淮",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李淮"
-          ]
-        },
-        {
-          "qid": "Q45633258",
           "label": "李淮",
           "aliases": [],
           "sitelinks": 0,
@@ -14189,7 +14156,33 @@
           ]
         },
         {
-          "qid": "Q45524880",
+          "qid": "Q45622854",
+          "label": "李淮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李淮"
+          ]
+        },
+        {
+          "qid": "Q45632064",
+          "label": "李淮",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李淮"
+          ]
+        },
+        {
+          "qid": "Q45633258",
           "label": "李淮",
           "aliases": [],
           "sitelinks": 0,
@@ -14255,32 +14248,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45549808",
-          "label": "李潭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 891,
-          "picture": null,
-          "isTangPoet": true,
-          "foundBy": [
-            "李潭"
-          ]
-        },
-        {
-          "qid": "Q45624384",
-          "label": "李潭",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李潭"
-          ]
-        },
-        {
           "qid": "Q45510116",
           "label": "李潭",
           "aliases": [],
@@ -14294,7 +14261,33 @@
           ]
         },
         {
+          "qid": "Q45549808",
+          "label": "李潭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 891,
+          "picture": null,
+          "isTangPoet": true,
+          "foundBy": [
+            "李潭"
+          ]
+        },
+        {
           "qid": "Q45582588",
+          "label": "李潭",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李潭"
+          ]
+        },
+        {
+          "qid": "Q45624384",
           "label": "李潭",
           "aliases": [],
           "sitelinks": 0,
@@ -14471,32 +14464,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45551166",
-          "label": "杨勋",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "杨勋"
-          ]
-        },
-        {
-          "qid": "Q45501571",
-          "label": "杨勋",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "杨勋"
-          ]
-        },
-        {
           "qid": "Q45582826",
           "label": "杨勋",
           "aliases": [],
@@ -14523,7 +14490,33 @@
           ]
         },
         {
+          "qid": "Q45501571",
+          "label": "杨勋",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "杨勋"
+          ]
+        },
+        {
           "qid": "Q45522253",
+          "label": "杨勋",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "杨勋"
+          ]
+        },
+        {
+          "qid": "Q45551166",
           "label": "杨勋",
           "aliases": [],
           "sitelinks": 0,
@@ -14550,6 +14543,136 @@
           "foundBy": [
             "杨勋",
             "杨损"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "李忱",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45462157",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45450050",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45567971",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 679,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45573872",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45596914",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 779,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45609432",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45649339",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q45707958",
+          "label": "李忱",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李忱"
+          ]
+        },
+        {
+          "qid": "Q9825",
+          "label": "唐宣宗",
+          "aliases": [
+            "圣武献文孝皇帝",
+            "宣宗",
+            "李忱",
+            "李忱(宣宗皇帝)",
+            "李怡"
+          ],
+          "sitelinks": 21,
+          "birthYear": 810,
+          "deathYear": 859,
+          "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Tangxuanzong.jpg",
+          "isTangPoet": false,
+          "foundBy": [
+            "唐宣宗",
+            "李忱"
           ]
         }
       ]
@@ -14617,7 +14740,7 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45606089",
+          "qid": "Q45709448",
           "label": "丁元和",
           "aliases": [
             "淘沙子"
@@ -14633,7 +14756,7 @@
           ]
         },
         {
-          "qid": "Q45709448",
+          "qid": "Q45606089",
           "label": "丁元和",
           "aliases": [
             "淘沙子"
@@ -14815,7 +14938,7 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45532803",
+          "qid": "Q65916507",
           "label": "张栖贞",
           "aliases": [],
           "sitelinks": 0,
@@ -14828,7 +14951,7 @@
           ]
         },
         {
-          "qid": "Q65916507",
+          "qid": "Q45532803",
           "label": "张栖贞",
           "aliases": [],
           "sitelinks": 0,
@@ -14838,6 +14961,40 @@
           "isTangPoet": false,
           "foundBy": [
             "张栖贞"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "徐峤",
+      "poemCount": 1,
+      "candidates": [
+        {
+          "qid": "Q45417806",
+          "label": "徐峤",
+          "aliases": [],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "徐峤"
+          ]
+        },
+        {
+          "qid": "Q18905499",
+          "label": "徐峤之",
+          "aliases": [
+            "徐峤之"
+          ],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": 725,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "徐峤"
           ]
         }
       ]
@@ -14863,45 +15020,6 @@
         },
         {
           "qid": "Q45487003",
-          "label": "王濬",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王濬"
-          ]
-        },
-        {
-          "qid": "Q45538232",
-          "label": "王濬",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王濬"
-          ]
-        },
-        {
-          "qid": "Q45538294",
-          "label": "王濬",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "王濬"
-          ]
-        },
-        {
-          "qid": "Q45564021",
           "label": "王濬",
           "aliases": [],
           "sitelinks": 0,
@@ -14940,12 +15058,12 @@
           ]
         },
         {
-          "qid": "Q45656792",
+          "qid": "Q45564021",
           "label": "王濬",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
-          "deathYear": 733,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -14972,6 +15090,45 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王濬"
+          ]
+        },
+        {
+          "qid": "Q45538232",
+          "label": "王濬",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王濬"
+          ]
+        },
+        {
+          "qid": "Q45538294",
+          "label": "王濬",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "王濬"
+          ]
+        },
+        {
+          "qid": "Q45656792",
+          "label": "王濬",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 733,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -15052,6 +15209,19 @@
           ]
         },
         {
+          "qid": "Q45527456",
+          "label": "李瓘",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 928,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李瓘"
+          ]
+        },
+        {
           "qid": "Q45534459",
           "label": "李瓘",
           "aliases": [],
@@ -15084,19 +15254,6 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 882,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李瓘"
-          ]
-        },
-        {
-          "qid": "Q45527456",
-          "label": "李瓘",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 928,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -15281,32 +15438,6 @@
           ]
         },
         {
-          "qid": "Q45474954",
-          "label": "张诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张诚"
-          ]
-        },
-        {
-          "qid": "Q45542489",
-          "label": "张诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张诚"
-          ]
-        },
-        {
           "qid": "Q45628791",
           "label": "张诚",
           "aliases": [],
@@ -15372,6 +15503,32 @@
           ]
         },
         {
+          "qid": "Q45474954",
+          "label": "张诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张诚"
+          ]
+        },
+        {
+          "qid": "Q45581984",
+          "label": "张诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张诚"
+          ]
+        },
+        {
           "qid": "Q45655520",
           "label": "张诚",
           "aliases": [],
@@ -15386,6 +15543,19 @@
         },
         {
           "qid": "Q45571951",
+          "label": "张诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "张诚"
+          ]
+        },
+        {
+          "qid": "Q65047480",
           "label": "张诚",
           "aliases": [],
           "sitelinks": 0,
@@ -15437,20 +15607,7 @@
           ]
         },
         {
-          "qid": "Q45581984",
-          "label": "张诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "张诚"
-          ]
-        },
-        {
-          "qid": "Q65047480",
+          "qid": "Q45542489",
           "label": "张诚",
           "aliases": [],
           "sitelinks": 0,
@@ -15501,19 +15658,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q120699142",
-          "label": "陈谏",
-          "aliases": [],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈谏"
-          ]
-        },
-        {
           "qid": "Q18906884",
           "label": "陈谏",
           "aliases": [],
@@ -15527,10 +15671,10 @@
           ]
         },
         {
-          "qid": "Q45661939",
+          "qid": "Q120699142",
           "label": "陈谏",
           "aliases": [],
-          "sitelinks": 0,
+          "sitelinks": 1,
           "birthYear": null,
           "deathYear": null,
           "picture": null,
@@ -15540,46 +15684,7 @@
           ]
         },
         {
-          "qid": "Q65812315",
-          "label": "陈谏",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈谏"
-          ]
-        },
-        {
-          "qid": "Q45436865",
-          "label": "陈谏",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈谏"
-          ]
-        },
-        {
-          "qid": "Q45441635",
-          "label": "陈谏",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈谏"
-          ]
-        },
-        {
-          "qid": "Q45542643",
+          "qid": "Q45397964",
           "label": "陈谏",
           "aliases": [],
           "sitelinks": 0,
@@ -15631,19 +15736,6 @@
           ]
         },
         {
-          "qid": "Q45397964",
-          "label": "陈谏",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈谏"
-          ]
-        },
-        {
           "qid": "Q45624380",
           "label": "陈谏",
           "aliases": [],
@@ -15663,6 +15755,71 @@
           "sitelinks": 0,
           "birthYear": 807,
           "deathYear": 872,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈谏"
+          ]
+        },
+        {
+          "qid": "Q45542643",
+          "label": "陈谏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈谏"
+          ]
+        },
+        {
+          "qid": "Q65812315",
+          "label": "陈谏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈谏"
+          ]
+        },
+        {
+          "qid": "Q45436865",
+          "label": "陈谏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈谏"
+          ]
+        },
+        {
+          "qid": "Q45441635",
+          "label": "陈谏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈谏"
+          ]
+        },
+        {
+          "qid": "Q45661939",
+          "label": "陈谏",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -15799,34 +15956,6 @@
           ]
         },
         {
-          "qid": "Q45542449",
-          "label": "陈商",
-          "aliases": [
-            "述圣"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 855,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈商"
-          ]
-        },
-        {
-          "qid": "Q65906487",
-          "label": "陈商",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈商"
-          ]
-        },
-        {
           "qid": "Q45481449",
           "label": "陈商",
           "aliases": [],
@@ -15864,6 +15993,34 @@
           "foundBy": [
             "陈商"
           ]
+        },
+        {
+          "qid": "Q65906487",
+          "label": "陈商",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈商"
+          ]
+        },
+        {
+          "qid": "Q45542449",
+          "label": "陈商",
+          "aliases": [
+            "述圣"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 855,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈商"
+          ]
         }
       ]
     },
@@ -15871,21 +16028,6 @@
       "name": "杨宇",
       "poemCount": 1,
       "candidates": [
-        {
-          "qid": "Q45512104",
-          "label": "杨宇",
-          "aliases": [
-            "子麻"
-          ],
-          "sitelinks": 0,
-          "birthYear": 807,
-          "deathYear": 851,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "杨宇"
-          ]
-        },
         {
           "qid": "Q45405294",
           "label": "杨宇",
@@ -15906,6 +16048,21 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "杨宇"
+          ]
+        },
+        {
+          "qid": "Q45512104",
+          "label": "杨宇",
+          "aliases": [
+            "子麻"
+          ],
+          "sitelinks": 0,
+          "birthYear": 807,
+          "deathYear": 851,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -16026,19 +16183,6 @@
           ]
         },
         {
-          "qid": "Q45561358",
-          "label": "李鹗",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李鹗"
-          ]
-        },
-        {
           "qid": "Q45509142",
           "label": "李鹗",
           "aliases": [],
@@ -16058,6 +16202,19 @@
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 784,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李鹗"
+          ]
+        },
+        {
+          "qid": "Q45561358",
+          "label": "李鹗",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -16251,32 +16408,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45531794",
-          "label": "永安",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "永安"
-          ]
-        },
-        {
-          "qid": "Q45574225",
-          "label": "永安",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "永安"
-          ]
-        },
-        {
           "qid": "Q45603109",
           "label": "永安",
           "aliases": [],
@@ -16291,6 +16422,32 @@
         },
         {
           "qid": "Q45603175",
+          "label": "永安",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "永安"
+          ]
+        },
+        {
+          "qid": "Q45531794",
+          "label": "永安",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "永安"
+          ]
+        },
+        {
+          "qid": "Q45574225",
           "label": "永安",
           "aliases": [],
           "sitelinks": 0,
@@ -16472,21 +16629,6 @@
       "poemCount": 1,
       "candidates": [
         {
-          "qid": "Q45448299",
-          "label": "陈端",
-          "aliases": [
-            "正卿"
-          ],
-          "sitelinks": 1,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈端"
-          ]
-        },
-        {
           "qid": "Q18198445",
           "label": "陈端",
           "aliases": [
@@ -16502,7 +16644,22 @@
           ]
         },
         {
-          "qid": "Q65883671",
+          "qid": "Q45448299",
+          "label": "陈端",
+          "aliases": [
+            "正卿"
+          ],
+          "sitelinks": 1,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈端"
+          ]
+        },
+        {
+          "qid": "Q45379587",
           "label": "陈端",
           "aliases": [],
           "sitelinks": 0,
@@ -16515,7 +16672,7 @@
           ]
         },
         {
-          "qid": "Q45541461",
+          "qid": "Q45499294",
           "label": "陈端",
           "aliases": [],
           "sitelinks": 0,
@@ -16567,33 +16724,33 @@
           ]
         },
         {
-          "qid": "Q45379587",
-          "label": "陈端",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈端"
-          ]
-        },
-        {
-          "qid": "Q45499294",
-          "label": "陈端",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "陈端"
-          ]
-        },
-        {
           "qid": "Q45639302",
+          "label": "陈端",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈端"
+          ]
+        },
+        {
+          "qid": "Q45541461",
+          "label": "陈端",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "陈端"
+          ]
+        },
+        {
+          "qid": "Q65883671",
           "label": "陈端",
           "aliases": [],
           "sitelinks": 0,
@@ -16629,6 +16786,21 @@
           "label": "杨明",
           "aliases": [
             "魁宇"
+          ],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "杨明"
+          ]
+        },
+        {
+          "qid": "Q45530712",
+          "label": "杨明",
+          "aliases": [
+            "复初"
           ],
           "sitelinks": 0,
           "birthYear": null,
@@ -16684,21 +16856,6 @@
           ]
         },
         {
-          "qid": "Q45530712",
-          "label": "杨明",
-          "aliases": [
-            "复初"
-          ],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "杨明"
-          ]
-        },
-        {
           "qid": "Q45402800",
           "label": "杨明",
           "aliases": [],
@@ -16725,19 +16882,6 @@
           ]
         },
         {
-          "qid": "Q45540753",
-          "label": "杨明",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "杨明"
-          ]
-        },
-        {
           "qid": "Q45522173",
           "label": "杨明",
           "aliases": [],
@@ -16752,6 +16896,19 @@
         },
         {
           "qid": "Q45528192",
+          "label": "杨明",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "杨明"
+          ]
+        },
+        {
+          "qid": "Q45540753",
           "label": "杨明",
           "aliases": [],
           "sitelinks": 0,
@@ -16914,6 +17071,19 @@
           ]
         },
         {
+          "qid": "Q45516886",
+          "label": "李峰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": 820,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "李峰"
+          ]
+        },
+        {
           "qid": "Q45553323",
           "label": "李峰",
           "aliases": [],
@@ -16922,6 +17092,19 @@
           "deathYear": 782,
           "picture": null,
           "isTangPoet": true,
+          "foundBy": [
+            "李峰"
+          ]
+        },
+        {
+          "qid": "Q45617231",
+          "label": "李峰",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
           "foundBy": [
             "李峰"
           ]
@@ -16940,38 +17123,12 @@
           ]
         },
         {
-          "qid": "Q45516886",
-          "label": "李峰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": 820,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李峰"
-          ]
-        },
-        {
           "qid": "Q45605325",
           "label": "李峰",
           "aliases": [],
           "sitelinks": 0,
           "birthYear": null,
           "deathYear": 757,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "李峰"
-          ]
-        },
-        {
-          "qid": "Q45617231",
-          "label": "李峰",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
           "picture": null,
           "isTangPoet": false,
           "foundBy": [
@@ -17078,7 +17235,7 @@
           ]
         },
         {
-          "qid": "Q45461154",
+          "qid": "Q45562158",
           "label": "刘吉",
           "aliases": [],
           "sitelinks": 0,
@@ -17104,7 +17261,7 @@
           ]
         },
         {
-          "qid": "Q45562158",
+          "qid": "Q45461154",
           "label": "刘吉",
           "aliases": [],
           "sitelinks": 0,
@@ -17173,32 +17330,6 @@
       "candidates": [
         {
           "qid": "Q45593562",
-          "label": "毕诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "毕诚"
-          ]
-        },
-        {
-          "qid": "Q65813636",
-          "label": "毕诚",
-          "aliases": [],
-          "sitelinks": 0,
-          "birthYear": null,
-          "deathYear": null,
-          "picture": null,
-          "isTangPoet": false,
-          "foundBy": [
-            "毕诚"
-          ]
-        },
-        {
-          "qid": "Q65903479",
           "label": "毕诚",
           "aliases": [],
           "sitelinks": 0,
@@ -17339,6 +17470,32 @@
           "foundBy": [
             "毕诚"
           ]
+        },
+        {
+          "qid": "Q65813636",
+          "label": "毕诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "毕诚"
+          ]
+        },
+        {
+          "qid": "Q65903479",
+          "label": "毕诚",
+          "aliases": [],
+          "sitelinks": 0,
+          "birthYear": null,
+          "deathYear": null,
+          "picture": null,
+          "isTangPoet": false,
+          "foundBy": [
+            "毕诚"
+          ]
         }
       ]
     }
@@ -17357,18 +17514,6 @@
       "poemCount": 117
     },
     {
-      "name": "太宗皇帝",
-      "poemCount": 110
-    },
-    {
-      "name": "后主煜",
-      "poemCount": 54
-    },
-    {
-      "name": "则天皇后",
-      "poemCount": 48
-    },
-    {
       "name": "克符道者",
       "poemCount": 41
     },
@@ -17383,10 +17528,6 @@
     {
       "name": "白云仙人",
       "poemCount": 39
-    },
-    {
-      "name": "僧贯休",
-      "poemCount": 33
     },
     {
       "name": "元阳子",
@@ -17413,18 +17554,6 @@
       "poemCount": 21
     },
     {
-      "name": "德宗皇帝",
-      "poemCount": 17
-    },
-    {
-      "name": "僧齐己",
-      "poemCount": 16
-    },
-    {
-      "name": "僧皎然",
-      "poemCount": 16
-    },
-    {
       "name": "孙宗闵",
       "poemCount": 15
     },
@@ -17433,20 +17562,8 @@
       "poemCount": 14
     },
     {
-      "name": "柳中庸",
-      "poemCount": 13
-    },
-    {
       "name": "湘妃庙",
       "poemCount": 13
-    },
-    {
-      "name": "高宗皇帝",
-      "poemCount": 12
-    },
-    {
-      "name": "宣宗皇帝",
-      "poemCount": 12
     },
     {
       "name": "嵩岳诸仙",
@@ -17501,14 +17618,6 @@
       "poemCount": 8
     },
     {
-      "name": "中宗皇帝",
-      "poemCount": 7
-    },
-    {
-      "name": "文宗皇帝",
-      "poemCount": 7
-    },
-    {
       "name": "丘光庭",
       "poemCount": 7
     },
@@ -17519,10 +17628,6 @@
     {
       "name": "还阳子",
       "poemCount": 7
-    },
-    {
-      "name": "后主衍",
-      "poemCount": 6
     },
     {
       "name": "崔居俭、卢文纪",
@@ -17557,10 +17662,6 @@
       "poemCount": 6
     },
     {
-      "name": "昭宗皇帝",
-      "poemCount": 5
-    },
-    {
       "name": "鲍氏君徽",
       "poemCount": 5
     },
@@ -17587,10 +17688,6 @@
     {
       "name": "岑真人",
       "poemCount": 5
-    },
-    {
-      "name": "肃宗皇帝",
-      "poemCount": 4
     },
     {
       "name": "吴越王钱镠",
@@ -17726,10 +17823,6 @@
     },
     {
       "name": "萧颕士",
-      "poemCount": 3
-    },
-    {
-      "name": "南唐嗣主李璟",
       "poemCount": 3
     },
     {
@@ -17957,10 +18050,6 @@
       "poemCount": 2
     },
     {
-      "name": "睿宗皇帝",
-      "poemCount": 1
-    },
-    {
       "name": "文德皇后",
       "poemCount": 1
     },
@@ -18037,10 +18126,6 @@
       "poemCount": 1
     },
     {
-      "name": "僧子兰",
-      "poemCount": 1
-    },
-    {
       "name": "张汯",
       "poemCount": 1
     },
@@ -18066,10 +18151,6 @@
     },
     {
       "name": "褚秀",
-      "poemCount": 1
-    },
-    {
-      "name": "李元操",
       "poemCount": 1
     },
     {
@@ -18681,10 +18762,6 @@
       "poemCount": 1
     },
     {
-      "name": "曲崇裕",
-      "poemCount": 1
-    },
-    {
       "name": "邵景",
       "poemCount": 1
     },
@@ -18973,10 +19050,6 @@
       "poemCount": 1
     },
     {
-      "name": "顺宗皇帝李诵",
-      "poemCount": 1
-    },
-    {
       "name": "粲和尚",
       "poemCount": 1
     },
@@ -19038,10 +19111,6 @@
     },
     {
       "name": "京师小子弟",
-      "poemCount": 1
-    },
-    {
-      "name": "郑殷彝",
       "poemCount": 1
     },
     {
@@ -19114,10 +19183,6 @@
     },
     {
       "name": "李善宁之子",
-      "poemCount": 1
-    },
-    {
-      "name": "陶彝之",
       "poemCount": 1
     },
     {

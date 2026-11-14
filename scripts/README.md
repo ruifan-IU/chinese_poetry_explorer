@@ -149,7 +149,19 @@ several paragraph entries. Nested brackets are handled.
   poet: 不詳, 無名氏, 缺名, 闕名, 失名, and others.
 - Authors known only by a role or place, such as 江油令 or 天目僧, are
   deliberately kept as separate poets.
-- A few known duplicate spellings are merged, for example 玄宗皇帝李隆基 → 明皇帝.
+- Title-style names are renamed to the name the person is commonly known by,
+  which is also their Wikidata label, so they can be matched:
+  - **Emperors by temple name:** 太宗皇帝 and 太宗皇帝李世民 → 唐太宗, by one
+    rule for all X宗皇帝 names (`^(.宗)皇帝(李..)?$`).
+  - **Monks with a 僧 prefix:** 僧貫休 → 貫休, but only if the rest of the name
+    is a known poet. 僧 ("monk") is a title in 僧貫休, but part of the name in
+    僧鸞 or 僧可, which are kept.
+  - **Everything irregular** is listed in `_AUTHOR_ALIASES`: 則天皇后 → 武則天,
+    後主煜 → 李煜, 明皇帝 / 唐明皇 → 唐玄宗. The same table merges the
+    same person listed under two names (李世民 → 唐太宗, 武曌 → 武則天).
+- A few author fields name two people, such as 趙光逢、張衮 or 道鏡　善導 (the
+  full-width space becomes 、). Most are 郊廟歌辭 hymns that the source credits
+  to a group; they are kept as joint "poets" for now (see the checklist).
 
 **Dedupe.** Poems are deduplicated by SHA-256 of the cleaned Simplified content,
 the same `contentHash` that `prisma/seed.ts` computes. Copies that differ only in
@@ -192,9 +204,13 @@ All text is converted to Simplified Chinese (OpenCC `t2s`) after cleaning.
 - `author_list.json`: poets sorted by poem count, with every raw spelling that
   was folded into each one.
 
-Latest run: 56,446 unique poems (964 duplicates removed), 3,628 poets,
-1,869 poems under 佚名, 355 matched to 唐诗三百首 and 139 to 千家诗,
+Latest run: 56,446 unique poems (964 duplicates removed), 3,614 poets,
+1,869 poems under 佚名, 355 matched to 唐诗三百首 and 140 to 千家诗,
 435 flagged for review.
+
+Hashing only catches exact copies. About 20 of the joint-author hymns also
+appear under one of their authors with a few variant characters (升圓丘 /
+昇圜丘), so both copies are kept.
 
 ## 3. Match poets to Wikidata: `match_wikidata_poets.py`
 
@@ -214,18 +230,23 @@ Local poet names are then compared with Wikidata names, both converted to
 Simplified Chinese. A local name can match an item in two ways:
 
 - **Label:** the Wikidata item's main name.
-- **Alias:** courtesy names (字), style names (号) and alternative spellings.
+- **Alias:** courtesy names (字), style names (号) and alternative spellings,
+  plus the item's `foundBy` names. A `foundBy` name is one Wikidata itself
+  matched exactly against the item's labels or aliases, so it also covers names
+  the kept label and aliases miss: a `zh-hans` label when the kept label is
+  `zh-hant` (唐中宗 on Q9717, labelled 李顯), variant characters (陶彝之 /
+  陶彞之) and courtesy names missing from our alias list (柳中庸 → 柳淡).
 
 Label and alias matches are collected **together** into one list of
 candidates, with each item listed once even if it matches both ways. An earlier
 version tried labels first and stopped at the first label match. That picked
 the wrong item in 38 cases, where a namesake's label equals the local name but
-the real poet is only reachable through an alias:
+the real poet is only reachable through an alias. For example, 朱庆余 matched a
+0-sitelink item labelled 朱庆余, while the poet Q11093704 is labelled 朱可久.
 
-- 朱庆余 matched a 0-sitelink item labelled 朱庆余; the poet Q11093704 is
-  labelled 朱可久;
-- 李适 and 李昂 are the personal names of the emperors 唐德宗 (Q9755) and
-  唐文宗 (Q9790), whose labels are their temple names.
+Aliases can also mislead. 李昂 is an alias of 唐文宗 (Q9790), his personal
+name, but the local 李昂 is a 開元-era official with the same name. Cases like
+this are fixed with manual matches (below).
 
 `matchMethod` records whether the chosen item matched by label or by alias.
 
@@ -260,22 +281,44 @@ before popularity:
 - 王建 the poet (9 sitelinks) would lose to 王建 the founder of Former Shu (16
   sitelinks); step 2 prevents that.
 
+Step 2 has a known cost. Rulers of the Five Dynasties and Ten Kingdoms states
+are not tagged as Tang poets, so an empty bulk-imported item with the same name
+and a Tang tag beats them. 李煜 and 李璟 (the Southern Tang rulers) both went
+wrong this way.
+
+**Manual matches.** `MANUAL_MATCHES` maps a local poet to a QID and skips
+matching entirely (`matchMethod: "manual"`). It is for poets the rules get
+wrong, and each entry carries a comment with its evidence:
+
+| Poet | QID | Evidence |
+|---|---|---|
+| 李昂 | Q45500865 | CBDB 92964: 考功員外郎, 知貢舉 in 開元24 (736), as in his bio |
+| 李煜 | Q378528 | the Southern Tang ruler (後主煜), not the Tang item that step 2 prefers |
+| 李璟 | Q718254 | aliases 伯玉 and 南唐元宗 match his bio (字伯玉 … 諡元宗) |
+
+The script stops with an error if an entry's name is no longer a local poet or
+its QID is missing from the Wikidata results, so a stale entry can't silently
+stop applying.
+
 Outputs:
 
 - `cleaned/tang/poet_wikidata.json`: local poet name → `wikidataId`,
-  `matchMethod`, `sitelinks`, `birthYear`, `deathYear`, `picture`, `isTangPoet`.
+  `matchMethod` (`label`, `alias`, either with `-ambiguous`, or `manual`),
+  `sitelinks`, `birthYear`, `deathYear`, `picture`, `isTangPoet`.
 - `audit/tang/wikidata_matches.json`:
   - `summary`: counts per match method;
   - `ambiguous`: name clashes, with all candidates;
   - `unmatched`: poets with no match, sorted by poem count;
   - `collisions`: Wikidata items claimed by two local poets. These are usually
-    the same person listed under two names in the source (武则天/武曌,
-    李冶/李季兰), so they are candidates for merging.
+    the same person listed under two names in the source (李冶/李季兰), so
+    they are candidates for merging. They can also expose a wrong match: 李昂
+    showed up only once 唐文宗 matched the same item.
 
-Latest run: 2,905 of 3,628 poets matched, covering 52,014 of 56,446 poems
-(92%). 1,241 name clashes were resolved, 219 left for review (209 from labels,
-10 from aliases), and 504 poets have no candidate at all. Before the by-name
-lookup it was 2,371 poets and 46,037 poems.
+Latest run: 2,912 of 3,614 poets matched, covering 52,381 of 56,446 poems
+(93%). 1,241 name clashes were resolved, 221 left for review (211 from labels,
+10 from aliases), 3 poets are matched manually, and 481 have no candidate at
+all. There are 32 collisions. Before the by-name lookup it was 2,371 poets and
+46,037 poems.
 
 Combining labels and aliases corrected 40 matches, but moved 16 poets that
 label-first matching had resolved into review. An alias now adds a second Tang
@@ -293,8 +336,18 @@ Preferring label matches among several Tang poets would resolve some of these.
       as one list of candidates.
 - [ ] Optional: prefer label matches among several Tang-poet candidates, to
       resolve some of the 16 poets moved to review.
-- [ ] Merge the duplicate local poets found by `collisions` and by candidates
-      whose `foundBy` lists two local names.
+- [x] Title-style names (太宗皇帝, 則天皇后, 後主煜, 僧貫休): renamed in
+      `normalize_author()`, and `foundBy` names indexed as aliases.
+- [x] Manual matches for poets the rules get wrong (李昂, 李煜, 李璟).
+- [ ] Merge the remaining duplicate local poets found by `collisions` (32) and
+      by candidates whose `foundBy` lists two local names. The emperors are done.
+- [ ] Joint-author poems (趙光逢、張衮…): drop the near-duplicate hymns that
+      also appear under one author (fuzzy matching, since hashes miss variant
+      characters), and decide whether co-authorship needs a many-to-many
+      `Poem`–`Poet` relation.
+- [ ] Optional: limit step 2 so that a Five Dynasties ruler with sitelinks
+      isn't beaten by an empty Tang-tagged item (李煜, 李璟), if more such
+      cases show up.
 - [ ] Portraits: download the `P18` images from Wikimedia Commons with their
       license and author metadata, resize them to WebP, and save them in
       `public/portraits/<QID>.webp`.
